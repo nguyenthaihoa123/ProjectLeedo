@@ -9,3 +9,17 @@ C:\Users\APC\Desktop\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.ex
 C:\Users\APC\Desktop\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.pdb
 C:\Users\APC\Desktop\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Login_Form.resources
 C:\Users\APC\Desktop\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Main_Form.resources
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.exe.config
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.exe
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.pdb
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.AssemblyReference.cache
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Login_Form.resources
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Main_Form.resources
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Properties.Resources.resources
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.GenerateResource.cache
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.CoreCompileInputs.cache
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.exe
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.pdb
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.DonHang.resources
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.NhanVien.resources
+C:\Users\APC\Desktop\project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.KhachHang.resources

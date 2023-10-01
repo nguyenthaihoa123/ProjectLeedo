@@ -19,7 +19,35 @@ namespace BanGiay_N11
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //NhanVien nv = new NhanVien();
+            //this.panel10.Controls.Clear();
+            //nv.TopLevel = false;
+            //nv.AutoScroll = true;
+            //nv.FormBorderStyle = FormBorderStyle.None;
+            //nv.Dock = DockStyle.Fill;
+            //this.Text = nv.Text;
+            //this.panel10.Controls.Add(nv);
+            //nv.Show();
 
+            /*DonHang dh = new DonHang();
+            this.panel10.Controls.Clear();
+            dh.TopLevel = false;
+            dh.AutoScroll = true;
+            dh.FormBorderStyle = FormBorderStyle.None;
+            dh.Dock = DockStyle.Fill;
+            this.Text = dh.Text;
+            this.panel10.Controls.Add(dh);
+            dh.Show();*/
+
+            KhachHang kh = new KhachHang();
+            this.panel10.Controls.Clear();
+            kh.TopLevel = false;
+            kh.AutoScroll = true;
+            kh.FormBorderStyle = FormBorderStyle.None;
+            kh.Dock = DockStyle.Fill;
+            this.Text = kh.Text;
+            this.panel10.Controls.Add(kh);
+            kh.Show();
         }
 
         private void btn_donhang_Click(object sender, EventArgs e)
@@ -89,6 +117,24 @@ namespace BanGiay_N11
 
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+
+
+        }
+
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+            // Lấy đối tượng Graphics để vẽ
 
         }
     }
