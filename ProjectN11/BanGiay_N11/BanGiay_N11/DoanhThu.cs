@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace BanGiay_N11
 {
-    public partial class DonHang : Form
+    public partial class DoanhThu : Form
     {
-        public DonHang()
+        public DoanhThu()
         {
             InitializeComponent();
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

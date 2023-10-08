@@ -39,7 +39,31 @@ namespace BanGiay_N11
             this.panel10.Controls.Add(dh);
             dh.Show();*/
 
+            /*
             KhachHang kh = new KhachHang();
+            this.panel10.Controls.Clear();
+            kh.TopLevel = false;
+            kh.AutoScroll = true;
+            kh.FormBorderStyle = FormBorderStyle.None;
+            kh.Dock = DockStyle.Fill;
+            this.Text = kh.Text;
+            this.panel10.Controls.Add(kh);
+            kh.Show();
+           */
+
+            /*
+            Kho kh = new Kho();
+            this.panel10.Controls.Clear();
+            kh.TopLevel = false;
+            kh.AutoScroll = true;
+            kh.FormBorderStyle = FormBorderStyle.None;
+            kh.Dock = DockStyle.Fill;
+            this.Text = kh.Text;
+            this.panel10.Controls.Add(kh);
+            kh.Show();
+            */
+
+            DoanhThu kh = new DoanhThu();
             this.panel10.Controls.Clear();
             kh.TopLevel = false;
             kh.AutoScroll = true;
