@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomParameter.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
