@@ -63,71 +63,71 @@
   <ItemGroup>
     <Compile Include="CustomParameter.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="DoanhThu.cs">
+    <Compile Include="view\DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoanhThu.Designer.cs">
+    <Compile Include="view\DoanhThu.Designer.cs">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonHang.cs">
+    <Compile Include="view\DonHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonHang.Designer.cs">
+    <Compile Include="view\DonHang.Designer.cs">
       <DependentUpon>DonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="employee.cs" />
-    <Compile Include="KhachHang.cs">
+    <Compile Include="view\KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhachHang.Designer.cs">
+    <Compile Include="view\KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kho.cs">
+    <Compile Include="view\Kho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kho.Designer.cs">
+    <Compile Include="view\Kho.Designer.cs">
       <DependentUpon>Kho.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main_Form.cs">
+    <Compile Include="view\Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main_Form.Designer.cs">
+    <Compile Include="view\Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login_Form.cs">
+    <Compile Include="view\Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login_Form.Designer.cs">
+    <Compile Include="view\Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanVien.cs">
+    <Compile Include="view\NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanVien.Designer.cs">
+    <Compile Include="view\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DoanhThu.resx">
+    <EmbeddedResource Include="view\DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonHang.resx">
+    <EmbeddedResource Include="view\DonHang.resx">
       <DependentUpon>DonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachHang.resx">
+    <EmbeddedResource Include="view\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kho.resx">
+    <EmbeddedResource Include="view\Kho.resx">
       <DependentUpon>Kho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login_Form.resx">
+    <EmbeddedResource Include="view\Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main_Form.resx">
+    <EmbeddedResource Include="view\Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVien.resx">
+    <EmbeddedResource Include="view\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -171,6 +171,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"

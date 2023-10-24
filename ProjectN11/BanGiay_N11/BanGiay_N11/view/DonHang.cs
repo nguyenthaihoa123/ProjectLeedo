@@ -26,5 +26,10 @@ namespace BanGiay_N11
         {
 
         }
+
+        private void DonHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
