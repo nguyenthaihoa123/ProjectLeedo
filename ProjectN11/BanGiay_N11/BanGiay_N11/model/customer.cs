@@ -11,11 +11,13 @@ namespace BanGiay_N11.model
         public int TichDiem { get; set; }
         public string Voucher { get; set; }
         
+        public string DiaChi { get; set; }
 
-        public customer(string id, string name, string birth, string sex, string sdt, string email, string pwd, int diem, string voucher) : base(id, name, birth, sex, sdt, email, pwd)
+        public customer(string id, string name, string birth, string sex, string sdt, string email,string diachi, string pwd, int diem, string voucher) : base(id, name, birth, sex, sdt, email, pwd)
         {
             TichDiem = diem;
             Voucher = voucher;
+            DiaChi = diachi;
         }
         /*employee emp = new employee(...);
         string cccdValue = emp.CCCD; // Lấy giá trị CCCD

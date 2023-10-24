@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using BanGiay_N11.viewModel;
 
 namespace BanGiay_N11
 {
@@ -35,6 +36,25 @@ namespace BanGiay_N11
 
             //apply gradient         
             graphics.FillRectangle(b, gradient_rectangle);
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            loginViewModel check = new loginViewModel();
+            String username = txtUsername.Text;
+            String password = txtPwd.Text;
+            check.loginCheck(username, password);
+            if(check.loginCheck(username, password) == true)
+            {
+                this.Hide();
+                Main_Form mainForm = new Main_Form();
+                mainForm.ShowDialog(); // Hiển thị Main_Form
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không hợp lệ");
+            }
         }
     }
 /*    public class RoundedButton : Button

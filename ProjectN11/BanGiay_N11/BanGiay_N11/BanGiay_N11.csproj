@@ -68,6 +68,7 @@
     <Compile Include="model\product.cs" />
     <Compile Include="viewModel\customerViewModel.cs" />
     <Compile Include="viewModel\employeeViewModel.cs" />
+    <Compile Include="viewModel\loginViewModel.cs" />
     <Compile Include="viewModel\nvlViewModel.cs" />
     <Compile Include="viewModel\productViewModel.cs" />
     <Compile Include="view\DoanhThu.cs">

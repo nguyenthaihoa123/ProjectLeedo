@@ -63,7 +63,7 @@ namespace BanGiay_N11
             kh.Show();
             */
 
-            DoanhThu kh = new DoanhThu();
+            KhachHang kh = new KhachHang();
             this.panel10.Controls.Clear();
             kh.TopLevel = false;
             kh.AutoScroll = true;
@@ -159,6 +159,11 @@ namespace BanGiay_N11
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
             // Lấy đối tượng Graphics để vẽ
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
