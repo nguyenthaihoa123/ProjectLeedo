@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BanGiay_N11
 {
-    internal class employee : person
+    internal class Employee : Person
     {
         private string EmpId;
         private string cccd;
@@ -19,7 +19,7 @@ namespace BanGiay_N11
         private string imgNV;
 
 
-        public employee(string EmpId, string name, string birth, string sex, string sdt, string email, string pwd, string cccd, string dept, string tkBank, string chucvu, double salary, string imgNV) : base(name, birth, sex, sdt) { 
+        public Employee(string EmpId, string name, string birth, string sex, string sdt, string email, string pwd, string cccd, string dept, string tkBank, string chucvu, double salary, string imgNV) : base(name, birth, sex, sdt) { 
             this.EmpId = EmpId;
             this.cccd = cccd;
             this.dept = dept;
@@ -31,18 +31,24 @@ namespace BanGiay_N11
             this.imgNV = imgNV;
         }
         // phuong thuc get
-        public string getCCCD() {  return cccd; }
-        public string getDept() {  return dept; }
-        public string getBank() { return tkBank;}
-        public string getChucvu() {  return chucvu; }
-        public double getSalary() {  return salary; }
-        public string getImgNV() {  return imgNV;}
+        public string GetEmpId() { return this.EmpId; }
+        public string GetCCCD() {  return this.cccd; }
+        public string GetDept() {  return this.dept; }
+        public string GetEmail() { return this.email; }
+        public string GetBank() { return this.tkBank; }
+        public string GetChucvu() {  return this.chucvu; }
+        public double GetSalary() {  return this.salary; }
+        public string GetPwd() { return this.pwd; }
+        public string GetImgNV() {  return this.imgNV; }
         // phuong thuc set
-        public void setCCCD(string cccd) {  this.cccd = cccd; }
-        public void setDept(string dept) {  this.dept = dept; }
-        public void setTKBank(string tkBank) { this.tkBank = tkBank; }
-        public void setChucvu(string chucvu) { this.chucvu = chucvu; }
-        public void setSalary(double salary) { this.salary = salary; }
-        public void setImgNV(string imgNV) {  this.imgNV = imgNV; }
+        public void SetEmpId(string empId) {  this.EmpId = empId; }
+        public void SetCCCD(string cccd) {  this.cccd = cccd; }
+        public void SetDept(string dept) {  this.dept = dept; }
+        public void SetEmail(string email) {  this.email = email; }
+        public void SetTKBank(string tkBank) { this.tkBank = tkBank; }
+        public void SetChucvu(string chucvu) { this.chucvu = chucvu; }
+        public void SetSalary(double salary) { this.salary = salary; }
+        public void SetPwd(string pwd) {  this.pwd = pwd; }
+        public void SetImgNV(string imgNV) {  this.imgNV = imgNV; }
     }
 }

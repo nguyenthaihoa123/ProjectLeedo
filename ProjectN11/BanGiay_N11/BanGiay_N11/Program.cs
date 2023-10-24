@@ -16,7 +16,9 @@ namespace BanGiay_N11
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_Form());
+
+            
+            Application.Run(new DoanhThu());
          //   Application.Run(new Login_Form());
         }
     }

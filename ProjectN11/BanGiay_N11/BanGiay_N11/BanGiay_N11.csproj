@@ -46,42 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
     <Compile Include="CustomParameter.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="DoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DoanhThu.cs" />
     <Compile Include="DoanhThu.Designer.cs">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DonHang.cs" />
     <Compile Include="DonHang.Designer.cs">
       <DependentUpon>DonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="employee.cs" />
-    <Compile Include="KhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="KhachHang.cs" />
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kho.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Kho.cs" />
     <Compile Include="Kho.Designer.cs">
       <DependentUpon>Kho.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Main_Form.cs" />
     <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Login_Form.cs" />
     <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
@@ -91,7 +80,7 @@
     <Compile Include="NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="person.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DoanhThu.resx">

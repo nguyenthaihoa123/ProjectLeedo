@@ -655,6 +655,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DonHang";
             this.Text = "DonHang";
+            this.Load += new System.EventHandler(this.DonHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
