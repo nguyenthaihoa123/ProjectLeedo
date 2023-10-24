@@ -8,19 +8,26 @@ namespace BanGiay_N11
 {
     internal class employee : person
     {
+        private string EmpId;
         private string cccd;
         private string dept;
+        private string email;
         private string tkBank;
         private string chucvu;
         private double salary;
+        private string pwd;
         private string imgNV;
 
-        public employee(string id, string name, string birth, string sex, string sdt, string email, string pwd, string cccd, string dept, string tkBank, string chucvu, double salary, string imgNV) : base(id, name, birth, sex, sdt, email, pwd) { 
+
+        public employee(string EmpId, string name, string birth, string sex, string sdt, string email, string pwd, string cccd, string dept, string tkBank, string chucvu, double salary, string imgNV) : base(name, birth, sex, sdt) { 
+            this.EmpId = EmpId;
             this.cccd = cccd;
             this.dept = dept;
+            this.email = email;
             this.tkBank = tkBank;
             this.chucvu = chucvu;
             this.salary = salary;
+            this.pwd = pwd;
             this.imgNV = imgNV;
         }
         // phuong thuc get
