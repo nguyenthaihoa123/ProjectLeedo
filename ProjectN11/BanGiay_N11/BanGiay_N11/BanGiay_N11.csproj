@@ -12,21 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,80 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="model\customer.cs" />
-    <Compile Include="model\CustomParameter.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomParameter.cs" />
     <Compile Include="Database.cs" />
-    <Compile Include="model\NguyenVatLieu.cs" />
-    <Compile Include="model\product.cs" />
-    <Compile Include="viewModel\customerViewModel.cs" />
-    <Compile Include="viewModel\employeeViewModel.cs" />
-    <Compile Include="viewModel\nvlViewModel.cs" />
-    <Compile Include="viewModel\productViewModel.cs" />
-    <Compile Include="view\DoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\DoanhThu.Designer.cs">
+    <Compile Include="DoanhThu.cs" />
+    <Compile Include="DoanhThu.Designer.cs">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\DonHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\DonHang.Designer.cs">
+    <Compile Include="DonHang.cs" />
+    <Compile Include="DonHang.Designer.cs">
       <DependentUpon>DonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="model\employee.cs" />
-    <Compile Include="view\KhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\KhachHang.Designer.cs">
+    <Compile Include="Employee.cs" />
+    <Compile Include="KhachHang.cs" />
+    <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\Kho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\Kho.Designer.cs">
+    <Compile Include="Kho.cs" />
+    <Compile Include="Kho.Designer.cs">
       <DependentUpon>Kho.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\Main_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\Main_Form.Designer.cs">
+    <Compile Include="Main_Form.cs" />
+    <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\Login_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\Login_Form.Designer.cs">
+    <Compile Include="Login_Form.cs" />
+    <Compile Include="Login_Form.Designer.cs">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\NhanVien.cs">
+    <Compile Include="NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\NhanVien.Designer.cs">
+    <Compile Include="NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="model\person.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="view\DoanhThu.resx">
+    <EmbeddedResource Include="DoanhThu.resx">
       <DependentUpon>DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\DonHang.resx">
+    <EmbeddedResource Include="DonHang.resx">
       <DependentUpon>DonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\KhachHang.resx">
+    <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\Kho.resx">
+    <EmbeddedResource Include="Kho.resx">
       <DependentUpon>Kho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\Login_Form.resx">
+    <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\Main_Form.resx">
+    <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\NhanVien.resx">
+    <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -166,19 +133,6 @@
   <ItemGroup>
     <None Include="Resources\z4706469479827_71a26a5f366412fcd5a25a1218db5824.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
