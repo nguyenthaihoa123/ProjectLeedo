@@ -56,7 +56,6 @@ D:\hoctap\Nam3\Software Engineering\Project Leedo\Project\ProjectLeedo\ProjectN1
 D:\hoctap\Nam3\Software Engineering\Project Leedo\Project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.CoreCompileInputs.cache
 D:\hoctap\Nam3\Software Engineering\Project Leedo\Project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.exe
 D:\hoctap\Nam3\Software Engineering\Project Leedo\Project\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.pdb
-<<<<<<< HEAD
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.exe.config
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.exe
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.pdb
@@ -74,21 +73,3 @@ D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\Proj
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.CoreCompileInputs.cache
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.exe
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.pdb
-=======
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.exe.config
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.exe
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\bin\Debug\BanGiay_N11.pdb
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.AssemblyReference.cache
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.DoanhThu.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.DonHang.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.KhachHang.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Kho.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Login_Form.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Main_Form.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.NhanVien.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.Properties.Resources.resources
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.GenerateResource.cache
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.csproj.CoreCompileInputs.cache
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.exe
-C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\ProjectN11\BanGiay_N11\BanGiay_N11\obj\Debug\BanGiay_N11.pdb
->>>>>>> 45870f914de38d2753323eedc04a42c2384372af
