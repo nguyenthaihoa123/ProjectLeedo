@@ -29,43 +29,38 @@
         private void InitializeComponent()
         {
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnUpdateEmp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.dtBirthEmp = new System.Windows.Forms.DateTimePicker();
+            this.txtSalaryEmp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtDepartEmp = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtLevelEmp = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBankEmp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEmailEmp = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCCCDEmp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtNameEmp = new System.Windows.Forms.TextBox();
+            this.cbbSexEmp = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SĐT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtSdtEmp = new System.Windows.Forms.TextBox();
+            this.picEmp = new System.Windows.Forms.PictureBox();
+            this.btnSelectAvt = new System.Windows.Forms.Button();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.txtIDEmp = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // panel9
@@ -74,28 +69,42 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.txtIDEmp);
             this.panel9.Controls.Add(this.label1);
-            this.panel9.Controls.Add(this.button3);
+            this.panel9.Controls.Add(this.btnUpdateEmp);
             this.panel9.Controls.Add(this.button1);
             this.panel9.Controls.Add(this.tableLayoutPanel1);
-            this.panel9.Controls.Add(this.pictureBox2);
-            this.panel9.Controls.Add(this.button2);
+            this.panel9.Controls.Add(this.picEmp);
+            this.panel9.Controls.Add(this.btnSelectAvt);
             this.panel9.Location = new System.Drawing.Point(12, 1);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1215, 477);
             this.panel9.TabIndex = 29;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
-            // button3
+            // label1
             // 
-            this.button3.BackColor = System.Drawing.Color.Snow;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(947, 405);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 49);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = false;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(225, 420);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 23);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "ID:";
+            // 
+            // btnUpdateEmp
+            // 
+            this.btnUpdateEmp.BackColor = System.Drawing.Color.Snow;
+            this.btnUpdateEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateEmp.Location = new System.Drawing.Point(947, 405);
+            this.btnUpdateEmp.Name = "btnUpdateEmp";
+            this.btnUpdateEmp.Size = new System.Drawing.Size(85, 49);
+            this.btnUpdateEmp.TabIndex = 27;
+            this.btnUpdateEmp.Text = "Sửa";
+            this.btnUpdateEmp.UseVisualStyleBackColor = false;
+            this.btnUpdateEmp.Click += new System.EventHandler(this.btnUpdateEmp_Click);
             // 
             // button1
             // 
@@ -115,26 +124,26 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox9, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.dtBirthEmp, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtSalaryEmp, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox8, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtDepartEmp, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox7, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtLevelEmp, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox6, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtBankEmp, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtEmailEmp, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label11, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtCCCDEmp, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.label10, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtNameEmp, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbbSexEmp, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label8, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtSdtEmp, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(238, 62);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -146,24 +155,24 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(797, 315);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dateTimePicker1
+            // dtBirthEmp
             // 
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(162, 255);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 34);
-            this.dateTimePicker1.TabIndex = 19;
+            this.dtBirthEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dtBirthEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtBirthEmp.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtBirthEmp.Location = new System.Drawing.Point(162, 255);
+            this.dtBirthEmp.Name = "dtBirthEmp";
+            this.dtBirthEmp.Size = new System.Drawing.Size(233, 34);
+            this.dtBirthEmp.TabIndex = 19;
             // 
-            // textBox9
+            // txtSalaryEmp
             // 
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(560, 255);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(234, 34);
-            this.textBox9.TabIndex = 24;
+            this.txtSalaryEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSalaryEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalaryEmp.Location = new System.Drawing.Point(560, 255);
+            this.txtSalaryEmp.Name = "txtSalaryEmp";
+            this.txtSalaryEmp.Size = new System.Drawing.Size(234, 34);
+            this.txtSalaryEmp.TabIndex = 24;
             // 
             // label2
             // 
@@ -177,14 +186,14 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "CCCD";
             // 
-            // textBox8
+            // txtDepartEmp
             // 
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(560, 192);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(234, 34);
-            this.textBox8.TabIndex = 23;
+            this.txtDepartEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDepartEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDepartEmp.Location = new System.Drawing.Point(560, 192);
+            this.txtDepartEmp.Name = "txtDepartEmp";
+            this.txtDepartEmp.Size = new System.Drawing.Size(234, 34);
+            this.txtDepartEmp.TabIndex = 23;
             // 
             // label3
             // 
@@ -198,14 +207,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Họ tên";
             // 
-            // textBox7
+            // txtLevelEmp
             // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(560, 129);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(234, 34);
-            this.textBox7.TabIndex = 22;
+            this.txtLevelEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtLevelEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLevelEmp.Location = new System.Drawing.Point(560, 129);
+            this.txtLevelEmp.Name = "txtLevelEmp";
+            this.txtLevelEmp.Size = new System.Drawing.Size(234, 34);
+            this.txtLevelEmp.TabIndex = 22;
             // 
             // label4
             // 
@@ -219,14 +228,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "SĐT";
             // 
-            // textBox6
+            // txtBankEmp
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(560, 66);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(234, 34);
-            this.textBox6.TabIndex = 21;
+            this.txtBankEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtBankEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBankEmp.Location = new System.Drawing.Point(560, 66);
+            this.txtBankEmp.Name = "txtBankEmp";
+            this.txtBankEmp.Size = new System.Drawing.Size(234, 34);
+            this.txtBankEmp.TabIndex = 21;
             // 
             // label5
             // 
@@ -240,14 +249,14 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Giới tính";
             // 
-            // textBox5
+            // txtEmailEmp
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(560, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(234, 34);
-            this.textBox5.TabIndex = 20;
+            this.txtEmailEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtEmailEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailEmp.Location = new System.Drawing.Point(560, 3);
+            this.txtEmailEmp.Name = "txtEmailEmp";
+            this.txtEmailEmp.Size = new System.Drawing.Size(234, 34);
+            this.txtEmailEmp.TabIndex = 20;
             // 
             // label6
             // 
@@ -273,15 +282,15 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "Lương";
             // 
-            // textBox1
+            // txtCCCDEmp
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(162, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 34);
-            this.textBox1.TabIndex = 15;
+            this.txtCCCDEmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCCCDEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtCCCDEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCCCDEmp.Location = new System.Drawing.Point(162, 3);
+            this.txtCCCDEmp.Name = "txtCCCDEmp";
+            this.txtCCCDEmp.Size = new System.Drawing.Size(233, 34);
+            this.txtCCCDEmp.TabIndex = 15;
             // 
             // label9
             // 
@@ -307,27 +316,27 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "Chức vụ";
             // 
-            // textBox2
+            // txtNameEmp
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(162, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 34);
-            this.textBox2.TabIndex = 16;
+            this.txtNameEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtNameEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameEmp.Location = new System.Drawing.Point(162, 66);
+            this.txtNameEmp.Name = "txtNameEmp";
+            this.txtNameEmp.Size = new System.Drawing.Size(233, 34);
+            this.txtNameEmp.TabIndex = 16;
             // 
-            // comboBox1
+            // cbbSexEmp
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbbSexEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cbbSexEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSexEmp.FormattingEnabled = true;
+            this.cbbSexEmp.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboBox1.Location = new System.Drawing.Point(162, 192);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 36);
-            this.comboBox1.TabIndex = 18;
+            this.cbbSexEmp.Location = new System.Drawing.Point(162, 192);
+            this.cbbSexEmp.Name = "cbbSexEmp";
+            this.cbbSexEmp.Size = new System.Drawing.Size(233, 36);
+            this.cbbSexEmp.TabIndex = 18;
             // 
             // label7
             // 
@@ -353,103 +362,62 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Email";
             // 
-            // textBox3
+            // txtSdtEmp
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(162, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(233, 34);
-            this.textBox3.TabIndex = 17;
+            this.txtSdtEmp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSdtEmp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSdtEmp.Location = new System.Drawing.Point(162, 129);
+            this.txtSdtEmp.Name = "txtSdtEmp";
+            this.txtSdtEmp.Size = new System.Drawing.Size(233, 34);
+            this.txtSdtEmp.TabIndex = 17;
             // 
-            // pictureBox2
+            // picEmp
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(58, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 157);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.picEmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picEmp.Location = new System.Drawing.Point(58, 88);
+            this.picEmp.Name = "picEmp";
+            this.picEmp.Size = new System.Drawing.Size(140, 157);
+            this.picEmp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEmp.TabIndex = 1;
+            this.picEmp.TabStop = false;
             // 
-            // button2
+            // btnSelectAvt
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(78, 274);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Chọn Ảnh";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSelectAvt.BackColor = System.Drawing.Color.White;
+            this.btnSelectAvt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectAvt.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectAvt.Location = new System.Drawing.Point(78, 274);
+            this.btnSelectAvt.Name = "btnSelectAvt";
+            this.btnSelectAvt.Size = new System.Drawing.Size(84, 40);
+            this.btnSelectAvt.TabIndex = 0;
+            this.btnSelectAvt.Text = "Chọn Ảnh";
+            this.btnSelectAvt.UseVisualStyleBackColor = false;
+            this.btnSelectAvt.Click += new System.EventHandler(this.btnSelectAvt_Click);
             // 
-            // dataGridView1
+            // dgvEmployee
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.CCCD,
-            this.HoTen,
-            this.SĐT,
-            this.GioiTinh,
-            this.NgaySinh});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 484);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1239, 176);
-            this.dataGridView1.TabIndex = 30;
+            this.dgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvEmployee.Location = new System.Drawing.Point(0, 484);
+            this.dgvEmployee.MultiSelect = false;
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.ReadOnly = true;
+            this.dgvEmployee.RowHeadersWidth = 51;
+            this.dgvEmployee.RowTemplate.Height = 24;
+            this.dgvEmployee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmployee.Size = new System.Drawing.Size(1239, 176);
+            this.dgvEmployee.TabIndex = 30;
+            this.dgvEmployee.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellDoubleClick);
             // 
-            // ID
+            // txtIDEmp
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // CCCD
-            // 
-            this.CCCD.HeaderText = "CCCD";
-            this.CCCD.MinimumWidth = 6;
-            this.CCCD.Name = "CCCD";
-            // 
-            // HoTen
-            // 
-            this.HoTen.HeaderText = "HoTen";
-            this.HoTen.MinimumWidth = 6;
-            this.HoTen.Name = "HoTen";
-            // 
-            // SĐT
-            // 
-            this.SĐT.HeaderText = "SĐT";
-            this.SĐT.MinimumWidth = 6;
-            this.SĐT.Name = "SĐT";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "GioiTinh";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.HeaderText = "NgaySinh";
-            this.NgaySinh.MinimumWidth = 6;
-            this.NgaySinh.Name = "NgaySinh";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(225, 420);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 23);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "ID:";
+            this.txtIDEmp.AutoSize = true;
+            this.txtIDEmp.Location = new System.Drawing.Point(274, 427);
+            this.txtIDEmp.Name = "txtIDEmp";
+            this.txtIDEmp.Size = new System.Drawing.Size(28, 16);
+            this.txtIDEmp.TabIndex = 29;
+            this.txtIDEmp.Text = ".......";
             // 
             // NhanVien
             // 
@@ -457,16 +425,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1239, 660);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.panel9);
             this.Name = "NhanVien";
             this.Text = "NhanVien";
+            this.Load += new System.EventHandler(this.NhanVien_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,38 +443,33 @@
         #endregion
 
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnUpdateEmp;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.DateTimePicker dtBirthEmp;
+        private System.Windows.Forms.TextBox txtSalaryEmp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtDepartEmp;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtLevelEmp;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBankEmp;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEmailEmp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCCCDEmp;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtNameEmp;
+        private System.Windows.Forms.ComboBox cbbSexEmp;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CCCD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SĐT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.TextBox txtSdtEmp;
+        private System.Windows.Forms.PictureBox picEmp;
+        private System.Windows.Forms.Button btnSelectAvt;
+        private System.Windows.Forms.DataGridView dgvEmployee;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtIDEmp;
     }
 }
