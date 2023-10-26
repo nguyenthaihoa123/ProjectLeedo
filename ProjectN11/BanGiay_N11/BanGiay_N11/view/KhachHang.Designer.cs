@@ -93,7 +93,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnUpdateCus, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnSearchCustomer, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
@@ -111,6 +110,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label10, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnDeleteCus, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnSearchCustomer, 4, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(86, 52);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;

@@ -11,7 +11,7 @@ namespace BanGiay_N11
 {
     internal class Database
     {
-        private string connectionString = @"Data Source=DESKTOP-S91JM4I\SQLEXPRESS2012;Initial Catalog=projectLeedo;Integrated Security=True";
+        private string connectionString = @"Data Source=DESKTOP-S91JM4I\HAONAM;Initial Catalog=projectLeedo;Integrated Security=True";
         private SqlConnection conn;
         private string sql;
         private DataTable dt;
