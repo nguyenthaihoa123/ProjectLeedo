@@ -18,7 +18,7 @@ namespace BanGiay_N11
             Application.SetCompatibleTextRenderingDefault(false);
 
             
-            Application.Run(new Login_Form());
+            Application.Run(new NhanVien());
          //   Application.Run(new Login_Form());
         }
     }
