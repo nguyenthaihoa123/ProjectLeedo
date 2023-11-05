@@ -43,7 +43,7 @@ namespace BanGiay_N11
             employeeViewModel viewAllEmp = new employeeViewModel();
             dgvEmployee.DataSource = viewAllEmp.dataAllEmploy();
 
-            dgvEmployee.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
+            /*dgvEmployee.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
             dgvEmployee.Columns["HotenNV"].HeaderText = "Họ tên";
             dgvEmployee.Columns["CCCD"].HeaderText = "Căn cước";
             dgvEmployee.Columns["SDT"].HeaderText = "Số điện thoại";
@@ -54,7 +54,7 @@ namespace BanGiay_N11
             dgvEmployee.Columns["Email"].HeaderText = "Email";
             dgvEmployee.Columns["ChucVu"].HeaderText = "Chức vụ";
             dgvEmployee.Columns["Luong"].HeaderText = "Lương";
-            dgvEmployee.Columns["MatKhau"].HeaderText = "Mật khẩu";
+            dgvEmployee.Columns["MatKhau"].HeaderText = "Mật khẩu";*/
         }
 
         private void dgvEmployee_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
