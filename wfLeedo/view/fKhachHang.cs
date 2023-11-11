@@ -35,8 +35,8 @@ namespace wfLeedo
 
         private void fKhachHang_Load(object sender, EventArgs e)
         {
-            customerViewModel viewAllEmp = new customerViewModel();
-            dgvCustomer.DataSource = viewAllEmp.dataAllCustomer("");
+            //customerViewModel viewAllEmp = new customerViewModel();
+            //dgvCustomer.DataSource = viewAllEmp.dataAllCustomer("");
         }
 
         private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
@@ -46,28 +46,28 @@ namespace wfLeedo
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            customerViewModel viewAllEmp = new customerViewModel();
-            string info = txtSearchInfo.Text;
-            dgvCustomer.DataSource = viewAllEmp.dataAllCustomer(info);
+            //customerViewModel viewAllEmp = new customerViewModel();
+            //string info = txtSearchInfo.Text;
+            //dgvCustomer.DataSource = viewAllEmp.dataAllCustomer(info);
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            customerViewModel viewAllEmp = new customerViewModel();
-            txtSearchInfo.Text = "";
-            dgvCustomer.DataSource = viewAllEmp.dataAllCustomer("");
+            //customerViewModel viewAllEmp = new customerViewModel();
+            //txtSearchInfo.Text = "";
+            //dgvCustomer.DataSource = viewAllEmp.dataAllCustomer("");
         }
 
         private void dgvCustomer_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                customerViewModel dataCus = new customerViewModel();
-                var mNV = dgvCustomer.Rows[e.RowIndex].Cells["MaKH"].Value.ToString();
-                form = new fThemKhachHang(mNV);
-                form.Dock = DockStyle.Fill;
-                form.Show();
-            }
+            //if (e.RowIndex >= 0)
+            //{
+            //    customerViewModel dataCus = new customerViewModel();
+            //    var mNV = dgvCustomer.Rows[e.RowIndex].Cells["MaKH"].Value.ToString();
+            //    form = new fThemKhachHang(mNV);
+            //    form.Dock = DockStyle.Fill;
+            //    form.Show();
+            //}
         }
     }
 }

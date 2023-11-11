@@ -33,5 +33,10 @@ namespace wfLeedo
                 MessageBox.Show("Tài khoản hoặc mật khẩu không hợp lệ");
             }
         }
+
+        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

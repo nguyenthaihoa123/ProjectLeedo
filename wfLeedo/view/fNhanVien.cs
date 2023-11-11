@@ -47,38 +47,38 @@ namespace wfLeedo
 
         private void fNhanVien_Load(object sender, EventArgs e)
         {
-            employeeViewModel viewAllEmp = new employeeViewModel();
-            dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
-        }
+            /*   employeeViewModel viewAllEmp = new employeeViewModel();
+               dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");*?
+           }
 
-        private void btnSearchEmp_Click(object sender, EventArgs e)
-        {
-            employeeViewModel viewAllEmp = new employeeViewModel();
+           private void btnSearchEmp_Click(object sender, EventArgs e)
+           {
+              /* employeeViewModel viewAllEmp = new employeeViewModel();
 
-            string info = txtInputInfoEmp.Text;
-            dgvEmployee.DataSource = viewAllEmp.dataAllEmploy(info);
+               string info = txtInputInfoEmp.Text;
+               dgvEmployee.DataSource = viewAllEmp.dataAllEmploy(info);*/
 
         }
 
         private void btnResetDataEmp_Click(object sender, EventArgs e)
         {
-            employeeViewModel viewAllEmp = new employeeViewModel();
-            dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
-            txtInputInfoEmp.Text = "";
+            /*   employeeViewModel viewAllEmp = new employeeViewModel();
+               dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
+               txtInputInfoEmp.Text = "";*/
         }
 
         private void dgvEmployee_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                employeeViewModel dataCus = new employeeViewModel();
-                var mNV = dgvEmployee.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
-                //employee newCustomer = dataCus.dataEmployee(mNV);
-                fthemnhanvien = new fThemNhanVien(mNV);
-                fthemnhanvien.FormClosed += Fthemnhanvien_FormClosed;
-                fthemnhanvien.Dock = DockStyle.Fill;
-                fthemnhanvien.Show();
-            }
+            /* if (e.RowIndex >= 0)
+             {
+                 employeeViewModel dataCus = new employeeViewModel();
+                 var mNV = dgvEmployee.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                 //employee newCustomer = dataCus.dataEmployee(mNV);
+                 fthemnhanvien = new fThemNhanVien(mNV);
+                 fthemnhanvien.FormClosed += Fthemnhanvien_FormClosed;
+                 fthemnhanvien.Dock = DockStyle.Fill;
+                 fthemnhanvien.Show();
+             }*/
         }
     }
 }

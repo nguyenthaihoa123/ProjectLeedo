@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            btnQuanLy = new FontAwesome.Sharp.IconButton();
+            btnSanPham = new FontAwesome.Sharp.IconButton();
             btnDangXuat = new FontAwesome.Sharp.IconButton();
-            btnKhachHang = new FontAwesome.Sharp.IconButton();
             btnDonHang = new FontAwesome.Sharp.IconButton();
-            btnDoanhThu = new FontAwesome.Sharp.IconButton();
-            btnKho = new FontAwesome.Sharp.IconButton();
-            btnNhanVien = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             pnMain = new Panel();
@@ -46,23 +44,60 @@
             // 
             // kryptonPanel1
             // 
+            kryptonPanel1.Controls.Add(btnQuanLy);
+            kryptonPanel1.Controls.Add(btnSanPham);
             kryptonPanel1.Controls.Add(btnDangXuat);
-            kryptonPanel1.Controls.Add(btnKhachHang);
             kryptonPanel1.Controls.Add(btnDonHang);
-            kryptonPanel1.Controls.Add(btnDoanhThu);
-            kryptonPanel1.Controls.Add(btnKho);
-            kryptonPanel1.Controls.Add(btnNhanVien);
             kryptonPanel1.Controls.Add(panel1);
             kryptonPanel1.Dock = DockStyle.Left;
             kryptonPanel1.Location = new Point(0, 0);
-            kryptonPanel1.Margin = new Padding(3, 2, 3, 2);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Size = new Size(102, 565);
-            kryptonPanel1.StateCommon.Color1 = Color.FromArgb(255, 76, 32);
-            kryptonPanel1.StateCommon.Color2 = Color.FromArgb(254, 141, 101);
+            kryptonPanel1.Size = new Size(117, 753);
+            kryptonPanel1.StateCommon.Color1 = Color.FromArgb(51, 51, 51);
+            kryptonPanel1.StateCommon.Color2 = Color.FromArgb(51, 51, 51);
             kryptonPanel1.StateCommon.ColorAngle = 90F;
             kryptonPanel1.StateCommon.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Dashed;
             kryptonPanel1.TabIndex = 0;
+            // 
+            // btnQuanLy
+            // 
+            btnQuanLy.BackColor = Color.Transparent;
+            btnQuanLy.Dock = DockStyle.Top;
+            btnQuanLy.FlatAppearance.BorderSize = 0;
+            btnQuanLy.FlatStyle = FlatStyle.Flat;
+            btnQuanLy.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnQuanLy.ForeColor = Color.LightGray;
+            btnQuanLy.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
+            btnQuanLy.IconColor = Color.LightGray;
+            btnQuanLy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnQuanLy.Location = new Point(0, 349);
+            btnQuanLy.Name = "btnQuanLy";
+            btnQuanLy.Size = new Size(117, 93);
+            btnQuanLy.TabIndex = 8;
+            btnQuanLy.Text = "Quản lý";
+            btnQuanLy.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnQuanLy.UseVisualStyleBackColor = false;
+            btnQuanLy.Click += btnQuanLy_Click;
+            // 
+            // btnSanPham
+            // 
+            btnSanPham.BackColor = Color.Transparent;
+            btnSanPham.Dock = DockStyle.Top;
+            btnSanPham.FlatAppearance.BorderSize = 0;
+            btnSanPham.FlatStyle = FlatStyle.Flat;
+            btnSanPham.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSanPham.ForeColor = Color.LightGray;
+            btnSanPham.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
+            btnSanPham.IconColor = Color.LightGray;
+            btnSanPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnSanPham.Location = new Point(0, 256);
+            btnSanPham.Name = "btnSanPham";
+            btnSanPham.Size = new Size(117, 93);
+            btnSanPham.TabIndex = 7;
+            btnSanPham.Text = "Sản phẩm";
+            btnSanPham.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnSanPham.UseVisualStyleBackColor = false;
+            btnSanPham.Click += btnSanPham_Click;
             // 
             // btnDangXuat
             // 
@@ -75,35 +110,13 @@
             btnDangXuat.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
             btnDangXuat.IconColor = Color.FromArgb(51, 51, 51);
             btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDangXuat.Location = new Point(0, 508);
-            btnDangXuat.Margin = new Padding(3, 2, 3, 2);
+            btnDangXuat.Location = new Point(0, 677);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Rotation = 180D;
-            btnDangXuat.Size = new Size(102, 57);
+            btnDangXuat.Size = new Size(117, 76);
             btnDangXuat.TabIndex = 6;
             btnDangXuat.TextImageRelation = TextImageRelation.ImageAboveText;
             btnDangXuat.UseVisualStyleBackColor = false;
-            // 
-            // btnKhachHang
-            // 
-            btnKhachHang.BackColor = Color.Transparent;
-            btnKhachHang.Dock = DockStyle.Top;
-            btnKhachHang.FlatAppearance.BorderSize = 0;
-            btnKhachHang.FlatStyle = FlatStyle.Flat;
-            btnKhachHang.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            btnKhachHang.ForeColor = Color.DimGray;
-            btnKhachHang.IconChar = FontAwesome.Sharp.IconChar.Users;
-            btnKhachHang.IconColor = Color.DimGray;
-            btnKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnKhachHang.Location = new Point(0, 404);
-            btnKhachHang.Margin = new Padding(3, 2, 3, 2);
-            btnKhachHang.Name = "btnKhachHang";
-            btnKhachHang.Size = new Size(102, 71);
-            btnKhachHang.TabIndex = 5;
-            btnKhachHang.Text = "Khách hàng";
-            btnKhachHang.TextImageRelation = TextImageRelation.ImageAboveText;
-            btnKhachHang.UseVisualStyleBackColor = false;
-            btnKhachHang.Click += btnKhachHang_Click;
             // 
             // btnDonHang
             // 
@@ -112,82 +125,18 @@
             btnDonHang.FlatAppearance.BorderSize = 0;
             btnDonHang.FlatStyle = FlatStyle.Flat;
             btnDonHang.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDonHang.ForeColor = Color.DimGray;
+            btnDonHang.ForeColor = Color.LightGray;
             btnDonHang.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            btnDonHang.IconColor = Color.DimGray;
+            btnDonHang.IconColor = Color.LightGray;
             btnDonHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDonHang.Location = new Point(0, 334);
-            btnDonHang.Margin = new Padding(3, 2, 3, 2);
+            btnDonHang.Location = new Point(0, 163);
             btnDonHang.Name = "btnDonHang";
-            btnDonHang.Size = new Size(102, 70);
+            btnDonHang.Size = new Size(117, 93);
             btnDonHang.TabIndex = 4;
             btnDonHang.Text = "Đơn hàng";
             btnDonHang.TextImageRelation = TextImageRelation.ImageAboveText;
             btnDonHang.UseVisualStyleBackColor = false;
             btnDonHang.Click += btnDonHang_Click;
-            // 
-            // btnDoanhThu
-            // 
-            btnDoanhThu.BackColor = Color.Transparent;
-            btnDoanhThu.Dock = DockStyle.Top;
-            btnDoanhThu.FlatAppearance.BorderSize = 0;
-            btnDoanhThu.FlatStyle = FlatStyle.Flat;
-            btnDoanhThu.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnDoanhThu.ForeColor = Color.DimGray;
-            btnDoanhThu.IconChar = FontAwesome.Sharp.IconChar.Coins;
-            btnDoanhThu.IconColor = Color.DimGray;
-            btnDoanhThu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDoanhThu.Location = new Point(0, 262);
-            btnDoanhThu.Margin = new Padding(3, 2, 3, 2);
-            btnDoanhThu.Name = "btnDoanhThu";
-            btnDoanhThu.Size = new Size(102, 72);
-            btnDoanhThu.TabIndex = 3;
-            btnDoanhThu.Text = "Doanh thu";
-            btnDoanhThu.TextImageRelation = TextImageRelation.ImageAboveText;
-            btnDoanhThu.UseVisualStyleBackColor = false;
-            btnDoanhThu.Click += btnDoanhThu_Click;
-            // 
-            // btnKho
-            // 
-            btnKho.BackColor = Color.Transparent;
-            btnKho.Dock = DockStyle.Top;
-            btnKho.FlatAppearance.BorderSize = 0;
-            btnKho.FlatStyle = FlatStyle.Flat;
-            btnKho.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnKho.ForeColor = Color.DimGray;
-            btnKho.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
-            btnKho.IconColor = Color.DimGray;
-            btnKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnKho.Location = new Point(0, 192);
-            btnKho.Margin = new Padding(3, 2, 3, 2);
-            btnKho.Name = "btnKho";
-            btnKho.Size = new Size(102, 70);
-            btnKho.TabIndex = 2;
-            btnKho.Text = "Kho";
-            btnKho.TextImageRelation = TextImageRelation.ImageAboveText;
-            btnKho.UseVisualStyleBackColor = false;
-            btnKho.Click += btnKho_Click;
-            // 
-            // btnNhanVien
-            // 
-            btnNhanVien.BackColor = Color.Transparent;
-            btnNhanVien.Dock = DockStyle.Top;
-            btnNhanVien.FlatAppearance.BorderSize = 0;
-            btnNhanVien.FlatStyle = FlatStyle.Flat;
-            btnNhanVien.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnNhanVien.ForeColor = Color.DimGray;
-            btnNhanVien.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
-            btnNhanVien.IconColor = Color.DimGray;
-            btnNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnNhanVien.Location = new Point(0, 122);
-            btnNhanVien.Margin = new Padding(3, 2, 3, 2);
-            btnNhanVien.Name = "btnNhanVien";
-            btnNhanVien.Size = new Size(102, 70);
-            btnNhanVien.TabIndex = 1;
-            btnNhanVien.Text = "Nhân viên";
-            btnNhanVien.TextImageRelation = TextImageRelation.ImageAboveText;
-            btnNhanVien.UseVisualStyleBackColor = false;
-            btnNhanVien.Click += btnNhanVien_Click;
             // 
             // panel1
             // 
@@ -195,46 +144,42 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(102, 122);
+            panel1.Size = new Size(117, 163);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.remove_bg;
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(102, 122);
+            pictureBox1.Size = new Size(117, 163);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pnMain
             // 
             pnMain.BackColor = Color.FromArgb(244, 244, 255);
             pnMain.Dock = DockStyle.Fill;
-            pnMain.Location = new Point(102, 0);
-            pnMain.Margin = new Padding(3, 2, 3, 2);
+            pnMain.Location = new Point(117, 0);
             pnMain.Name = "pnMain";
-            pnMain.Padding = new Padding(0, 0, 0, 11);
-            pnMain.Size = new Size(1020, 565);
+            pnMain.Padding = new Padding(0, 0, 0, 15);
+            pnMain.Size = new Size(1165, 753);
             pnMain.TabIndex = 1;
             // 
             // fMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 255);
-            ClientSize = new Size(1122, 565);
+            ClientSize = new Size(1282, 753);
             Controls.Add(pnMain);
             Controls.Add(kryptonPanel1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "fMain";
+            Text = "Trang chủ";
             Load += fMain_Load;
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
             kryptonPanel1.ResumeLayout(false);
@@ -248,12 +193,10 @@
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton btnNhanVien;
-        private FontAwesome.Sharp.IconButton btnDoanhThu;
-        private FontAwesome.Sharp.IconButton btnKho;
-        private FontAwesome.Sharp.IconButton btnKhachHang;
         private FontAwesome.Sharp.IconButton btnDonHang;
         private FontAwesome.Sharp.IconButton btnDangXuat;
         private Panel pnMain;
+        private FontAwesome.Sharp.IconButton btnQuanLy;
+        private FontAwesome.Sharp.IconButton btnSanPham;
     }
 }

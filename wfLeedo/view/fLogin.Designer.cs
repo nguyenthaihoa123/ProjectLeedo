@@ -34,13 +34,15 @@
             panel2 = new Panel();
             panel1 = new Panel();
             txtPwd = new Krypton.Toolkit.KryptonTextBox();
-            kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             txtUsername = new Krypton.Toolkit.KryptonTextBox();
             btnLogin = new Krypton.Toolkit.KryptonButton();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
@@ -55,10 +57,9 @@
             pictureBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.remove_bg;
-            pictureBox1.Location = new Point(66, 21);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(75, 28);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(271, 206);
+            pictureBox1.Size = new Size(310, 275);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -68,16 +69,17 @@
             pictureBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = Properties.Resources.shoes;
-            pictureBox2.Location = new Point(66, 231);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(75, 308);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(271, 212);
+            pictureBox2.Size = new Size(310, 283);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
             // kryptonPanel1
             // 
+            kryptonPanel1.Controls.Add(guna2HtmlLabel2);
+            kryptonPanel1.Controls.Add(guna2HtmlLabel1);
             kryptonPanel1.Controls.Add(panel2);
             kryptonPanel1.Controls.Add(panel1);
             kryptonPanel1.Controls.Add(txtPwd);
@@ -89,38 +91,34 @@
             kryptonPanel1.Controls.Add(label1);
             kryptonPanel1.Controls.Add(iconPictureBox1);
             kryptonPanel1.Dock = DockStyle.Right;
-            kryptonPanel1.Location = new Point(500, 0);
-            kryptonPanel1.Margin = new Padding(3, 2, 3, 2);
+            kryptonPanel1.Location = new Point(571, 0);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Size = new Size(447, 490);
+            kryptonPanel1.Size = new Size(511, 653);
             kryptonPanel1.StateCommon.Color1 = Color.FromArgb(240, 101, 57);
             kryptonPanel1.TabIndex = 2;
             // 
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Location = new Point(262, 134);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(299, 179);
             panel2.Name = "panel2";
-            panel2.Size = new Size(175, 4);
+            panel2.Size = new Size(200, 5);
             panel2.TabIndex = 10;
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Location = new Point(3, 134);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(3, 179);
             panel1.Name = "panel1";
-            panel1.Size = new Size(175, 4);
+            panel1.Size = new Size(200, 5);
             panel1.TabIndex = 9;
             // 
             // txtPwd
             // 
-            txtPwd.Location = new Point(89, 289);
-            txtPwd.Margin = new Padding(3, 2, 3, 2);
+            txtPwd.Location = new Point(102, 385);
             txtPwd.Name = "txtPwd";
             txtPwd.PasswordChar = '●';
-            txtPwd.Size = new Size(295, 35);
+            txtPwd.Size = new Size(337, 41);
             txtPwd.StateActive.Back.Color1 = Color.FromArgb(240, 101, 57);
             txtPwd.StateActive.Border.Color1 = Color.LightGray;
             txtPwd.StateActive.Border.Color2 = Color.LightGray;
@@ -131,36 +129,11 @@
             txtPwd.TabIndex = 2;
             txtPwd.UseSystemPasswordChar = true;
             // 
-            // kryptonButton2
-            // 
-            kryptonButton2.CornerRoundingRadius = 15F;
-            kryptonButton2.Location = new Point(240, 395);
-            kryptonButton2.Margin = new Padding(3, 2, 3, 2);
-            kryptonButton2.Name = "kryptonButton2";
-            kryptonButton2.Size = new Size(144, 52);
-            kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(240, 101, 57);
-            kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(240, 101, 57);
-            kryptonButton2.StateCommon.Border.Color1 = Color.White;
-            kryptonButton2.StateCommon.Border.Color2 = Color.White;
-            kryptonButton2.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
-            kryptonButton2.StateCommon.Border.Rounding = 15F;
-            kryptonButton2.StateCommon.Border.Width = 2;
-            kryptonButton2.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButton2.StateCommon.Content.ShortText.Color2 = Color.White;
-            kryptonButton2.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            kryptonButton2.StatePressed.Back.Color1 = Color.White;
-            kryptonButton2.StatePressed.Back.Color2 = Color.White;
-            kryptonButton2.StatePressed.Content.ShortText.Color1 = Color.FromArgb(255, 128, 0);
-            kryptonButton2.StatePressed.Content.ShortText.Color2 = Color.FromArgb(255, 128, 0);
-            kryptonButton2.TabIndex = 4;
-            kryptonButton2.Values.Text = "Cancel";
-            // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(89, 221);
-            txtUsername.Margin = new Padding(3, 2, 3, 2);
+            txtUsername.Location = new Point(102, 295);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(295, 35);
+            txtUsername.Size = new Size(337, 41);
             txtUsername.StateActive.Back.Color1 = Color.FromArgb(240, 101, 57);
             txtUsername.StateActive.Border.Color1 = Color.LightGray;
             txtUsername.StateActive.Border.Color2 = Color.LightGray;
@@ -173,10 +146,9 @@
             // btnLogin
             // 
             btnLogin.CornerRoundingRadius = 15F;
-            btnLogin.Location = new Point(55, 395);
-            btnLogin.Margin = new Padding(3, 2, 3, 2);
+            btnLogin.Location = new Point(209, 484);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(144, 52);
+            btnLogin.Size = new Size(268, 69);
             btnLogin.StateCommon.Back.Color1 = Color.White;
             btnLogin.StateCommon.Back.Color2 = Color.White;
             btnLogin.StateCommon.Border.Color1 = Color.White;
@@ -197,36 +169,32 @@
             btnLogin.StatePressed.Content.ShortText.Color1 = Color.White;
             btnLogin.StatePressed.Content.ShortText.Color2 = Color.White;
             btnLogin.TabIndex = 3;
-            btnLogin.Values.Text = "Login";
+            btnLogin.Values.Text = "Đăng nhập";
             btnLogin.Click += btnLogin_Click;
             // 
             // iconPictureBox3
             // 
             iconPictureBox3.BackColor = Color.Transparent;
-            iconPictureBox3.ForeColor = Color.LightGray;
             iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            iconPictureBox3.IconColor = Color.LightGray;
+            iconPictureBox3.IconColor = Color.White;
             iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox3.IconSize = 30;
-            iconPictureBox3.Location = new Point(33, 291);
-            iconPictureBox3.Margin = new Padding(3, 2, 3, 2);
+            iconPictureBox3.IconSize = 40;
+            iconPictureBox3.Location = new Point(38, 388);
             iconPictureBox3.Name = "iconPictureBox3";
-            iconPictureBox3.Size = new Size(35, 30);
+            iconPictureBox3.Size = new Size(40, 40);
             iconPictureBox3.TabIndex = 4;
             iconPictureBox3.TabStop = false;
             // 
             // iconPictureBox2
             // 
             iconPictureBox2.BackColor = Color.Transparent;
-            iconPictureBox2.ForeColor = Color.LightGray;
             iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.User;
-            iconPictureBox2.IconColor = Color.LightGray;
+            iconPictureBox2.IconColor = Color.White;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox2.IconSize = 30;
-            iconPictureBox2.Location = new Point(33, 224);
-            iconPictureBox2.Margin = new Padding(3, 2, 3, 2);
+            iconPictureBox2.IconSize = 40;
+            iconPictureBox2.Location = new Point(38, 299);
             iconPictureBox2.Name = "iconPictureBox2";
-            iconPictureBox2.Size = new Size(35, 30);
+            iconPictureBox2.Size = new Size(40, 40);
             iconPictureBox2.TabIndex = 3;
             iconPictureBox2.TabStop = false;
             // 
@@ -236,11 +204,11 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(153, 49);
+            label1.Location = new Point(114, 64);
             label1.Name = "label1";
-            label1.Size = new Size(123, 46);
+            label1.Size = new Size(279, 58);
             label1.TabIndex = 1;
-            label1.Text = "Login";
+            label1.Text = "Đăng nhập";
             // 
             // iconPictureBox1
             // 
@@ -248,27 +216,70 @@
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             iconPictureBox1.IconColor = Color.White;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 98;
-            iconPictureBox1.Location = new Point(123, 94);
-            iconPictureBox1.Margin = new Padding(3, 2, 3, 2);
+            iconPictureBox1.IconSize = 131;
+            iconPictureBox1.Location = new Point(141, 125);
             iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(195, 98);
+            iconPictureBox1.Size = new Size(223, 131);
             iconPictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             iconPictureBox1.TabIndex = 0;
             iconPictureBox1.TabStop = false;
             // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.Location = new Point(101, 267);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(136, 27);
+            guna2HtmlLabel1.TabIndex = 11;
+            guna2HtmlLabel1.Text = "Tên đăng nhập";
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.Location = new Point(101, 352);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(84, 27);
+            guna2HtmlLabel2.TabIndex = 12;
+            guna2HtmlLabel2.Text = "Mật khẩu";
+            // 
+            // kryptonButton2
+            // 
+            kryptonButton2.CornerRoundingRadius = 15F;
+            kryptonButton2.Location = new Point(38, 484);
+            kryptonButton2.Name = "kryptonButton2";
+            kryptonButton2.Size = new Size(165, 69);
+            kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(240, 101, 57);
+            kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(240, 101, 57);
+            kryptonButton2.StateCommon.Border.Color1 = Color.White;
+            kryptonButton2.StateCommon.Border.Color2 = Color.White;
+            kryptonButton2.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            kryptonButton2.StateCommon.Border.Rounding = 15F;
+            kryptonButton2.StateCommon.Border.Width = 2;
+            kryptonButton2.StateCommon.Content.ShortText.Color1 = Color.White;
+            kryptonButton2.StateCommon.Content.ShortText.Color2 = Color.White;
+            kryptonButton2.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            kryptonButton2.StatePressed.Back.Color1 = Color.White;
+            kryptonButton2.StatePressed.Back.Color2 = Color.White;
+            kryptonButton2.StatePressed.Content.ShortText.Color1 = Color.FromArgb(255, 128, 0);
+            kryptonButton2.StatePressed.Content.ShortText.Color2 = Color.FromArgb(255, 128, 0);
+            kryptonButton2.TabIndex = 4;
+            kryptonButton2.Values.Text = "Hủy";
+            // 
             // fLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.SignUp_Light;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(947, 490);
+            ClientSize = new Size(1082, 653);
             Controls.Add(kryptonPanel1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fLogin";
             StartPosition = FormStartPosition.CenterScreen;
             StateActive.Back.Image = Properties.Resources.SignUp_Light;
@@ -301,9 +312,11 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Krypton.Toolkit.KryptonButton btnLogin;
         private Krypton.Toolkit.KryptonTextBox txtUsername;
-        private Krypton.Toolkit.KryptonButton kryptonButton2;
         private Krypton.Toolkit.KryptonTextBox txtPwd;
         private Panel panel2;
         private Panel panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Krypton.Toolkit.KryptonButton kryptonButton2;
     }
 }
