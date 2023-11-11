@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\hoctap\\Nam3\\Software Engineering\\sourceTK\\wfLeedo\\wfLeedo\\wfLeedo.csproj": {}
+    "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj": {}
   },
   "projects": {
-    "D:\\hoctap\\Nam3\\Software Engineering\\sourceTK\\wfLeedo\\wfLeedo\\wfLeedo.csproj": {
+    "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\hoctap\\Nam3\\Software Engineering\\sourceTK\\wfLeedo\\wfLeedo\\wfLeedo.csproj",
+        "projectUniqueName": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
         "projectName": "wfLeedo",
-        "projectPath": "D:\\hoctap\\Nam3\\Software Engineering\\sourceTK\\wfLeedo\\wfLeedo\\wfLeedo.csproj",
+        "projectPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\hoctap\\Nam3\\Software Engineering\\sourceTK\\wfLeedo\\wfLeedo\\obj\\",
+        "outputPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
