@@ -12,9 +12,10 @@ namespace wfLeedo
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             // Application.Run(new fLogin());
-            Application.Run(new fKho());
+            //Application.Run(new fKho());
             //Application.Run(new fThemNhanVien());
             //Application.Run(new fDonHang());
+            Application.Run(new fMain());
         }
     }
 }

@@ -122,35 +122,35 @@
             // 
             txtPwdEmp.Location = new Point(177, 493);
             txtPwdEmp.Name = "txtPwdEmp";
-            txtPwdEmp.Size = new Size(233, 30);
+            txtPwdEmp.Size = new Size(233, 25);
             txtPwdEmp.TabIndex = 21;
             // 
             // txtNumberBank
             // 
             txtNumberBank.Location = new Point(177, 444);
             txtNumberBank.Name = "txtNumberBank";
-            txtNumberBank.Size = new Size(233, 30);
+            txtNumberBank.Size = new Size(233, 25);
             txtNumberBank.TabIndex = 20;
             // 
             // txtSalary
             // 
             txtSalary.Location = new Point(177, 395);
             txtSalary.Name = "txtSalary";
-            txtSalary.Size = new Size(233, 30);
+            txtSalary.Size = new Size(233, 25);
             txtSalary.TabIndex = 19;
             // 
             // txtSDTEmp
             // 
             txtSDTEmp.Location = new Point(177, 101);
             txtSDTEmp.Name = "txtSDTEmp";
-            txtSDTEmp.Size = new Size(233, 30);
+            txtSDTEmp.Size = new Size(233, 25);
             txtSDTEmp.TabIndex = 13;
             // 
             // txtCCCDEmp
             // 
             txtCCCDEmp.Location = new Point(177, 52);
             txtCCCDEmp.Name = "txtCCCDEmp";
-            txtCCCDEmp.Size = new Size(233, 30);
+            txtCCCDEmp.Size = new Size(233, 25);
             txtCCCDEmp.TabIndex = 12;
             // 
             // label1
@@ -159,7 +159,7 @@
             label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(110, 30);
+            label1.Size = new Size(90, 25);
             label1.TabIndex = 0;
             label1.Text = "Họ và Tên";
             // 
@@ -169,7 +169,7 @@
             label2.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(3, 49);
             label2.Name = "label2";
-            label2.Size = new Size(68, 30);
+            label2.Size = new Size(58, 25);
             label2.TabIndex = 1;
             label2.Text = "CCCD";
             // 
@@ -179,7 +179,7 @@
             label3.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(3, 98);
             label3.Name = "label3";
-            label3.Size = new Size(51, 30);
+            label3.Size = new Size(43, 25);
             label3.TabIndex = 2;
             label3.Text = "SDT";
             // 
@@ -189,7 +189,7 @@
             label4.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(3, 147);
             label4.Name = "label4";
-            label4.Size = new Size(93, 30);
+            label4.Size = new Size(78, 25);
             label4.TabIndex = 3;
             label4.Text = "Giới tính";
             // 
@@ -199,7 +199,7 @@
             label5.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(3, 196);
             label5.Name = "label5";
-            label5.Size = new Size(108, 30);
+            label5.Size = new Size(91, 25);
             label5.TabIndex = 4;
             label5.Text = "Ngày sinh";
             // 
@@ -209,7 +209,7 @@
             label6.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(3, 245);
             label6.Name = "label6";
-            label6.Size = new Size(117, 30);
+            label6.Size = new Size(99, 25);
             label6.TabIndex = 5;
             label6.Text = "Phòng ban";
             // 
@@ -219,7 +219,7 @@
             label7.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(3, 294);
             label7.Name = "label7";
-            label7.Size = new Size(64, 30);
+            label7.Size = new Size(54, 25);
             label7.TabIndex = 6;
             label7.Text = "Email";
             // 
@@ -229,7 +229,7 @@
             label8.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(3, 343);
             label8.Name = "label8";
-            label8.Size = new Size(91, 30);
+            label8.Size = new Size(76, 25);
             label8.TabIndex = 7;
             label8.Text = "Chức vụ";
             // 
@@ -239,7 +239,7 @@
             label9.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label9.Location = new Point(3, 392);
             label9.Name = "label9";
-            label9.Size = new Size(74, 30);
+            label9.Size = new Size(63, 25);
             label9.TabIndex = 8;
             label9.Text = "Lương";
             // 
@@ -249,7 +249,7 @@
             label10.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label10.Location = new Point(3, 441);
             label10.Name = "label10";
-            label10.Size = new Size(157, 30);
+            label10.Size = new Size(129, 25);
             label10.TabIndex = 9;
             label10.Text = "Tài khoản Bank";
             // 
@@ -259,7 +259,7 @@
             label11.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             label11.Location = new Point(3, 490);
             label11.Name = "label11";
-            label11.Size = new Size(103, 30);
+            label11.Size = new Size(86, 25);
             label11.TabIndex = 10;
             label11.Text = "Mật khẩu";
             // 
@@ -267,7 +267,7 @@
             // 
             txtNameEmp.Location = new Point(177, 3);
             txtNameEmp.Name = "txtNameEmp";
-            txtNameEmp.Size = new Size(233, 30);
+            txtNameEmp.Size = new Size(233, 25);
             txtNameEmp.TabIndex = 11;
             // 
             // cbbSexEmp
@@ -276,7 +276,7 @@
             cbbSexEmp.Items.AddRange(new object[] { "Nam", "Nữ" });
             cbbSexEmp.Location = new Point(177, 150);
             cbbSexEmp.Name = "cbbSexEmp";
-            cbbSexEmp.Size = new Size(233, 31);
+            cbbSexEmp.Size = new Size(233, 25);
             cbbSexEmp.TabIndex = 22;
             cbbSexEmp.Text = "Chọn giới tính";
             // 
@@ -286,7 +286,7 @@
             cbbLevelEmp.Items.AddRange(new object[] { "Chuyên viên tư vấn khách hàng", "Chuyên viên chăm sóc khách hàng", "Chuyên viên quản lý kho", "Chuyên viên kế toán tài chính", "Chuyên viên quản lý nhân sự", "Chủ tịch hội đồng quản trị" });
             cbbLevelEmp.Location = new Point(177, 346);
             cbbLevelEmp.Name = "cbbLevelEmp";
-            cbbLevelEmp.Size = new Size(233, 31);
+            cbbLevelEmp.Size = new Size(233, 25);
             cbbLevelEmp.TabIndex = 23;
             cbbLevelEmp.Text = "Chọn chức vụ";
             // 
@@ -296,7 +296,7 @@
             cbbDepartEmp.Items.AddRange(new object[] { "Nhân viên bán hàng", "Kho", "Kế toán", "Nhân sự", "Chăm sóc khách hàng", "Quản trị viên" });
             cbbDepartEmp.Location = new Point(177, 248);
             cbbDepartEmp.Name = "cbbDepartEmp";
-            cbbDepartEmp.Size = new Size(233, 31);
+            cbbDepartEmp.Size = new Size(233, 25);
             cbbDepartEmp.TabIndex = 24;
             cbbDepartEmp.Text = "Chọn phòng ban";
             // 
@@ -304,14 +304,14 @@
             // 
             dtBirthEmp.Location = new Point(177, 199);
             dtBirthEmp.Name = "dtBirthEmp";
-            dtBirthEmp.Size = new Size(233, 30);
+            dtBirthEmp.Size = new Size(233, 25);
             dtBirthEmp.TabIndex = 25;
             // 
             // txtEmailEmp
             // 
             txtEmailEmp.Location = new Point(177, 297);
             txtEmailEmp.Name = "txtEmailEmp";
-            txtEmailEmp.Size = new Size(233, 30);
+            txtEmailEmp.Size = new Size(233, 25);
             txtEmailEmp.TabIndex = 26;
             // 
             // btnInsertEmp
@@ -384,7 +384,7 @@
             // 
             // fThemNhanVien
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(652, 652);
             Controls.Add(btnSuaEmp);

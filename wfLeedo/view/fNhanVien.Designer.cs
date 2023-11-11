@@ -28,211 +28,172 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            label2 = new Label();
-            label1 = new Label();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            btnThem = new FontAwesome.Sharp.IconButton();
-            btnResetDataEmp = new FontAwesome.Sharp.IconButton();
-            btnSearchEmp = new FontAwesome.Sharp.IconButton();
-            txtInputInfoEmp = new Krypton.Toolkit.KryptonTextBox();
-            dgvEmployee = new Krypton.Toolkit.KryptonDataGridView();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvEmployee).BeginInit();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            STT = new DataGridViewTextBoxColumn();
+            name = new DataGridViewTextBoxColumn();
+            SĐT = new DataGridViewTextBoxColumn();
+            guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // guna2GradientPanel1
             // 
-            panel1.Controls.Add(iconPictureBox1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(iconButton4);
-            panel1.Controls.Add(btnThem);
-            panel1.Controls.Add(btnResetDataEmp);
-            panel1.Controls.Add(btnSearchEmp);
-            panel1.Controls.Add(txtInputInfoEmp);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1004, 74);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            guna2GradientPanel1.Controls.Add(guna2HtmlLabel1);
+            guna2GradientPanel1.Controls.Add(guna2TextBox1);
+            guna2GradientPanel1.CustomizableEdges = customizableEdges3;
+            guna2GradientPanel1.Dock = DockStyle.Top;
+            guna2GradientPanel1.Location = new Point(0, 0);
+            guna2GradientPanel1.Name = "guna2GradientPanel1";
+            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2GradientPanel1.Size = new Size(871, 112);
+            guna2GradientPanel1.TabIndex = 0;
             // 
-            // iconPictureBox1
+            // guna2HtmlLabel1
             // 
-            iconPictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            iconPictureBox1.BackColor = Color.FromArgb(244, 244, 255);
-            iconPictureBox1.ForeColor = SystemColors.ControlText;
-            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserTie;
-            iconPictureBox1.IconColor = SystemColors.ControlText;
-            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 61;
-            iconPictureBox1.Location = new Point(882, 11);
-            iconPictureBox1.Margin = new Padding(3, 2, 3, 2);
-            iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(80, 61);
-            iconPictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            iconPictureBox1.TabIndex = 8;
-            iconPictureBox1.TabStop = false;
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.Location = new Point(12, 81);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(192, 25);
+            guna2HtmlLabel1.TabIndex = 1;
+            guna2HtmlLabel1.Text = "Thông tin nhân viên";
             // 
-            // label2
+            // guna2TextBox1
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Location = new Point(774, 40);
-            label2.Name = "label2";
-            label2.Size = new Size(43, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Admin";
+            guna2TextBox1.BorderRadius = 20;
+            guna2TextBox1.CustomizableEdges = customizableEdges1;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FillColor = Color.FromArgb(51, 51, 51);
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.IconLeft = Properties.Resources.magnifying_glass;
+            guna2TextBox1.Location = new Point(12, 12);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PasswordChar = '\0';
+            guna2TextBox1.PlaceholderForeColor = Color.Silver;
+            guna2TextBox1.PlaceholderText = "Nhập mã số nhân viên";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2TextBox1.Size = new Size(312, 47);
+            guna2TextBox1.TabIndex = 0;
             // 
-            // label1
+            // guna2DataGridView1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(742, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(124, 20);
-            label1.TabIndex = 6;
-            label1.Text = "Nguyen Thang";
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(254, 205, 189);
+            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            guna2DataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            guna2DataGridView1.BackgroundColor = Color.FromArgb(51, 51, 51);
+            guna2DataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(254, 87, 34);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            guna2DataGridView1.ColumnHeadersHeight = 22;
+            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            guna2DataGridView1.Columns.AddRange(new DataGridViewColumn[] { STT, name, SĐT });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(254, 221, 211);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(254, 143, 107);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            guna2DataGridView1.GridColor = Color.FromArgb(254, 203, 186);
+            guna2DataGridView1.Location = new Point(12, 112);
+            guna2DataGridView1.Name = "guna2DataGridView1";
+            guna2DataGridView1.RowHeadersVisible = false;
+            guna2DataGridView1.RowHeadersWidth = 51;
+            guna2DataGridView1.RowTemplate.Height = 29;
+            guna2DataGridView1.Size = new Size(835, 526);
+            guna2DataGridView1.TabIndex = 1;
+            guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.DeepOrange;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(254, 205, 189);
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            guna2DataGridView1.ThemeStyle.BackColor = Color.FromArgb(51, 51, 51);
+            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(254, 203, 186);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(254, 87, 34);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Single;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 22;
+            guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(254, 221, 211);
+            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.Black;
+            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(254, 143, 107);
+            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
             // 
-            // iconButton4
+            // STT
             // 
-            iconButton4.BackColor = Color.Red;
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.ForeColor = Color.Transparent;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 32;
-            iconButton4.Location = new Point(623, 40);
-            iconButton4.Margin = new Padding(3, 2, 3, 2);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(57, 32);
-            iconButton4.TabIndex = 5;
-            iconButton4.UseVisualStyleBackColor = false;
+            STT.HeaderText = "STT";
+            STT.MinimumWidth = 6;
+            STT.Name = "STT";
             // 
-            // btnThem
+            // name
             // 
-            btnThem.BackColor = Color.FromArgb(128, 255, 128);
-            btnThem.FlatAppearance.BorderSize = 0;
-            btnThem.FlatStyle = FlatStyle.Flat;
-            btnThem.ForeColor = Color.Transparent;
-            btnThem.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            btnThem.IconColor = Color.White;
-            btnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnThem.IconSize = 32;
-            btnThem.Location = new Point(561, 40);
-            btnThem.Margin = new Padding(3, 2, 3, 2);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(57, 32);
-            btnThem.TabIndex = 4;
-            btnThem.UseVisualStyleBackColor = false;
-            btnThem.Click += btnThem_Click;
+            name.HeaderText = "Họ tên";
+            name.MinimumWidth = 6;
+            name.Name = "name";
             // 
-            // btnResetDataEmp
+            // SĐT
             // 
-            btnResetDataEmp.BackColor = Color.FromArgb(255, 76, 32);
-            btnResetDataEmp.FlatAppearance.BorderSize = 0;
-            btnResetDataEmp.FlatStyle = FlatStyle.Flat;
-            btnResetDataEmp.ForeColor = Color.Transparent;
-            btnResetDataEmp.IconChar = FontAwesome.Sharp.IconChar.Rotate;
-            btnResetDataEmp.IconColor = Color.White;
-            btnResetDataEmp.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnResetDataEmp.IconSize = 32;
-            btnResetDataEmp.Location = new Point(481, 40);
-            btnResetDataEmp.Margin = new Padding(3, 2, 3, 2);
-            btnResetDataEmp.Name = "btnResetDataEmp";
-            btnResetDataEmp.Size = new Size(57, 32);
-            btnResetDataEmp.TabIndex = 3;
-            btnResetDataEmp.UseVisualStyleBackColor = false;
-            btnResetDataEmp.Click += btnResetDataEmp_Click;
-            // 
-            // btnSearchEmp
-            // 
-            btnSearchEmp.BackColor = Color.FromArgb(255, 76, 32);
-            btnSearchEmp.FlatAppearance.BorderSize = 0;
-            btnSearchEmp.FlatStyle = FlatStyle.Flat;
-            btnSearchEmp.ForeColor = Color.Transparent;
-            btnSearchEmp.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            btnSearchEmp.IconColor = Color.White;
-            btnSearchEmp.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnSearchEmp.IconSize = 32;
-            btnSearchEmp.Location = new Point(419, 40);
-            btnSearchEmp.Margin = new Padding(3, 2, 3, 2);
-            btnSearchEmp.Name = "btnSearchEmp";
-            btnSearchEmp.Size = new Size(57, 32);
-            btnSearchEmp.TabIndex = 2;
-            btnSearchEmp.UseVisualStyleBackColor = false;
-            btnSearchEmp.Click += btnSearchEmp_Click;
-            // 
-            // txtInputInfoEmp
-            // 
-            txtInputInfoEmp.Location = new Point(32, 40);
-            txtInputInfoEmp.Margin = new Padding(3, 2, 3, 2);
-            txtInputInfoEmp.Name = "txtInputInfoEmp";
-            txtInputInfoEmp.Size = new Size(382, 34);
-            txtInputInfoEmp.StateActive.Back.Color1 = Color.White;
-            txtInputInfoEmp.StateActive.Border.Color1 = Color.White;
-            txtInputInfoEmp.StateActive.Border.Color2 = Color.White;
-            txtInputInfoEmp.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
-            txtInputInfoEmp.StateActive.Border.Rounding = 10F;
-            txtInputInfoEmp.StateActive.Border.Width = 0;
-            txtInputInfoEmp.StateActive.Content.Color1 = Color.DarkGray;
-            txtInputInfoEmp.StateActive.Content.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtInputInfoEmp.TabIndex = 1;
-            // 
-            // dgvEmployee
-            // 
-            dgvEmployee.ColumnHeadersHeight = 36;
-            dgvEmployee.Dock = DockStyle.Fill;
-            dgvEmployee.Location = new Point(0, 74);
-            dgvEmployee.Margin = new Padding(3, 2, 3, 2);
-            dgvEmployee.MultiSelect = false;
-            dgvEmployee.Name = "dgvEmployee";
-            dgvEmployee.ReadOnly = true;
-            dgvEmployee.RowHeadersWidth = 51;
-            dgvEmployee.RowTemplate.Height = 29;
-            dgvEmployee.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvEmployee.Size = new Size(1004, 456);
-            dgvEmployee.TabIndex = 1;
-            dgvEmployee.CellDoubleClick += dgvEmployee_CellDoubleClick;
+            SĐT.HeaderText = "SĐT";
+            SĐT.MinimumWidth = 6;
+            SĐT.Name = "SĐT";
             // 
             // fNhanVien
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(244, 244, 255);
-            ClientSize = new Size(1004, 530);
-            Controls.Add(dgvEmployee);
-            Controls.Add(panel1);
+            BackColor = Color.FromArgb(51, 51, 51);
+            ClientSize = new Size(871, 638);
+            Controls.Add(guna2DataGridView1);
+            Controls.Add(guna2GradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fNhanVien";
             Text = "fNhanVien";
             Load += fNhanVien_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvEmployee).EndInit();
+            guna2GradientPanel1.ResumeLayout(false);
+            guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Krypton.Toolkit.KryptonTextBox txtInputInfoEmp;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton btnThem;
-        private FontAwesome.Sharp.IconButton btnResetDataEmp;
-        private FontAwesome.Sharp.IconButton btnSearchEmp;
-        private Label label2;
-        private Label label1;
-        private Krypton.Toolkit.KryptonDataGridView dgvEmployee;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private DataGridViewTextBoxColumn STT;
+        private DataGridViewTextBoxColumn name;
+        private DataGridViewTextBoxColumn SĐT;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

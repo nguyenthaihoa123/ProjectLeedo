@@ -1,6 +1,6 @@
-﻿namespace wfLeedo
+﻿namespace wfLeedo.view
 {
-    partial class fDoanhThu
+    partial class fThongKe
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,15 @@
         {
             SuspendLayout();
             // 
-            // fDoanhThu
+            // fThongKe
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(51, 51, 51);
-            ClientSize = new Size(864, 612);
+            ClientSize = new Size(871, 638);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "fDoanhThu";
-            Text = "fDoanhThu";
-            Load += fDoanhThu_Load;
+            Name = "fThongKe";
+            Text = "fThongKe";
             ResumeLayout(false);
         }
 
