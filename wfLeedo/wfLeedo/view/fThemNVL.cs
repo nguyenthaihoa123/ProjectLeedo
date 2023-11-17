@@ -25,12 +25,12 @@ namespace wfLeedo.view
         {
             if (string.IsNullOrEmpty(maNVL))
             {
-                this.Text = "Thêm mới sản phẩm";
+                this.Text = "Thêm nguyên vật liệu mới";
                 saveBtn.Enabled = false;
             }
             else
             {
-                this.Text = "Sửa thông tin sản phẩm";
+                this.Text = "Sửa thông tin nguyên vật liệu";
                 insertBtn.Enabled = false;
                 nvlViewModel dataNVL = new nvlViewModel();
                 NguyenVatLieu newNVL = dataNVL.dataNVL(maNVL);

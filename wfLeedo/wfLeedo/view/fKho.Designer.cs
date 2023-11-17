@@ -239,6 +239,7 @@
             cbModel.StartIndex = 0;
             cbModel.TabIndex = 9;
             cbModel.Tag = "";
+            cbModel.SelectedIndexChanged += cbModel_SelectedIndexChanged;
             // 
             // dgvKho
             // 
@@ -270,6 +271,7 @@
             cbNXMode.Size = new Size(161, 36);
             cbNXMode.StartIndex = 0;
             cbNXMode.TabIndex = 10;
+            cbNXMode.SelectedIndexChanged += cbNXMode_SelectedIndexChanged;
             // 
             // dgvNXMode
             // 
@@ -296,6 +298,7 @@
             insertNXBtn.Size = new Size(133, 36);
             insertNXBtn.TabIndex = 12;
             insertNXBtn.Text = "Thêm";
+            insertNXBtn.Click += insertNXBtn_Click;
             // 
             // reloadNXBtn
             // 

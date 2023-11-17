@@ -153,6 +153,8 @@ namespace BanGiay_N11.viewModel
         {
             string sql = "insertNhapKhoNVL";
             List<CustomParameter> list = new List<CustomParameter>();
+            slXuat = 0;
+            tgXuat = null;
 
             list.Add(new CustomParameter()
             {
@@ -201,6 +203,8 @@ namespace BanGiay_N11.viewModel
         {
             string sql = "insertXuatKhoNVL";
             List<CustomParameter> list = new List<CustomParameter>();
+            slNhap = 0;
+            tgNhap = null;
 
             list.Add(new CustomParameter()
             {

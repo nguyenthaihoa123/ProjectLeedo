@@ -157,3 +157,4 @@ C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\wfLeedo\wfLeed
 C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\wfLeedo\wfLeedo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
 C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\wfLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemSP.resources
 C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\wfLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNVL.resources
+C:\Users\HAO NAM\WorkSpace\Công nghệ phần mềm\ProjectLeedo\wfLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNXKhoNVL.resources

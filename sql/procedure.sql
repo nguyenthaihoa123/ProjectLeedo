@@ -50,6 +50,14 @@ create proc [dbo].[selectXuatKhoNVL]
 as
 select * from KhoNVL where SL_XuatNVL != 0 and TG_XuatNVL is not null
 
+create proc [dbo].[selectMaKho]
+as
+select MaKho from Kho
+
+create proc [dbo].[selectMaNVL]
+as
+select MaNVL from NguyenVatLieu
+
 create proc [dbo].[insertNhapKhoNVL]
 	@MaKho nchar(10),
 	@MaNVL nchar(50),

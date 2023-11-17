@@ -17,27 +17,20 @@ namespace wfLeedo
     {
         private fThemSP formSP;
         private fThemNVL formNVL;
-        private string mode;
-        private string modeNX;
+        private fThemNXKhoNVL formNXKhoNVL;
+        private static string mode;
+        private static string modeNX;
         public fKho()
         {
             InitializeComponent();
+            mode = cbModel.SelectedItem.ToString();
+            modeNX = cbNXMode.SelectedItem.ToString();
         }
         private void fKho_Load_1(object sender, EventArgs e)
         {
-            mode = cbModel.SelectedItem.ToString();
-
-            if (mode == "Sản phẩm")
-            {
-                productViewModel dataAllPro = new productViewModel();
-                dgvKho.DataSource = dataAllPro.dataAllProduct();
-            }
-            else if (mode == "Nguyên vật liệu")
-            {
-                nvlViewModel dataAllNVL = new nvlViewModel();
-                dgvKho.DataSource = dataAllNVL.dataAllNVL();
-                dgvNXMode.DataSource = dataAllNVL.dataAllKhoNVL();
-            }
+            nvlViewModel dataAllNVL = new nvlViewModel();
+            dgvKho.DataSource = dataAllNVL.dataAllNVL();
+            dgvNXMode.DataSource = dataAllNVL.dataAllKhoNVL();
 
             dgvKho.ReadOnly = true;
             dgvNXMode.ReadOnly = true;
@@ -45,7 +38,7 @@ namespace wfLeedo
 
         private void insertBtn_Click(object sender, EventArgs e)
         {
-            mode = cbModel.SelectedItem.ToString();
+            //mode = cbModel.SelectedItem.ToString();
             if (mode == "Sản phẩm")
             {
                 formSP = new fThemSP("");
@@ -58,12 +51,11 @@ namespace wfLeedo
                 formNVL.Dock = DockStyle.Fill;
                 formNVL.Show();
             }
-
         }
 
         private void dgvKho_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            mode = cbModel.SelectedItem.ToString();
+            //mode = cbModel.SelectedItem.ToString();
             if (e.RowIndex >= 0)
             {
                 if (mode == "Sản phẩm")
@@ -87,7 +79,7 @@ namespace wfLeedo
 
         private void reloadBtn_Click(object sender, EventArgs e)
         {
-            mode = cbModel.SelectedItem.ToString();
+            //mode = cbModel.SelectedItem.ToString();
 
             txtSearch.Text = "";
 
@@ -105,7 +97,7 @@ namespace wfLeedo
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            mode = cbModel.SelectedItem.ToString();
+            //mode = cbModel.SelectedItem.ToString();
             if (txtSearch.Text != "")
             {
                 if (mode == "Sản phẩm")
@@ -150,9 +142,6 @@ namespace wfLeedo
 
         private void reloadNXBtn_Click(object sender, EventArgs e)
         {
-            mode = cbModel.SelectedItem.ToString();
-            modeNX = cbNXMode.SelectedItem.ToString();
-
             txtSearch.Text = "";
 
             if (mode == "Sản phẩm")
@@ -173,6 +162,74 @@ namespace wfLeedo
                 else if (modeNX == "Xuất")
                 {
                     dgvNXMode.DataSource = dataAllNVL.dataXuatKhoNVL();
+                }
+            }
+        }
+
+        private void cbModel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            mode = cbModel.SelectedItem.ToString();
+
+            if (mode == "Sản phẩm")
+            {
+                productViewModel dataAllPro = new productViewModel();
+                dgvKho.DataSource = dataAllPro.dataAllProduct();
+            }
+            else if (mode == "Nguyên vật liệu")
+            {
+                nvlViewModel dataAllNVL = new nvlViewModel();
+                dgvKho.DataSource = dataAllNVL.dataAllNVL();
+                dgvNXMode.DataSource = dataAllNVL.dataAllKhoNVL();
+            }
+
+            dgvKho.ReadOnly = true;
+            dgvNXMode.ReadOnly = true;
+        }
+
+        private void cbNXMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            modeNX = cbNXMode.SelectedItem.ToString();
+            if (mode == "Sản phẩm")
+            {
+                productViewModel dataAllPro = new productViewModel();
+            }
+            else if (mode == "Nguyên vật liệu")
+            {
+                nvlViewModel dataAllNVL = new nvlViewModel();
+                if (modeNX == "Tất cả")
+                {
+                    dgvNXMode.DataSource = dataAllNVL.dataAllKhoNVL();
+                }
+                else if (modeNX == "Nhập")
+                {
+                    dgvNXMode.DataSource = dataAllNVL.dataNhapKhoNVL();
+                }
+                else if (modeNX == "Xuất")
+                {
+                    dgvNXMode.DataSource = dataAllNVL.dataXuatKhoNVL();
+                }
+            }
+        }
+
+        private void insertNXBtn_Click(object sender, EventArgs e)
+        {
+            if (mode == "Sản phẩm")
+            {
+                /*formSP = new fThemSP("");
+                formSP.Dock = DockStyle.Fill;
+                formSP.Show();*/
+            }
+            else if (mode == "Nguyên vật liệu")
+            {
+                if(modeNX == "Nhập" || modeNX == "Xuất")
+                {
+                    formNXKhoNVL = new fThemNXKhoNVL("", modeNX);
+                    formNXKhoNVL.Dock = DockStyle.Fill;
+                    formNXKhoNVL.Show();
+                }
+                else if (modeNX == "Tất cả")
+                {
+                    MessageBox.Show("Vui lòng chọn 1 trong 2 chức năng nhập/xuất!");
                 }
             }
         }
