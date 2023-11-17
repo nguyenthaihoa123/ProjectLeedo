@@ -2552,11 +2552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+      "projectUniqueName": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\projectClone\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
       "projectName": "wfLeedo",
-      "projectPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+      "projectPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\projectClone\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\obj\\",
+      "outputPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\projectClone\\ProjectLeedo\\wfLeedo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2632,13 +2632,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
