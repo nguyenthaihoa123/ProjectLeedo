@@ -25,5 +25,14 @@
     <Compile Update="view\fThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="view\fThemNXKhoNVL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="view\fThemNVL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="view\fThemSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
