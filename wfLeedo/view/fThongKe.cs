@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using wfLeedo.viewModel;
 
 namespace wfLeedo.view
 {
@@ -15,6 +16,12 @@ namespace wfLeedo.view
         public fThongKe()
         {
             InitializeComponent();
+        }
+
+        private void fThongKe_Load(object sender, EventArgs e)
+        {
+            moneyViewModel hehe = new moneyViewModel();
+            dgvthongke.DataSource = hehe.dataChiTieu("");
         }
     }
 }

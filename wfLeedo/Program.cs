@@ -1,3 +1,5 @@
+using wfLeedo.view;
+
 namespace wfLeedo
 {
     internal static class Program
@@ -15,7 +17,7 @@ namespace wfLeedo
             //Application.Run(new fKho());
             //Application.Run(new fThemNhanVien());
             //Application.Run(new fDonHang());
-            Application.Run(new fMain());
+            Application.Run(new fThongKe());
         }
     }
 }

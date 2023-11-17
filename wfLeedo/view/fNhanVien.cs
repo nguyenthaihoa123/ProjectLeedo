@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using wfLeedo.view;
 
 namespace wfLeedo
 {
@@ -47,38 +48,61 @@ namespace wfLeedo
 
         private void fNhanVien_Load(object sender, EventArgs e)
         {
-            /*   employeeViewModel viewAllEmp = new employeeViewModel();
-               dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");*?
-           }
-
-           private void btnSearchEmp_Click(object sender, EventArgs e)
-           {
-              /* employeeViewModel viewAllEmp = new employeeViewModel();
-
-               string info = txtInputInfoEmp.Text;
-               dgvEmployee.DataSource = viewAllEmp.dataAllEmploy(info);*/
-
+            employeeViewModel viewAllEmp = new employeeViewModel();
+            dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
         }
 
-        private void btnResetDataEmp_Click(object sender, EventArgs e)
+
+       
+
+        private void dgvEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*   employeeViewModel viewAllEmp = new employeeViewModel();
-               dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
-               txtInputInfoEmp.Text = "";*/
+            if (e.ColumnIndex == 0)
+            {
+                var mNV = dgvEmployee.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                employeeViewModel dataCus = new employeeViewModel();
+                dataCus.deleteEmployee(mNV);
+                dgvEmployee.DataSource = dataCus.dataAllEmploy("");
+            }
         }
 
-        private void dgvEmployee_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void btnInsertEmp_Click(object sender, EventArgs e)
         {
-            /* if (e.RowIndex >= 0)
-             {
-                 employeeViewModel dataCus = new employeeViewModel();
-                 var mNV = dgvEmployee.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
-                 //employee newCustomer = dataCus.dataEmployee(mNV);
-                 fthemnhanvien = new fThemNhanVien(mNV);
-                 fthemnhanvien.FormClosed += Fthemnhanvien_FormClosed;
-                 fthemnhanvien.Dock = DockStyle.Fill;
-                 fthemnhanvien.Show();
-             }*/
+            fthemnhanvien = new fThemNhanVien("");
+            fthemnhanvien.FormClosed += Fthemnhanvien_FormClosed;
+            fthemnhanvien.Dock = DockStyle.Fill;
+            fthemnhanvien.Show();
+        }
+
+        private void dgvEmployee_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                employeeViewModel dataCus = new employeeViewModel();
+                var mNV = dgvEmployee.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                fthemnhanvien = new fThemNhanVien(mNV);
+                fthemnhanvien.FormClosed += Fthemnhanvien_FormClosed;
+                fthemnhanvien.Dock = DockStyle.Fill;
+                fthemnhanvien.Show();
+            }
+        }
+        private void PerformSearch()
+        {
+            customerViewModel viewAllEmp = new customerViewModel();
+            string info = txtInputInfoEmp.Text;
+            dgvEmployee.DataSource = viewAllEmp.dataAllCustomer(info);
+        }
+
+        private void txtInputInfoEmp_TextChanged(object sender, EventArgs e)
+        {
+            PerformSearch();
+        }
+
+        private void btnResetEmp_Click(object sender, EventArgs e)
+        {
+            employeeViewModel viewAllEmp = new employeeViewModel();
+            dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
+            txtInputInfoEmp.Text = "";
         }
     }
 }

@@ -214,6 +214,27 @@ namespace BanGiay_N11.viewModel
                 return false;
             }
         }
+        public void deleteEmployee(string id)
+        {
+            employeeViewModel dataCus = new employeeViewModel();
+            employee emp = dataCus.dataEmployee(id);
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa Nhân viên: " + emp.Name.ToString() + " ?", "Xác nhận xóa!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                var sql = "deleteNhanVien";
+                List<CustomParameter> lst = new List<CustomParameter>();
+                lst.Add(new CustomParameter()
+                {
+                    key = "@maNV",
+                    value = emp.Id
+                });
+                var rs = new Database().ExeCute(sql, lst);
+                MessageBox.Show("Xóa nhân viên thành công!");
+                if (rs == 0)
+                {
+                    MessageBox.Show("Xóa nhân viên thất bại!!");
+                }
+            }
+        }
 
     }
 }

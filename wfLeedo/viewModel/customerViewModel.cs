@@ -43,6 +43,14 @@ namespace BanGiay_N11.viewModel
                 string pwd = r["MatKhau"].ToString();
                 string point = r["TichDiem"].ToString();
                 string voucher = r["Voucher"].ToString();
+                if (voucher == null)
+                {
+                    voucher = "";
+                }
+                else
+                {
+                    voucher = r["Voucher"].ToString();
+                }
 
                 customer customerObject = new customer(idCus, name, birth, sex, number, email, address, pwd, int.Parse(point), voucher);
 
