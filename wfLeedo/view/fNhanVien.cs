@@ -88,9 +88,9 @@ namespace wfLeedo
         }
         private void PerformSearch()
         {
-            customerViewModel viewAllEmp = new customerViewModel();
+            employeeViewModel viewAllEmp = new employeeViewModel();
             string info = txtInputInfoEmp.Text;
-            dgvEmployee.DataSource = viewAllEmp.dataAllCustomer(info);
+            dgvEmployee.DataSource = viewAllEmp.dataAllEmploy(info);
         }
 
         private void txtInputInfoEmp_TextChanged(object sender, EventArgs e)

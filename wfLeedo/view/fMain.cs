@@ -1,4 +1,6 @@
-﻿using FontAwesome.Sharp;
+﻿using BanGiay_N11;
+using BanGiay_N11.viewModel;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,25 +19,18 @@ namespace wfLeedo
         fDonHang fdonhang;
         fQuanLy fquanly;
         fSanPham fsanpham;
-        public fMain()
+        private string idNV;
+        public fMain(string id)
         {
             InitializeComponent();
+            this.idNV = id;
         }
 
-        private void btnKho_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+        
 
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Fnhanvien_FormClosed(object? sender, FormClosedEventArgs e)
-        {
-
-        }
+        
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
@@ -43,23 +38,31 @@ namespace wfLeedo
             openPanel(fdonhang);
         }
 
-        private void btnKhachHang_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void btnDoanhThu_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void btn_click(object sender, EventArgs e)
-        {
-            this.ForeColor = Color.Red;
-        }
+       
+        
 
         private void fMain_Load(object sender, EventArgs e)
         {
+            employeeViewModel employeeViewModel = new employeeViewModel();
 
+            employee emp = employeeViewModel.dataEmployee(idNV);
+            string chucvu = emp.ChucVu;
+
+            if(chucvu == "Chuyên viên quản lý kho" || chucvu == "Chuyên viên kế toán tài chính"|| chucvu == "Chuyên viên quản lý nhân sự")
+            {
+                btnDonHang.Enabled = false;
+            }
+            if(chucvu == "Chuyên viên chăm sóc khách hàng"||chucvu== "Chuyên viên tư vấn sản phẩm")
+            {
+                btnQuanLy.Enabled = false;
+            }
+            else
+            {
+                btnDonHang.Enabled = true;
+                btnQuanLy.Enabled = true;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

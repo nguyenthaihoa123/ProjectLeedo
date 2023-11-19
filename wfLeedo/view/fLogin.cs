@@ -24,7 +24,7 @@ namespace wfLeedo
             if (check.loginCheck(username, password) == true)
             {
                 this.Hide();
-                fMain mainForm = new fMain();
+                fMain mainForm = new fMain(username);
                 mainForm.ShowDialog();
                 this.Close();
             }
