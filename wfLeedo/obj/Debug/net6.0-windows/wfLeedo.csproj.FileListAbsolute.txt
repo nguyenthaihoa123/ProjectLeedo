@@ -311,3 +311,4 @@ D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\wfLe
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNVL.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNhapXuatKho.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemSP.resources
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.uc_product.resources
