@@ -61,11 +61,13 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvthongke.DefaultCellStyle = dataGridViewCellStyle3;
             dgvthongke.GridColor = Color.FromArgb(231, 229, 255);
-            dgvthongke.Location = new Point(12, 136);
+            dgvthongke.Location = new Point(14, 181);
+            dgvthongke.Margin = new Padding(3, 4, 3, 4);
             dgvthongke.Name = "dgvthongke";
             dgvthongke.RowHeadersVisible = false;
+            dgvthongke.RowHeadersWidth = 51;
             dgvthongke.RowTemplate.Height = 25;
-            dgvthongke.Size = new Size(738, 330);
+            dgvthongke.Size = new Size(843, 440);
             dgvthongke.TabIndex = 0;
             dgvthongke.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             dgvthongke.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -93,23 +95,24 @@
             // 
             Month.DataPropertyName = "Thang";
             Month.HeaderText = "Tháng";
+            Month.MinimumWidth = 6;
             Month.Name = "Month";
             // 
             // Money
             // 
             Money.DataPropertyName = "ChiTieu";
             Money.HeaderText = "Tiền";
+            Money.MinimumWidth = 6;
             Money.Name = "Money";
             // 
             // fThongKe
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(51, 51, 51);
-            ClientSize = new Size(762, 478);
+            ClientSize = new Size(871, 637);
             Controls.Add(dgvthongke);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fThongKe";
             Text = "fThongKe";
             Load += fThongKe_Load;

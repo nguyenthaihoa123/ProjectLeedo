@@ -24,6 +24,23 @@ namespace wfLeedo.viewModel
             DataTable dt = new Database().SelectData(sql, list);
             return dt;
         }
+        public DataTable dataAllDonHangByRangeTime(string start, string end)
+        {
+            string sql = "GetOrdersByTimeRange";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@StartTime",
+                value = start
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@EndTime",
+                value = end
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
         public DonHang dataDonHang(string id)
         {
             string mDH = id;
@@ -151,7 +168,7 @@ namespace wfLeedo.viewModel
                 int.TryParse(sizeString, out size);
 
                 string dv = r["DonViTinh"].ToString();
-                string img = r["Img_Sp"].ToString();
+                string img = r["ImgSP"].ToString();
                 
                 Product addPro = new Product(id, type, name, price, size,dv,img);
 
@@ -284,26 +301,33 @@ namespace wfLeedo.viewModel
         } 
         public bool deleteBill(string id)
         {
-            string sql = "";
-            List<CustomParameter> list = new List<CustomParameter>();
-            sql = "DeleteDonHang";
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa Đơn hàng: " + id.Trim() + " ?", "Xác nhận xóa!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                // Thực hiện xóa đơn hàng
+                string sql = "DeleteDonHang";
+                List<CustomParameter> list = new List<CustomParameter>();
+                list.Add(new CustomParameter()
+                {
+                    key = "@MaDH",
+                    value = id
+                });
 
-            list.Add(new CustomParameter()
-            {
-                key = "@MaDH",
-                value = id
-            });
-            var rs = new Database().ExeCute(sql, list);
-            if (rs >= 1)
-            {
-                MessageBox.Show("Xóa đơn hàng thành công!");
-                return true;
+                var rs = new Database().ExeCute(sql, list);
+
+                if (rs >= 1)
+                {
+                    MessageBox.Show("Xóa đơn hàng thành công!");
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Thực thi truy vấn thất bại");
+                    return false;
+                }
             }
-            else
-            {
-                MessageBox.Show("Thực thi truy vấn thất bại");
-                return false;
-            }
+
+            // Người dùng đã chọn "No" trong hộp thoại xác nhận
+            return false;
         }
         public bool updateDonHang(string id, string status)
         {
@@ -352,5 +376,6 @@ namespace wfLeedo.viewModel
             // Trả về tổng số tiền đã giảm giá
             return discount;
         }
+
     }
 }

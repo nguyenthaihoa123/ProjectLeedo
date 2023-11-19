@@ -50,11 +50,11 @@
             btnSearchDonHang = new Guna.UI2.WinForms.Guna2Button();
             guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             btnInsertDH = new Guna.UI2.WinForms.Guna2CircleButton();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            btn_filter_DH_RT = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            dt_Search_End = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            dt_Search_Start = new Guna.UI2.WinForms.Guna2DateTimePicker();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtSearchDonHang = new Guna.UI2.WinForms.Guna2TextBox();
             dgvDonHang = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -68,19 +68,20 @@
             guna2GradientPanel1.Controls.Add(btnSearchDonHang);
             guna2GradientPanel1.Controls.Add(guna2CircleButton2);
             guna2GradientPanel1.Controls.Add(btnInsertDH);
-            guna2GradientPanel1.Controls.Add(guna2Button1);
+            guna2GradientPanel1.Controls.Add(btn_filter_DH_RT);
             guna2GradientPanel1.Controls.Add(guna2HtmlLabel3);
             guna2GradientPanel1.Controls.Add(guna2HtmlLabel2);
-            guna2GradientPanel1.Controls.Add(guna2DateTimePicker2);
-            guna2GradientPanel1.Controls.Add(guna2DateTimePicker1);
+            guna2GradientPanel1.Controls.Add(dt_Search_End);
+            guna2GradientPanel1.Controls.Add(dt_Search_Start);
             guna2GradientPanel1.Controls.Add(guna2HtmlLabel1);
             guna2GradientPanel1.Controls.Add(txtSearchDonHang);
             guna2GradientPanel1.CustomizableEdges = customizableEdges13;
             guna2GradientPanel1.Dock = DockStyle.Top;
             guna2GradientPanel1.Location = new Point(0, 0);
+            guna2GradientPanel1.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2GradientPanel1.Size = new Size(1165, 112);
+            guna2GradientPanel1.Size = new Size(1019, 84);
             guna2GradientPanel1.TabIndex = 2;
             // 
             // btnSearchDonHang
@@ -92,10 +93,11 @@
             btnSearchDonHang.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnSearchDonHang.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnSearchDonHang.ForeColor = Color.White;
-            btnSearchDonHang.Location = new Point(344, 18);
+            btnSearchDonHang.Location = new Point(301, 14);
+            btnSearchDonHang.Margin = new Padding(3, 2, 3, 2);
             btnSearchDonHang.Name = "btnSearchDonHang";
             btnSearchDonHang.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnSearchDonHang.Size = new Size(162, 36);
+            btnSearchDonHang.Size = new Size(142, 27);
             btnSearchDonHang.TabIndex = 9;
             btnSearchDonHang.Text = "Tìm kiếm";
             btnSearchDonHang.Click += btnSearchDonHang_Click;
@@ -110,11 +112,12 @@
             guna2CircleButton2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2CircleButton2.ForeColor = Color.White;
             guna2CircleButton2.Image = Properties.Resources.delete_user;
-            guna2CircleButton2.Location = new Point(1075, 55);
+            guna2CircleButton2.Location = new Point(941, 41);
+            guna2CircleButton2.Margin = new Padding(3, 2, 3, 2);
             guna2CircleButton2.Name = "guna2CircleButton2";
             guna2CircleButton2.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CircleButton2.Size = new Size(50, 51);
+            guna2CircleButton2.Size = new Size(44, 38);
             guna2CircleButton2.TabIndex = 8;
             // 
             // btnInsertDH
@@ -127,40 +130,44 @@
             btnInsertDH.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnInsertDH.ForeColor = Color.White;
             btnInsertDH.Image = Properties.Resources.add_user;
-            btnInsertDH.Location = new Point(1019, 55);
+            btnInsertDH.Location = new Point(892, 41);
+            btnInsertDH.Margin = new Padding(3, 2, 3, 2);
             btnInsertDH.Name = "btnInsertDH";
             btnInsertDH.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnInsertDH.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            btnInsertDH.Size = new Size(50, 51);
+            btnInsertDH.Size = new Size(44, 38);
             btnInsertDH.TabIndex = 7;
             btnInsertDH.Click += btnInsertDH_Click;
             // 
-            // guna2Button1
+            // btn_filter_DH_RT
             // 
-            guna2Button1.CustomizableEdges = customizableEdges5;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.Tomato;
-            guna2Button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Image = Properties.Resources.filter_filled_tool_symbol;
-            guna2Button1.Location = new Point(773, 60);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button1.Size = new Size(111, 45);
-            guna2Button1.TabIndex = 6;
-            guna2Button1.Text = "Lọc";
+            btn_filter_DH_RT.CustomizableEdges = customizableEdges5;
+            btn_filter_DH_RT.DisabledState.BorderColor = Color.DarkGray;
+            btn_filter_DH_RT.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_filter_DH_RT.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_filter_DH_RT.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_filter_DH_RT.FillColor = Color.Tomato;
+            btn_filter_DH_RT.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_filter_DH_RT.ForeColor = Color.White;
+            btn_filter_DH_RT.Image = Properties.Resources.filter_filled_tool_symbol;
+            btn_filter_DH_RT.Location = new Point(676, 45);
+            btn_filter_DH_RT.Margin = new Padding(3, 2, 3, 2);
+            btn_filter_DH_RT.Name = "btn_filter_DH_RT";
+            btn_filter_DH_RT.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btn_filter_DH_RT.Size = new Size(97, 34);
+            btn_filter_DH_RT.TabIndex = 6;
+            btn_filter_DH_RT.Text = "Lọc";
+            btn_filter_DH_RT.Click += btn_filter_DH_RT_Click;
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.White;
-            guna2HtmlLabel3.Location = new Point(530, 81);
+            guna2HtmlLabel3.Location = new Point(464, 61);
+            guna2HtmlLabel3.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(35, 24);
+            guna2HtmlLabel3.Size = new Size(28, 21);
             guna2HtmlLabel3.TabIndex = 5;
             guna2HtmlLabel3.Text = "Đến";
             // 
@@ -169,52 +176,56 @@
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(321, 81);
+            guna2HtmlLabel2.Location = new Point(281, 61);
+            guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(26, 24);
+            guna2HtmlLabel2.Size = new Size(21, 21);
             guna2HtmlLabel2.TabIndex = 4;
             guna2HtmlLabel2.Text = "Từ";
             // 
-            // guna2DateTimePicker2
+            // dt_Search_End
             // 
-            guna2DateTimePicker2.Checked = true;
-            guna2DateTimePicker2.CustomizableEdges = customizableEdges7;
-            guna2DateTimePicker2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DateTimePicker2.ForeColor = Color.White;
-            guna2DateTimePicker2.Format = DateTimePickerFormat.Short;
-            guna2DateTimePicker2.Location = new Point(576, 60);
-            guna2DateTimePicker2.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker2.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2DateTimePicker2.Size = new Size(143, 45);
-            guna2DateTimePicker2.TabIndex = 3;
-            guna2DateTimePicker2.Value = new DateTime(2023, 11, 11, 11, 17, 40, 538);
+            dt_Search_End.Checked = true;
+            dt_Search_End.CustomizableEdges = customizableEdges7;
+            dt_Search_End.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dt_Search_End.ForeColor = Color.White;
+            dt_Search_End.Format = DateTimePickerFormat.Short;
+            dt_Search_End.Location = new Point(504, 45);
+            dt_Search_End.Margin = new Padding(3, 2, 3, 2);
+            dt_Search_End.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dt_Search_End.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dt_Search_End.Name = "dt_Search_End";
+            dt_Search_End.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            dt_Search_End.Size = new Size(125, 34);
+            dt_Search_End.TabIndex = 3;
+            dt_Search_End.Value = new DateTime(2023, 11, 11, 11, 17, 40, 538);
             // 
-            // guna2DateTimePicker1
+            // dt_Search_Start
             // 
-            guna2DateTimePicker1.Checked = true;
-            guna2DateTimePicker1.CustomizableEdges = customizableEdges9;
-            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2DateTimePicker1.ForeColor = Color.White;
-            guna2DateTimePicker1.Format = DateTimePickerFormat.Short;
-            guna2DateTimePicker1.Location = new Point(363, 60);
-            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2DateTimePicker1.Size = new Size(143, 45);
-            guna2DateTimePicker1.TabIndex = 2;
-            guna2DateTimePicker1.Value = new DateTime(2023, 11, 11, 11, 17, 40, 538);
+            dt_Search_Start.Checked = true;
+            dt_Search_Start.CustomizableEdges = customizableEdges9;
+            dt_Search_Start.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dt_Search_Start.ForeColor = Color.White;
+            dt_Search_Start.Format = DateTimePickerFormat.Short;
+            dt_Search_Start.Location = new Point(318, 45);
+            dt_Search_Start.Margin = new Padding(3, 2, 3, 2);
+            dt_Search_Start.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dt_Search_Start.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dt_Search_Start.Name = "dt_Search_Start";
+            dt_Search_Start.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            dt_Search_Start.Size = new Size(125, 34);
+            dt_Search_Start.TabIndex = 2;
+            dt_Search_Start.Value = new DateTime(2023, 11, 11, 11, 17, 40, 538);
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(11, 81);
+            guna2HtmlLabel1.Location = new Point(10, 61);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(153, 24);
+            guna2HtmlLabel1.Size = new Size(118, 21);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "Thông tin đơn hàng";
             // 
@@ -232,14 +243,15 @@
             txtSearchDonHang.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtSearchDonHang.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSearchDonHang.IconLeft = Properties.Resources.magnifying_glass;
-            txtSearchDonHang.Location = new Point(11, 12);
+            txtSearchDonHang.Location = new Point(10, 9);
+            txtSearchDonHang.Margin = new Padding(3, 2, 3, 2);
             txtSearchDonHang.Name = "txtSearchDonHang";
             txtSearchDonHang.PasswordChar = '\0';
             txtSearchDonHang.PlaceholderForeColor = Color.Silver;
             txtSearchDonHang.PlaceholderText = "Nhập số điện thoại";
             txtSearchDonHang.SelectedText = "";
             txtSearchDonHang.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtSearchDonHang.Size = new Size(312, 47);
+            txtSearchDonHang.Size = new Size(273, 35);
             txtSearchDonHang.TabIndex = 0;
             // 
             // dgvDonHang
@@ -269,7 +281,8 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvDonHang.DefaultCellStyle = dataGridViewCellStyle3;
             dgvDonHang.GridColor = Color.FromArgb(254, 203, 186);
-            dgvDonHang.Location = new Point(11, 117);
+            dgvDonHang.Location = new Point(10, 88);
+            dgvDonHang.Margin = new Padding(3, 2, 3, 2);
             dgvDonHang.MultiSelect = false;
             dgvDonHang.Name = "dgvDonHang";
             dgvDonHang.ReadOnly = true;
@@ -286,7 +299,7 @@
             dgvDonHang.RowHeadersVisible = false;
             dgvDonHang.RowHeadersWidth = 100;
             dgvDonHang.RowTemplate.Height = 40;
-            dgvDonHang.Size = new Size(1126, 623);
+            dgvDonHang.Size = new Size(985, 467);
             dgvDonHang.TabIndex = 3;
             dgvDonHang.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.DeepOrange;
             dgvDonHang.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(254, 205, 189);
@@ -325,13 +338,14 @@
             // 
             // fDonHang
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(51, 51, 51);
-            ClientSize = new Size(1165, 753);
+            ClientSize = new Size(1019, 565);
             Controls.Add(dgvDonHang);
             Controls.Add(guna2GradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "fDonHang";
             Text = "fDonHang";
             Load += fDonHang_Load;
@@ -346,12 +360,12 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchDonHang;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dt_Search_Start;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDonHang;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_filter_DH_RT;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dt_Search_End;
         private Guna.UI2.WinForms.Guna2CircleButton btnInsertDH;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private DataGridViewButtonColumn Modify;

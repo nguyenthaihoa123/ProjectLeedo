@@ -308,3 +308,6 @@ D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\wfLe
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.pdb
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.genruntimeconfig.cache
 D:\hoctap\Nam3\Software Engineering\Project Leedo\projectClone\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\ref\wfLeedo.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNVL.resources
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNhapXuatKho.resources
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemSP.resources

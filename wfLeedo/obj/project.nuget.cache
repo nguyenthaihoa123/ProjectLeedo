@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A+g1VXgJyo1eaKBnDq8K92RPMEpxQUIAxj7fJMQ3+DPV0lm6pHJFSHJSM2bWw3kgsbmTlmUzTDm9VsJmTpw72g==",
+  "dgSpecHash": "LXq31Mra4uJK9+V/CCCTU/vP3RTl1ADILEyhciIRHg/hoIgrF0k55+bUxDn2P2I6Z0nXkw19ORANZ/MPk2JFTQ==",
   "success": true,
-  "projectFilePath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\projectClone\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+  "projectFilePath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

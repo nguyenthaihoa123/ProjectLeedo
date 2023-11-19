@@ -28,8 +28,10 @@ namespace wfLeedo
             DonHangViewModel viewModel = new DonHangViewModel();
             dgvDonHang.DataSource = viewModel.dataAllDonHang("");
             dgvDonHang.AllowUserToAddRows = false;
-
-
+            dt_Search_Start.Format = DateTimePickerFormat.Custom;
+            dt_Search_Start.CustomFormat = "MM-dd-yyyy";
+            dt_Search_End.Format = DateTimePickerFormat.Custom;
+            dt_Search_End.CustomFormat = "MM-dd-yyyy";
         }
 
 
@@ -106,6 +108,14 @@ namespace wfLeedo
         {
             DonHangViewModel viewModel = new DonHangViewModel();
             dgvDonHang.DataSource = viewModel.dataAllDonHang(txtSearchDonHang.Text);
+        }
+
+        private void btn_filter_DH_RT_Click(object sender, EventArgs e)
+        {
+            string start = dt_Search_Start.Text;
+            string end = dt_Search_End.Text;
+            DonHangViewModel model = new DonHangViewModel();
+            dgvDonHang.DataSource = model.dataAllDonHangByRangeTime(start, end);
         }
     }
 }
