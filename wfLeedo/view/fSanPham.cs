@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace wfLeedo.view
         public fSanPham()
         {
             InitializeComponent();
+        }
+
+        private void fSanPham_Load(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

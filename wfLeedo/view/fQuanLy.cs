@@ -60,5 +60,11 @@ namespace wfLeedo.view
             fkhachhang = new fKhachHang();
             openPanel(fkhachhang);
         }
+
+        private void btnDoanhThu_Click_1(object sender, EventArgs e)
+        {
+            fdoanhthu = new fDoanhThu();
+            openPanel(fdoanhthu);
+        }
     }
 }

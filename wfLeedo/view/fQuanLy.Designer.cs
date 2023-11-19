@@ -211,6 +211,7 @@
             btnDoanhThu.Size = new Size(193, 59);
             btnDoanhThu.TabIndex = 6;
             btnDoanhThu.Text = "Doanh thu";
+            btnDoanhThu.Click += btnDoanhThu_Click_1;
             // 
             // btnKhachHang
             // 
