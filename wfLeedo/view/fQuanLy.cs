@@ -16,6 +16,7 @@ namespace wfLeedo.view
         fDoanhThu fdoanhthu;
         fThongKe fthongke;
         fKhachHang fkhachhang;
+        fKho fKhohang;
         public fQuanLy()
         {
             InitializeComponent();
@@ -71,6 +72,12 @@ namespace wfLeedo.view
         {
             fthongke = new fThongKe();
             openPanel(fthongke);
+        }
+
+        private void btnKhohang_Click(object sender, EventArgs e)
+        {
+            fKhohang = new fKho();
+            openPanel(fKhohang);
         }
     }
 }

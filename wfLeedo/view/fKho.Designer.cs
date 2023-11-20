@@ -58,7 +58,7 @@
             cbNXMode = new Guna.UI2.WinForms.Guna2ComboBox();
             dgvNXMode = new Krypton.Toolkit.KryptonDataGridView();
             insertNXBtn = new Guna.UI2.WinForms.Guna2Button();
-            reloadNXBtn = new Guna.UI2.WinForms.Guna2Button();
+            deleteNXBtn = new Guna.UI2.WinForms.Guna2Button();
             printBtn = new Guna.UI2.WinForms.Guna2Button();
             guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -239,6 +239,7 @@
             cbModel.StartIndex = 0;
             cbModel.TabIndex = 9;
             cbModel.Tag = "";
+            cbModel.SelectedIndexChanged += cbModel_SelectedIndexChanged;
             // 
             // dgvKho
             // 
@@ -248,6 +249,7 @@
             dgvKho.Name = "dgvKho";
             dgvKho.RowHeadersWidth = 51;
             dgvKho.RowTemplate.Height = 29;
+            dgvKho.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvKho.Size = new Size(1435, 369);
             dgvKho.TabIndex = 1;
             dgvKho.CellContentClick += dgvKho_CellContentClick;
@@ -270,6 +272,7 @@
             cbNXMode.Size = new Size(161, 36);
             cbNXMode.StartIndex = 0;
             cbNXMode.TabIndex = 10;
+            cbNXMode.SelectedIndexChanged += cbNXMode_SelectedIndexChanged;
             // 
             // dgvNXMode
             // 
@@ -278,6 +281,7 @@
             dgvNXMode.Name = "dgvNXMode";
             dgvNXMode.RowHeadersWidth = 62;
             dgvNXMode.RowTemplate.Height = 33;
+            dgvNXMode.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvNXMode.Size = new Size(1435, 292);
             dgvNXMode.TabIndex = 11;
             // 
@@ -296,23 +300,24 @@
             insertNXBtn.Size = new Size(133, 36);
             insertNXBtn.TabIndex = 12;
             insertNXBtn.Text = "Thêm";
+            insertNXBtn.Click += insertNXBtn_Click;
             // 
-            // reloadNXBtn
+            // deleteNXBtn
             // 
-            reloadNXBtn.CustomizableEdges = customizableEdges7;
-            reloadNXBtn.DisabledState.BorderColor = Color.DarkGray;
-            reloadNXBtn.DisabledState.CustomBorderColor = Color.DarkGray;
-            reloadNXBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            reloadNXBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            reloadNXBtn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            reloadNXBtn.ForeColor = Color.White;
-            reloadNXBtn.Location = new Point(185, 550);
-            reloadNXBtn.Name = "reloadNXBtn";
-            reloadNXBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            reloadNXBtn.Size = new Size(130, 36);
-            reloadNXBtn.TabIndex = 13;
-            reloadNXBtn.Text = "Tải lại";
-            reloadNXBtn.Click += reloadNXBtn_Click;
+            deleteNXBtn.CustomizableEdges = customizableEdges7;
+            deleteNXBtn.DisabledState.BorderColor = Color.DarkGray;
+            deleteNXBtn.DisabledState.CustomBorderColor = Color.DarkGray;
+            deleteNXBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            deleteNXBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            deleteNXBtn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteNXBtn.ForeColor = Color.White;
+            deleteNXBtn.Location = new Point(185, 550);
+            deleteNXBtn.Name = "deleteNXBtn";
+            deleteNXBtn.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            deleteNXBtn.Size = new Size(130, 36);
+            deleteNXBtn.TabIndex = 13;
+            deleteNXBtn.Text = "Xóa";
+            deleteNXBtn.Click += deleteNXBtn_Click;
             // 
             // printBtn
             // 
@@ -406,7 +411,7 @@
             Controls.Add(guna2DateTimePicker2);
             Controls.Add(guna2DateTimePicker1);
             Controls.Add(printBtn);
-            Controls.Add(reloadNXBtn);
+            Controls.Add(deleteNXBtn);
             Controls.Add(insertNXBtn);
             Controls.Add(dgvNXMode);
             Controls.Add(cbNXMode);
@@ -443,7 +448,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbNXMode;
         private Krypton.Toolkit.KryptonDataGridView dgvNXMode;
         private Guna.UI2.WinForms.Guna2Button insertNXBtn;
-        private Guna.UI2.WinForms.Guna2Button reloadNXBtn;
+        private Guna.UI2.WinForms.Guna2Button deleteNXBtn;
         private Guna.UI2.WinForms.Guna2Button printBtn;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
