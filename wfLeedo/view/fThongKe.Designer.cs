@@ -88,7 +88,7 @@
             // 
             // chartThongKe
             // 
-            chartThongKe.Dock = DockStyle.Fill;
+            chartThongKe.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             chartFont1.FontName = "Arial";
             chartThongKe.Legend.LabelFont = chartFont1;
             chartThongKe.Location = new Point(0, 0);
@@ -305,6 +305,7 @@
             // 
             // guna2Panel1
             // 
+            guna2Panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             guna2Panel1.Controls.Add(chartThongKe);
             guna2Panel1.CustomizableEdges = customizableEdges13;
             guna2Panel1.Location = new Point(33, 168);

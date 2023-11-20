@@ -156,7 +156,7 @@ namespace wfLeedo
 
         private void deleteNXBtn_Click(object sender, EventArgs e)
         {
-            if(dgvNXMode.SelectedRows.Count > 0)
+            if (dgvNXMode.SelectedRows.Count > 0)
             {
                 DateTime? time;
                 nvlViewModel newNVL = new nvlViewModel();

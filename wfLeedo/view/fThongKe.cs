@@ -14,7 +14,7 @@ namespace wfLeedo.view
 {
     public partial class fThongKe : Form
     {
-        
+
         public fThongKe()
         {
             InitializeComponent();
@@ -52,6 +52,7 @@ namespace wfLeedo.view
             String labeltopic = "";
             String valuetopic = "";
             gunaBarDataset.Label = cbb_topic.Text;
+            gunaBarDataset.DataPoints.Clear ();
 
             if (toggleMonth.Checked)
             {
@@ -120,27 +121,27 @@ namespace wfLeedo.view
             }
 
 
-                gunaBarDataset.DataPoints.Clear();
-                foreach (DataRow row in dt.Rows)
+            gunaBarDataset.DataPoints.Clear();
+            foreach (DataRow row in dt.Rows)
+            {
+                string label = row[labeltopic].ToString(); // Thay "LabelColumnName" bằng tên cột chứa nhãn
+
+                // Thay "ValueColumnName" bằng tên cột chứa giá trị
+                string valueStr = row[valuetopic].ToString();
+
+                // Thử chia giá trị cho 1000 trước khi chuyển đổi
+                if (decimal.TryParse(valueStr, out decimal originalValue))
                 {
-                    string label = row[labeltopic].ToString(); // Thay "LabelColumnName" bằng tên cột chứa nhãn
-
-                    // Thay "ValueColumnName" bằng tên cột chứa giá trị
-                    string valueStr = row[valuetopic].ToString();
-
-                    // Thử chia giá trị cho 1000 trước khi chuyển đổi
-                    if (decimal.TryParse(valueStr, out decimal originalValue))
-                    {
-                        int value = (int)(originalValue / 1000); // Chia cho 1000 để bớt đi 3 số 0
-                        gunaBarDataset.DataPoints.Add(new Guna.Charts.WinForms.LPoint(label, value));
-                        gunaBarDataset.TargetChart = chartThongKe;
-                    }
-                    else
-                    {
-                        // Xử lý trường hợp không thể chuyển đổi thành decimal
-                        // Ví dụ: Log hoặc hiển thị thông báo lỗi.
-                    }
+                    int value = (int)(originalValue / 1000); // Chia cho 1000 để bớt đi 3 số 0
+                    gunaBarDataset.DataPoints.Add(new Guna.Charts.WinForms.LPoint(label, value));
+                    gunaBarDataset.TargetChart = chartThongKe;
                 }
+                else
+                {
+                    // Xử lý trường hợp không thể chuyển đổi thành decimal
+                    // Ví dụ: Log hoặc hiển thị thông báo lỗi.
+                }
+            }
 
 
         }

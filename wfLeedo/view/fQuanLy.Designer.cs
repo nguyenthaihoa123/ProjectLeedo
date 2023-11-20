@@ -39,6 +39,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fQuanLy));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -47,8 +50,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             pnQuanLy = new Guna.UI2.WinForms.Guna2GradientPanel();
             guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -56,11 +57,11 @@
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
             guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            btnKhohang = new Guna.UI2.WinForms.Guna2Button();
             btnThongKe = new Guna.UI2.WinForms.Guna2Button();
             btnDoanhThu = new Guna.UI2.WinForms.Guna2Button();
             btnKhachHang = new Guna.UI2.WinForms.Guna2Button();
             btn_NhanVien = new Guna.UI2.WinForms.Guna2Button();
-            btnKhohang = new Guna.UI2.WinForms.Guna2Button();
             guna2GradientPanel1.SuspendLayout();
             guna2GradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
@@ -81,10 +82,9 @@
             guna2GradientPanel1.ForeColor = SystemColors.ControlLightLight;
             guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             guna2GradientPanel1.Location = new Point(0, 0);
-            guna2GradientPanel1.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges21;
-            guna2GradientPanel1.Size = new Size(1004, 530);
+            guna2GradientPanel1.Size = new Size(1147, 707);
             guna2GradientPanel1.TabIndex = 2;
             // 
             // pnQuanLy
@@ -93,11 +93,10 @@
             pnQuanLy.BackColor = Color.FromArgb(51, 51, 51);
             pnQuanLy.BorderColor = Color.White;
             pnQuanLy.CustomizableEdges = customizableEdges1;
-            pnQuanLy.Location = new Point(237, 62);
-            pnQuanLy.Margin = new Padding(3, 2, 3, 2);
+            pnQuanLy.Location = new Point(271, 83);
             pnQuanLy.Name = "pnQuanLy";
             pnQuanLy.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            pnQuanLy.Size = new Size(756, 459);
+            pnQuanLy.Size = new Size(864, 612);
             pnQuanLy.TabIndex = 5;
             // 
             // guna2GradientPanel4
@@ -109,21 +108,20 @@
             guna2GradientPanel4.FillColor = Color.FromArgb(255, 85, 0);
             guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             guna2GradientPanel4.Location = new Point(0, 0);
-            guna2GradientPanel4.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel4.Name = "guna2GradientPanel4";
             guna2GradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            guna2GradientPanel4.Size = new Size(1004, 51);
+            guna2GradientPanel4.Size = new Size(1147, 68);
             guna2GradientPanel4.TabIndex = 3;
             // 
             // guna2CirclePictureBox1
             // 
+            guna2CirclePictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2CirclePictureBox1.ImageRotate = 0F;
-            guna2CirclePictureBox1.Location = new Point(914, 4);
-            guna2CirclePictureBox1.Margin = new Padding(3, 2, 3, 2);
+            guna2CirclePictureBox1.Location = new Point(1045, 5);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox1.Size = new Size(52, 45);
+            guna2CirclePictureBox1.Size = new Size(59, 60);
             guna2CirclePictureBox1.TabIndex = 1;
             guna2CirclePictureBox1.TabStop = false;
             guna2CirclePictureBox1.Click += guna2CirclePictureBox1_Click;
@@ -132,10 +130,9 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(12, 2);
-            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel1.Location = new Point(14, 3);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(141, 46);
+            guna2HtmlLabel1.Size = new Size(171, 56);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Quản lý";
             // 
@@ -146,10 +143,9 @@
             guna2GradientPanel5.CustomizableEdges = customizableEdges18;
             guna2GradientPanel5.Dock = DockStyle.Fill;
             guna2GradientPanel5.Location = new Point(0, 0);
-            guna2GradientPanel5.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel5.Name = "guna2GradientPanel5";
             guna2GradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges19;
-            guna2GradientPanel5.Size = new Size(1004, 530);
+            guna2GradientPanel5.Size = new Size(1147, 707);
             guna2GradientPanel5.TabIndex = 6;
             // 
             // guna2GradientPanel2
@@ -162,13 +158,35 @@
             guna2GradientPanel2.Controls.Add(btnKhachHang);
             guna2GradientPanel2.Controls.Add(btn_NhanVien);
             guna2GradientPanel2.CustomizableEdges = customizableEdges16;
-            guna2GradientPanel2.Location = new Point(18, 62);
-            guna2GradientPanel2.Margin = new Padding(3, 2, 3, 2);
+            guna2GradientPanel2.Location = new Point(21, 83);
             guna2GradientPanel2.Name = "guna2GradientPanel2";
             guna2GradientPanel2.ShadowDecoration.Color = Color.White;
             guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges17;
-            guna2GradientPanel2.Size = new Size(193, 459);
+            guna2GradientPanel2.Size = new Size(221, 612);
             guna2GradientPanel2.TabIndex = 4;
+            // 
+            // btnKhohang
+            // 
+            btnKhohang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnKhohang.CheckedState.FillColor = Color.FromArgb(255, 85, 0);
+            btnKhohang.CustomizableEdges = customizableEdges6;
+            btnKhohang.DisabledState.BorderColor = Color.DarkGray;
+            btnKhohang.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnKhohang.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnKhohang.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnKhohang.Dock = DockStyle.Top;
+            btnKhohang.FillColor = Color.Transparent;
+            btnKhohang.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnKhohang.ForeColor = Color.White;
+            btnKhohang.Image = (Image)resources.GetObject("btnKhohang.Image");
+            btnKhohang.ImageSize = new Size(40, 40);
+            btnKhohang.Location = new Point(0, 316);
+            btnKhohang.Name = "btnKhohang";
+            btnKhohang.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            btnKhohang.Size = new Size(221, 79);
+            btnKhohang.TabIndex = 8;
+            btnKhohang.Text = "Kho hàng";
+            btnKhohang.Click += btnKhohang_Click;
             // 
             // btnThongKe
             // 
@@ -185,11 +203,10 @@
             btnThongKe.ForeColor = Color.White;
             btnThongKe.Image = Properties.Resources.line_chart;
             btnThongKe.ImageSize = new Size(40, 40);
-            btnThongKe.Location = new Point(0, 177);
-            btnThongKe.Margin = new Padding(3, 2, 3, 2);
+            btnThongKe.Location = new Point(0, 237);
             btnThongKe.Name = "btnThongKe";
             btnThongKe.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            btnThongKe.Size = new Size(193, 59);
+            btnThongKe.Size = new Size(221, 79);
             btnThongKe.TabIndex = 7;
             btnThongKe.Text = "Thống kê";
             btnThongKe.Click += btnThongKe_Click_1;
@@ -209,11 +226,10 @@
             btnDoanhThu.ForeColor = Color.White;
             btnDoanhThu.Image = Properties.Resources.coin_stack;
             btnDoanhThu.ImageSize = new Size(40, 40);
-            btnDoanhThu.Location = new Point(0, 118);
-            btnDoanhThu.Margin = new Padding(3, 2, 3, 2);
+            btnDoanhThu.Location = new Point(0, 158);
             btnDoanhThu.Name = "btnDoanhThu";
             btnDoanhThu.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            btnDoanhThu.Size = new Size(193, 59);
+            btnDoanhThu.Size = new Size(221, 79);
             btnDoanhThu.TabIndex = 6;
             btnDoanhThu.Text = "Doanh thu";
             btnDoanhThu.Click += btnDoanhThu_Click_1;
@@ -233,11 +249,10 @@
             btnKhachHang.ForeColor = Color.White;
             btnKhachHang.Image = Properties.Resources.users;
             btnKhachHang.ImageSize = new Size(40, 40);
-            btnKhachHang.Location = new Point(0, 59);
-            btnKhachHang.Margin = new Padding(3, 2, 3, 2);
+            btnKhachHang.Location = new Point(0, 79);
             btnKhachHang.Name = "btnKhachHang";
             btnKhachHang.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            btnKhachHang.Size = new Size(193, 59);
+            btnKhachHang.Size = new Size(221, 79);
             btnKhachHang.TabIndex = 1;
             btnKhachHang.Text = "Khách hàng";
             btnKhachHang.Click += btnKhachHang_Click;
@@ -258,46 +273,20 @@
             btn_NhanVien.Image = Properties.Resources.group2;
             btn_NhanVien.ImageSize = new Size(40, 40);
             btn_NhanVien.Location = new Point(0, 0);
-            btn_NhanVien.Margin = new Padding(3, 2, 3, 2);
             btn_NhanVien.Name = "btn_NhanVien";
             btn_NhanVien.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            btn_NhanVien.Size = new Size(193, 59);
+            btn_NhanVien.Size = new Size(221, 79);
             btn_NhanVien.TabIndex = 0;
             btn_NhanVien.Text = "Nhân viên";
             btn_NhanVien.Click += btnNhanVien_Click;
             // 
-            // btnKhohang
-            // 
-            btnKhohang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnKhohang.CheckedState.FillColor = Color.FromArgb(255, 85, 0);
-            btnKhohang.CustomizableEdges = customizableEdges6;
-            btnKhohang.DisabledState.BorderColor = Color.DarkGray;
-            btnKhohang.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnKhohang.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnKhohang.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnKhohang.Dock = DockStyle.Top;
-            btnKhohang.FillColor = Color.Transparent;
-            btnKhohang.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnKhohang.ForeColor = Color.White;
-            btnKhohang.Image = Properties.Resources.line_chart;
-            btnKhohang.ImageSize = new Size(40, 40);
-            btnKhohang.Location = new Point(0, 236);
-            btnKhohang.Margin = new Padding(3, 2, 3, 2);
-            btnKhohang.Name = "btnKhohang";
-            btnKhohang.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            btnKhohang.Size = new Size(193, 59);
-            btnKhohang.TabIndex = 8;
-            btnKhohang.Text = "Kho hàng";
-            btnKhohang.Click += btnKhohang_Click;
-            // 
             // fQuanLy
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1004, 530);
+            ClientSize = new Size(1147, 707);
             Controls.Add(guna2GradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fQuanLy";
             Text = "Trang quản lý";
             guna2GradientPanel1.ResumeLayout(false);
