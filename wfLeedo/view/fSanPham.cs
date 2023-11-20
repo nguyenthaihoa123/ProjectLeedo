@@ -39,7 +39,7 @@ namespace wfLeedo.view
                 uc_product productControl = new uc_product();
 
                 // Đặt các thuộc tính của UserControl từ dữ liệu sản phẩm
-                productControl.PanelBackgroundImagePath = "";
+                productControl.PanelBackgroundImagePath = productItem.ImgSP;
                 productControl.price = productItem.Price.ToString() + " VNĐ";
                 productControl.name = productItem.Name;
                 productControl.id = productItem.Id;

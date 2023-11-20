@@ -34,7 +34,7 @@ namespace wfLeedo.view
                 else
                 {
                     // Nếu đường dẫn rỗng, bạn có thể đặt hình ảnh mặc định hoặc xử lý khác tùy thuộc vào yêu cầu của bạn.
-                    imgProShow.Image = Image.FromFile("AnhSanPham/yay2.jpg");
+                    //imgProShow.Image = Image.FromFile("AnhSanPham/yay2.jpg");
                     panelItem.BackgroundImage = Properties.Resources.shoes1; // Đặt làm null hoặc hình ảnh mặc định khác.
                 }
             }

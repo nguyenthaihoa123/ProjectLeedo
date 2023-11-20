@@ -66,5 +66,11 @@ namespace wfLeedo.view
             fdoanhthu = new fDoanhThu();
             openPanel(fdoanhthu);
         }
+
+        private void btnThongKe_Click_1(object sender, EventArgs e)
+        {
+            fthongke = new fThongKe();
+            openPanel(fthongke);
+        }
     }
 }

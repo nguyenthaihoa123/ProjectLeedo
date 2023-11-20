@@ -188,6 +188,7 @@
             btnThongKe.Size = new Size(193, 59);
             btnThongKe.TabIndex = 7;
             btnThongKe.Text = "Thống kê";
+            btnThongKe.Click += btnThongKe_Click_1;
             // 
             // btnDoanhThu
             // 
