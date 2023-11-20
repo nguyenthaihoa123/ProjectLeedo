@@ -43,8 +43,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             kryptonTableLayoutPanel1 = new Krypton.Toolkit.KryptonTableLayoutPanel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,7 +57,6 @@
             dtTGNhap = new Guna.UI2.WinForms.Guna2DateTimePicker();
             dtTGXuat = new Guna.UI2.WinForms.Guna2DateTimePicker();
             insertBtn = new Guna.UI2.WinForms.Guna2Button();
-            saveBtn = new Guna.UI2.WinForms.Guna2Button();
             kryptonTableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -227,7 +224,7 @@
             dtTGNhap.Checked = true;
             dtTGNhap.CustomizableEdges = customizableEdges9;
             dtTGNhap.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dtTGNhap.Format = DateTimePickerFormat.Long;
+            dtTGNhap.Format = DateTimePickerFormat.Custom;
             dtTGNhap.Location = new Point(185, 223);
             dtTGNhap.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtTGNhap.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -235,14 +232,14 @@
             dtTGNhap.ShadowDecoration.CustomizableEdges = customizableEdges10;
             dtTGNhap.Size = new Size(299, 49);
             dtTGNhap.TabIndex = 10;
-            dtTGNhap.Value = new DateTime(2023, 11, 17, 16, 42, 11, 588);
+            dtTGNhap.Value = new DateTime(2023, 11, 17, 15, 40, 0, 0);
             // 
             // dtTGXuat
             // 
             dtTGXuat.Checked = true;
             dtTGXuat.CustomizableEdges = customizableEdges11;
             dtTGXuat.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dtTGXuat.Format = DateTimePickerFormat.Long;
+            dtTGXuat.Format = DateTimePickerFormat.Custom;
             dtTGXuat.Location = new Point(185, 278);
             dtTGXuat.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtTGXuat.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -250,7 +247,7 @@
             dtTGXuat.ShadowDecoration.CustomizableEdges = customizableEdges12;
             dtTGXuat.Size = new Size(299, 54);
             dtTGXuat.TabIndex = 11;
-            dtTGXuat.Value = new DateTime(2023, 11, 17, 16, 42, 14, 86);
+            dtTGXuat.Value = new DateTime(2023, 11, 17, 15, 40, 0, 0);
             // 
             // insertBtn
             // 
@@ -261,36 +258,19 @@
             insertBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             insertBtn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             insertBtn.ForeColor = Color.White;
-            insertBtn.Location = new Point(12, 370);
+            insertBtn.Location = new Point(137, 370);
             insertBtn.Name = "insertBtn";
             insertBtn.ShadowDecoration.CustomizableEdges = customizableEdges14;
             insertBtn.Size = new Size(239, 68);
             insertBtn.TabIndex = 3;
-            insertBtn.Text = "Thêm";
+            insertBtn.Text = "Tạo phiếu";
             insertBtn.Click += insertBtn_Click;
-            // 
-            // saveBtn
-            // 
-            saveBtn.CustomizableEdges = customizableEdges15;
-            saveBtn.DisabledState.BorderColor = Color.DarkGray;
-            saveBtn.DisabledState.CustomBorderColor = Color.DarkGray;
-            saveBtn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            saveBtn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            saveBtn.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            saveBtn.ForeColor = Color.White;
-            saveBtn.Location = new Point(257, 370);
-            saveBtn.Name = "saveBtn";
-            saveBtn.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            saveBtn.Size = new Size(242, 68);
-            saveBtn.TabIndex = 4;
-            saveBtn.Text = "Sửa";
             // 
             // fThemNXKhoNVL
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(511, 450);
-            Controls.Add(saveBtn);
             Controls.Add(insertBtn);
             Controls.Add(kryptonTableLayoutPanel1);
             Name = "fThemNXKhoNVL";
@@ -317,6 +297,5 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dtTGNhap;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtTGXuat;
         private Guna.UI2.WinForms.Guna2Button insertBtn;
-        private Guna.UI2.WinForms.Guna2Button saveBtn;
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using wfLeedo;
 
 namespace BanGiay_N11.viewModel
 {
@@ -149,12 +150,10 @@ namespace BanGiay_N11.viewModel
             DataTable dt = new Database().SelectData(sql, list);
             return dt;
         }
-        public Boolean insertNhapKhoNVL(string maKho, string maNVL, int slNhap, int slXuat, string tgNhap, string tgXuat)
+        public Boolean insertNhapKhoNVL(string maKho, string maNVL, int slNhap, int slXuat, DateTime tgNhap, DateTime? tgXuat)
         {
             string sql = "insertNhapKhoNVL";
             List<CustomParameter> list = new List<CustomParameter>();
-            slXuat = 0;
-            tgXuat = null;
 
             list.Add(new CustomParameter()
             {
@@ -179,12 +178,12 @@ namespace BanGiay_N11.viewModel
             list.Add(new CustomParameter()
             {
                 key = "@TG_NhapNVL",
-                value = tgNhap
+                value = tgNhap.ToString()
             });
             list.Add(new CustomParameter()
             {
                 key = "@TG_XuatNVL",
-                value = tgXuat
+                value = tgXuat.ToString()
             });
 
             var rs = new Database().ExeCute(sql, list);
@@ -199,12 +198,10 @@ namespace BanGiay_N11.viewModel
                 return false;
             }
         }
-        public Boolean insertXuatKhoNVL(string maKho, string maNVL, int slNhap, int slXuat, string tgNhap, string tgXuat)
+        public Boolean insertXuatKhoNVL(string maKho, string maNVL, int slNhap, int slXuat, DateTime? tgNhap, DateTime tgXuat)
         {
             string sql = "insertXuatKhoNVL";
             List<CustomParameter> list = new List<CustomParameter>();
-            slNhap = 0;
-            tgNhap = null;
 
             list.Add(new CustomParameter()
             {
@@ -229,12 +226,12 @@ namespace BanGiay_N11.viewModel
             list.Add(new CustomParameter()
             {
                 key = "@TG_NhapNVL",
-                value = tgNhap
+                value = tgNhap.ToString()
             });
             list.Add(new CustomParameter()
             {
                 key = "@TG_XuatNVL",
-                value = tgXuat
+                value = tgXuat.ToString()
             });
 
             var rs = new Database().ExeCute(sql, list);
@@ -248,6 +245,44 @@ namespace BanGiay_N11.viewModel
                 MessageBox.Show("Tạo phiếu xuất hàng mới thất bại!");
                 return false;
             }
+        }
+        public Boolean deleteNXNVL(DateTime? time)
+        {
+            string sql = "deleteKhoNVL";
+            List<CustomParameter> list = new List<CustomParameter>();
+
+            list.Add(new CustomParameter()
+            {
+                key = "@time",
+                value = time.ToString()
+            });
+
+            var rs = new Database().ExeCute(sql, list);
+            if (rs == 1)
+            {
+                MessageBox.Show("Xóa phiếu thành công!");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Xóa phiếu thất bại!");
+                return false;
+            }
+        }
+        public int getSLTonNVL(string maNVL)
+        {
+
+            string sql = "SelectSLTonNVL";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@MaNVL",
+                value = maNVL
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+
+            var slTon = dt.Rows[0]["SL_Ton"];
+            return Convert.ToInt32(slTon);
         }
     }
 }

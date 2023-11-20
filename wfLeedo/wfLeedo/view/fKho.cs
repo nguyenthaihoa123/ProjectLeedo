@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using wfLeedo.view;
 
@@ -87,11 +88,24 @@ namespace wfLeedo
             {
                 productViewModel dataAllPro = new productViewModel();
                 dgvKho.DataSource = dataAllPro.dataAllProduct();
+
             }
             else if (mode == "Nguyên vật liệu")
             {
                 nvlViewModel dataAllNVL = new nvlViewModel();
                 dgvKho.DataSource = dataAllNVL.dataAllNVL();
+                if (modeNX == "Tất cả")
+                {
+                    dgvNXMode.DataSource = dataAllNVL.dataAllKhoNVL();
+                }
+                else if (modeNX == "Nhập")
+                {
+                    dgvNXMode.DataSource = dataAllNVL.dataNhapKhoNVL();
+                }
+                else if (modeNX == "Xuất")
+                {
+                    dgvNXMode.DataSource = dataAllNVL.dataXuatKhoNVL();
+                }
             }
         }
 
@@ -140,29 +154,29 @@ namespace wfLeedo
             }
         }
 
-        private void reloadNXBtn_Click(object sender, EventArgs e)
+        private void deleteNXBtn_Click(object sender, EventArgs e)
         {
-            txtSearch.Text = "";
+            if(dgvNXMode.SelectedRows.Count > 0)
+            {
+                DateTime? time;
+                nvlViewModel newNVL = new nvlViewModel();
+                int rowIndex = dgvNXMode.SelectedRows[0].Index;
+                //dgvNXMode.Rows.RemoveAt(rowIndex);
 
-            if (mode == "Sản phẩm")
-            {
-                productViewModel dataAllPro = new productViewModel();
-            }
-            else if (mode == "Nguyên vật liệu")
-            {
-                nvlViewModel dataAllNVL = new nvlViewModel();
-                if (modeNX == "Tất cả")
+                string tgNhap = dgvNXMode.SelectedRows[0].Cells["TG_NhapNVL"].Value.ToString();
+                string tgXuat = dgvNXMode.SelectedRows[0].Cells["TG_XuatNVL"].Value.ToString();
+
+                if (string.IsNullOrEmpty(tgXuat))
                 {
-                    dgvNXMode.DataSource = dataAllNVL.dataAllKhoNVL();
+                    time = Convert.ToDateTime(tgNhap);
+                    MessageBox.Show(time.ToString());
                 }
-                else if (modeNX == "Nhập")
+                else
                 {
-                    dgvNXMode.DataSource = dataAllNVL.dataNhapKhoNVL();
+                    time = Convert.ToDateTime(tgXuat);
+                    MessageBox.Show(time.ToString());
                 }
-                else if (modeNX == "Xuất")
-                {
-                    dgvNXMode.DataSource = dataAllNVL.dataXuatKhoNVL();
-                }
+                newNVL.deleteNXNVL(time);
             }
         }
 
@@ -221,9 +235,9 @@ namespace wfLeedo
             }
             else if (mode == "Nguyên vật liệu")
             {
-                if(modeNX == "Nhập" || modeNX == "Xuất")
+                if (modeNX == "Nhập" || modeNX == "Xuất")
                 {
-                    formNXKhoNVL = new fThemNXKhoNVL("", modeNX);
+                    formNXKhoNVL = new fThemNXKhoNVL(modeNX);
                     formNXKhoNVL.Dock = DockStyle.Fill;
                     formNXKhoNVL.Show();
                 }
