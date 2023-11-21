@@ -108,10 +108,31 @@ namespace wfLeedo.view
             g.DrawString("Tổng Bill: " + tongBill, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(100, 140));
             g.DrawString("=============================", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(100, 160));
 
-            // Ví dụ vẽ danh sách món hàng
             float yPosition = 180;
-            foreach (DataRow row in dataSource.Rows)
+            int lineHeight = 90; // Khoảng cách giữa các dòng
+            int lineWidth = 300; // Độ dài của đường kẻ ngang
+
+            // Vẽ thông tin cho sản phẩm đầu tiên
+            DataRow firstRow = dataSource.Rows[0];
+            string maSP1 = firstRow["MaSP"].ToString();
+            string tenSP1 = firstRow["TenSP"].ToString();
+            string sl1 = firstRow["SoLuong"].ToString();
+            string giaSP1 = firstRow["TongBill"].ToString();
+
+            g.DrawString("Mã SP: " + maSP1, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition));
+            g.DrawString("Tên SP: " + tenSP1, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 20));
+            g.DrawString("Số lượng: " + sl1, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 40));
+            g.DrawString("Giá SP: " + giaSP1 +" VNĐ", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 60));
+
+            yPosition += lineHeight; // Dịch vị trí vẽ xuống
+
+            // Vẽ thông tin cho các sản phẩm từ sản phẩm thứ hai trở đi
+            for (int i = 1; i < dataSource.Rows.Count; i++)
             {
+                // Vẽ đường kẻ ngang
+                g.DrawLine(new Pen(Brushes.Black), new PointF(100, yPosition - 10), new PointF(100 + lineWidth, yPosition - 10));
+
+                DataRow row = dataSource.Rows[i];
                 string maSP = row["MaSP"].ToString();
                 string tenSP = row["TenSP"].ToString();
                 string sl = row["SoLuong"].ToString();
@@ -121,9 +142,9 @@ namespace wfLeedo.view
                 g.DrawString("Mã SP: " + maSP, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition));
                 g.DrawString("Tên SP: " + tenSP, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 20));
                 g.DrawString("Số lượng: " + sl, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 40));
-                g.DrawString("Giá SP: " + giaSP, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 60));
+                g.DrawString("Giá SP: " + giaSP + " VNĐ", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 60));
 
-                yPosition += 60; // Dịch vị trí vẽ xuống
+                yPosition += lineHeight; // Dịch vị trí vẽ xuống
             }
         }
 
@@ -133,7 +154,7 @@ namespace wfLeedo.view
             printDocument.PrintPage += new PrintPageEventHandler(printBill_PrintPage);
 
             // Specify the file path for saving the PDF
-            string pdfPath = "";
+            string pdfPath = @"D:\Bill\" + lbIDDH.Text + ".pdf";
 
             // Set up the print controller for silent printing
             PrintController printController = new StandardPrintController();
