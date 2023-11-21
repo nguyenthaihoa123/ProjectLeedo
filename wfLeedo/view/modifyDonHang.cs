@@ -106,9 +106,10 @@ namespace wfLeedo.view
             g.DrawString("ID Đơn Hàng: " + idDH, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(100, 100));
             g.DrawString("Tên Khách Hàng: " + tenKH, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(100, 120));
             g.DrawString("Tổng Bill: " + tongBill, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(100, 140));
+            g.DrawString("=============================", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(100, 160));
 
             // Ví dụ vẽ danh sách món hàng
-            float yPosition = 160;
+            float yPosition = 180;
             foreach (DataRow row in dataSource.Rows)
             {
                 string maSP = row["MaSP"].ToString();
@@ -132,7 +133,7 @@ namespace wfLeedo.view
             printDocument.PrintPage += new PrintPageEventHandler(printBill_PrintPage);
 
             // Specify the file path for saving the PDF
-            string pdfPath = @"D:\Bill\" + lbIDDH.Text + ".pdf";
+            string pdfPath = "";
 
             // Set up the print controller for silent printing
             PrintController printController = new StandardPrintController();
@@ -143,7 +144,7 @@ namespace wfLeedo.view
             printDocument.PrintController = printController;
 
             // Set the file name for saving the PDF
-            printDocument.PrinterSettings.PrintFileName = pdfPath;
+            printDocument.PrinterSettings.PrintFileName = lbIDDH.Text;
 
             try
             {

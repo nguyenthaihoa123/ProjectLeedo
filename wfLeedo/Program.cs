@@ -15,9 +15,9 @@ namespace wfLeedo
             ApplicationConfiguration.Initialize();
             // Application.Run(new fLogin());
             //Application.Run(new fKho());
-            //Application.Run(new fThemNhanVien());
-            //Application.Run(new fDonHang());
-            Application.Run(new fMain("qtv02"));
+            //Application.Run(new fDoanhThu());
+            Application.Run(new fDonHang());
+            //Application.Run(new fMain("QTV01"));
         }
     }
 }

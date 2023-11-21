@@ -571,6 +571,7 @@
             txtNumber.Name = "txtNumber";
             txtNumber.Size = new Size(233, 23);
             txtNumber.TabIndex = 13;
+            txtNumber.Leave += txtNumber_Leave;
             // 
             // txtEmail
             // 
@@ -578,6 +579,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(233, 23);
             txtEmail.TabIndex = 26;
+            txtEmail.Leave += txtEmail_Leave;
             // 
             // txtAddress
             // 
@@ -606,6 +608,7 @@
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(233, 23);
             txtPass.TabIndex = 21;
+            txtPass.Leave += txtPass_Leave;
             // 
             // fThemKhachHang
             // 

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfLeedo.viewModel;
+using OfficeOpenXml;
+using System.IO;
 
 namespace wfLeedo
 {
@@ -66,7 +68,7 @@ namespace wfLeedo
             Boolean filterMonth = false;
             if (toggleMonth.Checked)
             {
-                
+
                 filterMonth = true;
                 month = cbb_month.Text;
                 lbFilter.Text = "Dữ liệu vào " + month + "/" + year;
@@ -127,6 +129,49 @@ namespace wfLeedo
         private void dgvDoanhThu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            // Thiết lập các thuộc tính của SaveFileDialog
+            saveFileDialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
+            saveFileDialog.Title = "Chọn vị trí để lưu tệp CSV";
+            //saveFileDialog.InitialDirectory = "C:\\"; // Đường dẫn mặc định khi mở hộp thoại
+
+            // Hiển thị hộp thoại SaveFileDialog
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Build the CSV file data as a Comma separated string.
+                string csv = string.Empty;
+
+                // Add the Header row for CSV file.
+                foreach (DataGridViewColumn column in dgvDoanhThu.Columns)
+                {
+                    csv += column.HeaderText + ',';
+                }
+
+                // Add new line.
+                csv += "\r\n";
+
+                // Adding the Rows
+                foreach (DataGridViewRow row in dgvDoanhThu.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        // Add the Data rows.
+                        csv += cell.Value?.ToString().Replace(",", ";") + ','; // Check for null values
+                    }
+
+                    // Add new line.
+                    csv += "\r\n";
+                }
+
+                // Lưu tệp CSV vào địa chỉ đã chọn
+                File.WriteAllText(saveFileDialog.FileName, csv);
+                MessageBox.Show("Xuất file báo cáo thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

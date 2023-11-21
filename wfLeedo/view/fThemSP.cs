@@ -57,6 +57,8 @@ namespace wfLeedo.view
                 if (txtMaSP.Text != "")
                 {
                     productViewModel dataPro = new productViewModel();
+                    MessageBox.Show("Hiển thị hình ảnh thành công!" + imgPath);
+
                     Product newPro = new Product(txtMaSP.Text, txtLoaiSP.Text, txtTenSP.Text, double.Parse(txtGiaSP.Text), int.Parse(txtSizeSP.Text), txtDonViTinh.Text, imgPath);
 
                     if (dataPro.insertSP(newPro))
@@ -88,12 +90,24 @@ namespace wfLeedo.view
         {
             if (imgPath != null)
             {
-                //imgSP.Image = Image.FromFile(imgPath);
-                //MessageBox.Show("Hiển thị hình ảnh thành công!");
+                // Load ảnh từ đường dẫn
+                Image originalImage = Image.FromFile(imgPath);
+
+                // Đặt ảnh cho PictureBox
+                imgSP.Image = originalImage;
+
+                // Đặt SizeMode cho PictureBox
+                imgSP.SizeMode = PictureBoxSizeMode.Zoom; // Chọn một trong các giá trị: Normal, StretchImage, AutoSize, CenterImage, Zoom
+
+                // Hiển thị thông báo
+                MessageBox.Show("Hiển thị hình ảnh thành công!");
             }
             else
             {
+                // Không có ảnh, đặt ảnh của PictureBox là null
                 imgSP.Image = null;
+
+                // Hiển thị thông báo
                 MessageBox.Show("Không thể hiển thị hình ảnh!");
             }
         }

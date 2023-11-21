@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BanGiay_N11;
@@ -25,38 +26,52 @@ namespace wfLeedo
 
         private void btnInsertEmp_Click(object sender, EventArgs e)
         {
-            try
+            string userInput = txtPwdEmp.Text;
+
+            if (IsInputValid(userInput))
             {
-                string name = txtNameEmp.Text;
-                string cccd = txtCCCDEmp.Text;
-                string sdt = txtSDTEmp.Text;
-                string sex = cbbSexEmp.Text;
-                string birth = dtBirthEmp.Text;
-                string depart = cbbDepartEmp.Text;
-                string email = txtEmailEmp.Text;
-                string level = cbbLevelEmp.Text;
-                double salary = double.Parse(txtSalary.Text);
-                string tkBank = txtNumberBank.Text;
-                string password = txtPwdEmp.Text;
-                employee empObject = new employee("", name, birth, sex, sdt, email, password, cccd, depart, tkBank, level, salary, "");
-                employeeViewModel insertNewEmp = new employeeViewModel();
-                //insertNewEmp.insertEmployee(empObject);
-                if (insertNewEmp.insertEmployee(empObject))
+                // Chuỗi hợp lệ (có ít nhất 6 ký tự)
+                // Thực hiện các xử lý khác ở đây
+                try
                 {
-                    this.Close();
+                    string name = txtNameEmp.Text;
+                    string cccd = txtCCCDEmp.Text;
+                    string sdt = txtSDTEmp.Text;
+                    string sex = cbbSexEmp.Text;
+                    string birth = dtBirthEmp.Text;
+                    string depart = cbbDepartEmp.Text;
+                    string email = txtEmailEmp.Text;
+                    string level = cbbLevelEmp.Text;
+                    double salary = double.Parse(txtSalary.Text);
+                    string tkBank = txtNumberBank.Text;
+                    string password = txtPwdEmp.Text;
+                    employee empObject = new employee("", name, birth, sex, sdt, email, password, cccd, depart, tkBank, level, salary, "");
+                    employeeViewModel insertNewEmp = new employeeViewModel();
+                    //insertNewEmp.insertEmployee(empObject);
+                    if (insertNewEmp.insertEmployee(empObject))
+                    {
+                        this.Close();
+                    }
+                    // Thực hiện các thao tác khác với dữ liệu đã nhập
                 }
-                // Thực hiện các thao tác khác với dữ liệu đã nhập
+                catch (FormatException ex)
+                {
+                    // Xử lý lỗi kiểu dữ liệu sai (ví dụ: nhập chuỗi không phải số vào salary)
+                    MessageBox.Show("Lỗi: Nhập liệu không hợp lệ. Vui lòng kiểm tra lại các trường số.");
+                }
+                catch (Exception ex)
+                {
+                    // Xử lý các lỗi khác có thể xảy ra
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
-            catch (FormatException ex)
+            else
             {
-                // Xử lý lỗi kiểu dữ liệu sai (ví dụ: nhập chuỗi không phải số vào salary)
-                MessageBox.Show("Lỗi: Nhập liệu không hợp lệ. Vui lòng kiểm tra lại các trường số.");
+                // Chuỗi không hợp lệ
+                MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPwdEmp.Focus();
             }
-            catch (Exception ex)
-            {
-                // Xử lý các lỗi khác có thể xảy ra
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
+
 
         }
 
@@ -134,5 +149,91 @@ namespace wfLeedo
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void txtCCCDEmp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCCCDEmp_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCCCDEmp.Text))
+                return;
+
+            // Kiểm tra xem nếu giá trị không phải là số
+            if (!int.TryParse(txtCCCDEmp.Text, out _))
+            {
+                MessageBox.Show("Vui lòng chỉ nhập số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCCCDEmp.Focus();
+            }
+        }
+
+        private void txtSDTEmp_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSDTEmp.Text))
+                return;
+
+            // Kiểm tra xem nếu giá trị không phải là số
+            if (!int.TryParse(txtSDTEmp.Text, out _))
+            {
+                MessageBox.Show("Vui lòng chỉ nhập số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSDTEmp.Focus();
+            }
+        }
+
+        private void txtEmailEmp_Leave(object sender, EventArgs e)
+        {
+            string emailAddress = txtEmailEmp.Text.Trim();
+
+            if (IsValidEmail(emailAddress))
+            {
+                // Email hợp lệ
+            }
+            else
+            {
+                // Email không hợp lệ
+                MessageBox.Show("Email không hợp lệ. Vui lòng kiểm tra lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmailEmp.Focus();
+            }
+        }
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                // Sử dụng biểu thức chính quy để kiểm tra định dạng email
+                var regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
+                return regex.IsMatch(email);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        private void txtNumberBank_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPwdEmp_Leave(object sender, EventArgs e)
+        {
+            string number = txtPwdEmp.Text.Trim();
+
+            if (IsInputValid(number))
+            {
+                // Email hợp lệ
+            }
+            else
+            {
+                // Email không hợp lệ
+                MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự..", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPwdEmp.Focus();
+            }
+        }
+        private bool IsInputValid(string input)
+        {
+            return input.Length >= 6;
+        }
+
     }
 }

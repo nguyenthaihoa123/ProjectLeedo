@@ -420,3 +420,14 @@ C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLee
 C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemNXKhoNVL.resources
 C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemSP.resources
 C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.uc_product.resources
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\EPPlus.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\EPPlus.Interfaces.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\EPPlus.System.Drawing.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

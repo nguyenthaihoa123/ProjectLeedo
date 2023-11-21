@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BanGiay_N11.model;
+using System.Text.RegularExpressions;
 
 namespace wfLeedo.view
 {
@@ -128,6 +129,68 @@ namespace wfLeedo.view
                 // Xử lý các lỗi khác có thể xảy ra
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+
+        private void txtNumber_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtNumber.Text))
+                return;
+
+            // Kiểm tra xem nếu giá trị không phải là số
+            if (!int.TryParse(txtNumber.Text, out _))
+            {
+                MessageBox.Show("Vui lòng chỉ nhập số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNumber.Focus();
+            }
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            string emailAddress = txtEmail.Text.Trim();
+
+            if (IsValidEmail(emailAddress))
+            {
+                // Email hợp lệ
+            }
+            else
+            {
+                // Email không hợp lệ
+                MessageBox.Show("Email không hợp lệ. Vui lòng kiểm tra lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Focus();
+            }
+        }
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                // Sử dụng biểu thức chính quy để kiểm tra định dạng email
+                var regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
+                return regex.IsMatch(email);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        private void txtPass_Leave(object sender, EventArgs e)
+        {
+            string number = txtPass.Text.Trim();
+
+            if (IsInputValid(number))
+            {
+                // Email hợp lệ
+            }
+            else
+            {
+                // Email không hợp lệ
+                MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự..", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPass.Focus();
+            }
+        }
+        private bool IsInputValid(string input)
+        {
+            return input.Length >= 6;
         }
     }
 }

@@ -124,6 +124,7 @@
             txtPwdEmp.Name = "txtPwdEmp";
             txtPwdEmp.Size = new Size(233, 25);
             txtPwdEmp.TabIndex = 21;
+            txtPwdEmp.Leave += txtPwdEmp_Leave;
             // 
             // txtNumberBank
             // 
@@ -131,6 +132,7 @@
             txtNumberBank.Name = "txtNumberBank";
             txtNumberBank.Size = new Size(233, 25);
             txtNumberBank.TabIndex = 20;
+            txtNumberBank.Leave += txtNumberBank_Leave;
             // 
             // txtSalary
             // 
@@ -145,6 +147,7 @@
             txtSDTEmp.Name = "txtSDTEmp";
             txtSDTEmp.Size = new Size(233, 25);
             txtSDTEmp.TabIndex = 13;
+            txtSDTEmp.Leave += txtSDTEmp_Leave;
             // 
             // txtCCCDEmp
             // 
@@ -152,6 +155,8 @@
             txtCCCDEmp.Name = "txtCCCDEmp";
             txtCCCDEmp.Size = new Size(233, 25);
             txtCCCDEmp.TabIndex = 12;
+            txtCCCDEmp.TextChanged += txtCCCDEmp_TextChanged;
+            txtCCCDEmp.Leave += txtCCCDEmp_Leave;
             // 
             // label1
             // 
@@ -313,6 +318,7 @@
             txtEmailEmp.Name = "txtEmailEmp";
             txtEmailEmp.Size = new Size(233, 25);
             txtEmailEmp.TabIndex = 26;
+            txtEmailEmp.Leave += txtEmailEmp_Leave;
             // 
             // btnInsertEmp
             // 
