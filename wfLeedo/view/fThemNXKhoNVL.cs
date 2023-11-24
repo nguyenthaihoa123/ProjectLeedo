@@ -15,10 +15,11 @@ namespace wfLeedo.view
 {
     public partial class fThemNXKhoNVL : Form
     {
-        string modeNX;
-        public fThemNXKhoNVL(string modeNX)
+        string mode, modeNX;
+        public fThemNXKhoNVL(string mode, string modeNX)
         {
             InitializeComponent();
+            this.mode = mode;
             this.modeNX = modeNX;
         }
 
@@ -37,12 +38,25 @@ namespace wfLeedo.view
                 cbMaKho.Items.Add(idKho);
             }
 
-            dt = new Database().SelectData("selectMaNVL", list);
-            cbMaNVL.Items.Clear();
-            foreach (DataRow r in dt.Rows)
+            if (mode == "Nguyên vật liệu")
             {
-                string idNVL = r["MaNVL"].ToString();
-                cbMaNVL.Items.Add(idNVL);
+                dt = new Database().SelectData("selectMaNVL", list);
+                cbMaNVL.Items.Clear();
+                foreach (DataRow r in dt.Rows)
+                {
+                    string idNVL = r["MaNVL"].ToString();
+                    cbMaNVL.Items.Add(idNVL);
+                }
+            }
+            else if (mode == "Sản phẩm")
+            {
+                dt = new Database().SelectData("selectMaSP", list);
+                cbMaNVL.Items.Clear();
+                foreach (DataRow r in dt.Rows)
+                {
+                    string idSP = r["MaSP"].ToString();
+                    cbMaNVL.Items.Add(idSP);
+                }
             }
 
             if (modeNX == "Nhập")
@@ -69,25 +83,52 @@ namespace wfLeedo.view
                 dtTGXuat.Value = dt;
                 if (cbMaKho.Text != "" && cbMaNVL.Text != "")
                 {
-                    nvlViewModel newNVL = new nvlViewModel();
-                    if (modeNX == "Nhập")
+                    if (mode == "Nguyên vật liệu")
                     {
-                        if (newNVL.insertNhapKhoNVL(cbMaKho.Text, cbMaNVL.Text, int.Parse(txtSLNhap.Text), 0, dtTGNhap.Value, null))
+                        nvlViewModel newNVL = new nvlViewModel();
+                        if (modeNX == "Nhập")
                         {
-                            this.Close();
+                            if (newNVL.insertNhapKhoNVL(cbMaKho.Text, cbMaNVL.Text, int.Parse(txtSLNhap.Text), 0, dtTGNhap.Value, null))
+                            {
+                                this.Close();
+                            }
                         }
-                    }
-                    else if (modeNX == "Xuất")
-                    {
+                        else if (modeNX == "Xuất")
+                        {
 
-                        int slTon = newNVL.getSLTonNVL(cbMaNVL.Text);
-                        if(slTon - int.Parse(txtSLXuat.Text) < 0)
-                        {
-                            MessageBox.Show("Vui lòng nhập lại số lượng xuất! Số lượng xuất không được lớn hơn số lượng tồn kho!");
+                            int slTon = newNVL.getSLTonNVL(cbMaNVL.Text);
+                            if(slTon - int.Parse(txtSLXuat.Text) < 0)
+                            {
+                                MessageBox.Show("Vui lòng nhập lại số lượng xuất! Số lượng xuất không được lớn hơn số lượng tồn kho!");
+                            }
+                            else if (newNVL.insertXuatKhoNVL(cbMaKho.Text, cbMaNVL.Text, 0, int.Parse(txtSLXuat.Text), null, dtTGXuat.Value))
+                            {
+                                this.Close();
+                            }
                         }
-                        else if (newNVL.insertXuatKhoNVL(cbMaKho.Text, cbMaNVL.Text, 0, int.Parse(txtSLXuat.Text), null, dtTGXuat.Value))
+                    } 
+                    else if (mode == "Sản phẩm")
+                    {
+                        productViewModel newPro = new productViewModel();
+                        if (modeNX == "Nhập")
                         {
-                            this.Close();
+                            if (newPro.insertNhapKhoSP(cbMaKho.Text, cbMaNVL.Text, int.Parse(txtSLNhap.Text), 0, dtTGNhap.Value, null))
+                            {
+                                this.Close();
+                            }
+                        }
+                        else if (modeNX == "Xuất")
+                        {
+
+                            int slTon = newPro.getSLTonSP(cbMaNVL.Text);
+                            if (slTon - int.Parse(txtSLXuat.Text) < 0)
+                            {
+                                MessageBox.Show("Vui lòng nhập lại số lượng xuất! Số lượng xuất không được lớn hơn số lượng tồn kho!");
+                            }
+                            else if (newPro.insertXuatKhoSP(cbMaKho.Text, cbMaNVL.Text, 0, int.Parse(txtSLXuat.Text), null, dtTGXuat.Value))
+                            {
+                                this.Close();
+                            }
                         }
                     }
                 }

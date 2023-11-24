@@ -197,7 +197,218 @@ namespace BanGiay_N11.viewModel
                 MessageBox.Show("Cập nhật thông tin sản phẩm thất bại!");
             }
         }
+        public DataTable dataAllKhoSP()
+        {
+            string sql = "SelectAllKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
+        public DataTable dataNhapKhoSP()
+        {
+            string sql = "selectNhapKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
+        public DataTable dataXuatKhoSP()
+        {
+            string sql = "selectXuatKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
+        public Boolean insertNhapKhoSP(string maKho, string maSP, int slNhap, int slXuat, DateTime tgNhap, DateTime? tgXuat)
+        {
+            string sql = "insertNhapKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
 
+            list.Add(new CustomParameter()
+            {
+                key = "@MaKho",
+                value = maKho
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@MaSP",
+                value = maSP
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@SL_NhapSP",
+                value = slNhap.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@SL_XuatSP",
+                value = slXuat.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@TG_NhapSP",
+                value = tgNhap.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@TG_XuatSP",
+                value = tgXuat.ToString()
+            });
+
+            var rs = new Database().ExeCute(sql, list);
+            if (rs == 1)
+            {
+                MessageBox.Show("Tạo phiếu nhập hàng mới thành công!");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Tạo phiếu nhập hàng mới thất bại!");
+                return false;
+            }
+        }
+        public Boolean insertXuatKhoSP(string maKho, string maSP, int slNhap, int slXuat, DateTime? tgNhap, DateTime tgXuat)
+        {
+            string sql = "insertXuatKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+
+            list.Add(new CustomParameter()
+            {
+                key = "@MaKho",
+                value = maKho
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@MaSP",
+                value = maSP
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@SL_NhapSP",
+                value = slNhap.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@SL_XuatSP",
+                value = slXuat.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@TG_NhapSP",
+                value = tgNhap.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@TG_XuatSP",
+                value = tgXuat.ToString()
+            });
+
+            var rs = new Database().ExeCute(sql, list);
+            if (rs == 1)
+            {
+                MessageBox.Show("Tạo phiếu xuất hàng mới thành công!");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Tạo phiếu xuất hàng mới thất bại!");
+                return false;
+            }
+        }
+        public Boolean deleteNKhoSP(DateTime? tg_nhap)
+        {
+            string sql = "deleteNhapKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+
+            list.Add(new CustomParameter()
+            {
+                key = "@tg_nhap",
+                value = tg_nhap.ToString()
+            });
+
+            var rs = new Database().ExeCute(sql, list);
+            if (rs == 1)
+            {
+                MessageBox.Show("Xóa phiếu nhập thành công!");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Xóa phiếu nhập thất bại!");
+                return false;
+            }
+        }
+        public Boolean deleteXKhoSP(DateTime? tg_xuat)
+        {
+            string sql = "deleteXuatKhoSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+
+            list.Add(new CustomParameter()
+            {
+                key = "@tg_xuat",
+                value = tg_xuat.ToString()
+            });
+
+            var rs = new Database().ExeCute(sql, list);
+            if (rs == 1)
+            {
+                MessageBox.Show("Xóa phiếu xuất thành công!");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Xóa phiếu xuất thất bại!");
+                return false;
+            }
+        }
+        public DataTable dataNKhoSPbyTime(DateTime sTime, DateTime eTime)
+        {
+            string sql = "selectNKhoSPbyTime";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@sTime",
+                value = sTime.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@eTime",
+                value = eTime.ToString()
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
+        public DataTable dataXKhoSPbyTime(DateTime sTime, DateTime eTime)
+        {
+            string sql = "selectXKhoSPbyTime";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@sTime",
+                value = sTime.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@eTime",
+                value = eTime.ToString()
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
+        public int getSLTonSP(string maSP)
+        {
+
+            string sql = "SelectSLTonSP";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@MaSP",
+                value = maSP
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+
+            var slTon = dt.Rows[0]["SL_Ton"];
+            return Convert.ToInt32(slTon);
+        }
         public string getImgPath()
         {
             string imgPath = "";

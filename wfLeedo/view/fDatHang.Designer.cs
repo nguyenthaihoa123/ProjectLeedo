@@ -97,10 +97,9 @@
             // 
             // kryptonTextBox1
             // 
-            kryptonTextBox1.Location = new Point(38, 38);
-            kryptonTextBox1.Margin = new Padding(3, 2, 3, 2);
+            kryptonTextBox1.Location = new Point(43, 51);
             kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.Size = new Size(382, 37);
+            kryptonTextBox1.Size = new Size(437, 42);
             kryptonTextBox1.StateActive.Back.Color1 = Color.White;
             kryptonTextBox1.StateActive.Border.Color1 = Color.White;
             kryptonTextBox1.StateActive.Border.Color2 = Color.White;
@@ -121,10 +120,9 @@
             panel1.Controls.Add(kryptonTextBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(0, 0, 0, 8);
-            panel1.Size = new Size(1004, 86);
+            panel1.Padding = new Padding(0, 0, 0, 11);
+            panel1.Size = new Size(1147, 115);
             panel1.TabIndex = 2;
             // 
             // iconPictureBox2
@@ -135,11 +133,10 @@
             iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             iconPictureBox2.IconColor = SystemColors.ControlText;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox2.IconSize = 61;
-            iconPictureBox2.Location = new Point(914, 9);
-            iconPictureBox2.Margin = new Padding(3, 2, 3, 2);
+            iconPictureBox2.IconSize = 81;
+            iconPictureBox2.Location = new Point(1045, 12);
             iconPictureBox2.Name = "iconPictureBox2";
-            iconPictureBox2.Size = new Size(80, 61);
+            iconPictureBox2.Size = new Size(91, 81);
             iconPictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             iconPictureBox2.TabIndex = 9;
             iconPictureBox2.TabStop = false;
@@ -148,9 +145,9 @@
             // 
             label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label7.AutoSize = true;
-            label7.Location = new Point(817, 43);
+            label7.Location = new Point(934, 57);
             label7.Name = "label7";
-            label7.Size = new Size(43, 15);
+            label7.Size = new Size(53, 20);
             label7.TabIndex = 8;
             label7.Text = "Admin";
             // 
@@ -159,19 +156,18 @@
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(767, 24);
+            label6.Location = new Point(877, 32);
             label6.Name = "label6";
-            label6.Size = new Size(124, 20);
+            label6.Size = new Size(154, 25);
             label6.TabIndex = 7;
             label6.Text = "Nguyen Thang";
             // 
             // kryptonButton1
             // 
             kryptonButton1.CornerRoundingRadius = 10F;
-            kryptonButton1.Location = new Point(424, 38);
-            kryptonButton1.Margin = new Padding(3, 2, 3, 2);
+            kryptonButton1.Location = new Point(485, 51);
             kryptonButton1.Name = "kryptonButton1";
-            kryptonButton1.Size = new Size(66, 32);
+            kryptonButton1.Size = new Size(75, 43);
             kryptonButton1.StateCommon.Back.Color1 = Color.White;
             kryptonButton1.StateCommon.Back.Color2 = Color.White;
             kryptonButton1.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
@@ -184,10 +180,9 @@
             // panel2
             // 
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 86);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(0, 115);
             panel2.Name = "panel2";
-            panel2.Size = new Size(33, 473);
+            panel2.Size = new Size(38, 630);
             panel2.TabIndex = 3;
             // 
             // panel3
@@ -195,11 +190,10 @@
             panel3.Controls.Add(pnfHoaDon2);
             panel3.Controls.Add(pnfHoaDon1);
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(610, 86);
-            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Location = new Point(697, 115);
             panel3.Name = "panel3";
-            panel3.Padding = new Padding(18, 0, 4, 4);
-            panel3.Size = new Size(394, 473);
+            panel3.Padding = new Padding(21, 0, 5, 5);
+            panel3.Size = new Size(450, 630);
             panel3.TabIndex = 4;
             // 
             // pnfHoaDon2
@@ -207,12 +201,11 @@
             pnfHoaDon2.Controls.Add(panel4);
             pnfHoaDon2.Controls.Add(dgvDonHangChiTiet);
             pnfHoaDon2.Dock = DockStyle.Fill;
-            pnfHoaDon2.Location = new Point(18, 66);
-            pnfHoaDon2.Margin = new Padding(3, 2, 3, 2);
+            pnfHoaDon2.Location = new Point(21, 88);
             pnfHoaDon2.Name = "pnfHoaDon2";
-            pnfHoaDon2.Padding = new Padding(9, 0, 9, 8);
+            pnfHoaDon2.Padding = new Padding(10, 0, 10, 11);
             pnfHoaDon2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            pnfHoaDon2.Size = new Size(372, 403);
+            pnfHoaDon2.Size = new Size(424, 537);
             pnfHoaDon2.TabIndex = 1;
             // 
             // panel4
@@ -224,10 +217,9 @@
             panel4.Controls.Add(lbShowTotal);
             panel4.Controls.Add(label8);
             panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(9, 290);
-            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Location = new Point(10, 386);
             panel4.Name = "panel4";
-            panel4.Size = new Size(354, 105);
+            panel4.Size = new Size(404, 140);
             panel4.TabIndex = 1;
             // 
             // lbShowVoucher
@@ -235,9 +227,9 @@
             lbShowVoucher.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lbShowVoucher.AutoSize = true;
             lbShowVoucher.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbShowVoucher.Location = new Point(88, 60);
+            lbShowVoucher.Location = new Point(100, 80);
             lbShowVoucher.Name = "lbShowVoucher";
-            lbShowVoucher.Size = new Size(18, 20);
+            lbShowVoucher.Size = new Size(23, 25);
             lbShowVoucher.TabIndex = 13;
             lbShowVoucher.Text = "0";
             // 
@@ -246,9 +238,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.DimGray;
-            label2.Location = new Point(15, 60);
+            label2.Location = new Point(17, 80);
             label2.Name = "label2";
-            label2.Size = new Size(80, 18);
+            label2.Size = new Size(98, 24);
             label2.TabIndex = 12;
             label2.Text = "Đã giảm: ";
             // 
@@ -261,10 +253,9 @@
             btnThanhToan.IconColor = Color.White;
             btnThanhToan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnThanhToan.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThanhToan.Location = new Point(196, 57);
-            btnThanhToan.Margin = new Padding(3, 2, 3, 2);
+            btnThanhToan.Location = new Point(224, 76);
             btnThanhToan.Name = "btnThanhToan";
-            btnThanhToan.Size = new Size(158, 46);
+            btnThanhToan.Size = new Size(181, 61);
             btnThanhToan.TabIndex = 11;
             btnThanhToan.Text = "Thanh toán";
             btnThanhToan.TextAlign = ContentAlignment.MiddleRight;
@@ -277,9 +268,9 @@
             lbShowTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lbShowTotal.AutoSize = true;
             lbShowTotal.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lbShowTotal.Location = new Point(130, 19);
+            lbShowTotal.Location = new Point(148, 25);
             lbShowTotal.Name = "lbShowTotal";
-            lbShowTotal.Size = new Size(75, 24);
+            lbShowTotal.Size = new Size(97, 29);
             lbShowTotal.TabIndex = 10;
             lbShowTotal.Text = "500.000";
             // 
@@ -288,9 +279,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.DimGray;
-            label8.Location = new Point(15, 19);
+            label8.Location = new Point(17, 25);
             label8.Name = "label8";
-            label8.Size = new Size(124, 24);
+            label8.Size = new Size(152, 29);
             label8.TabIndex = 0;
             label8.Text = "Tổng cộng: ";
             // 
@@ -300,15 +291,14 @@
             dgvDonHangChiTiet.ColumnHeadersHeight = 36;
             dgvDonHangChiTiet.Columns.AddRange(new DataGridViewColumn[] { name, SL, money });
             dgvDonHangChiTiet.Dock = DockStyle.Fill;
-            dgvDonHangChiTiet.Location = new Point(9, 0);
-            dgvDonHangChiTiet.Margin = new Padding(3, 2, 3, 2);
+            dgvDonHangChiTiet.Location = new Point(10, 0);
             dgvDonHangChiTiet.MultiSelect = false;
             dgvDonHangChiTiet.Name = "dgvDonHangChiTiet";
             dgvDonHangChiTiet.ReadOnly = true;
             dgvDonHangChiTiet.RowHeadersWidth = 51;
             dgvDonHangChiTiet.RowTemplate.Height = 29;
             dgvDonHangChiTiet.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDonHangChiTiet.Size = new Size(354, 395);
+            dgvDonHangChiTiet.Size = new Size(404, 526);
             dgvDonHangChiTiet.TabIndex = 0;
             dgvDonHangChiTiet.CellDoubleClick += dgvDonHangChiTiet_CellDoubleClick;
             // 
@@ -316,6 +306,7 @@
             // 
             name.DataPropertyName = "TenSP";
             name.HeaderText = "Tên SP";
+            name.MinimumWidth = 6;
             name.Name = "name";
             name.ReadOnly = true;
             // 
@@ -323,6 +314,7 @@
             // 
             SL.DataPropertyName = "SoLuong";
             SL.HeaderText = "Số Lượng";
+            SL.MinimumWidth = 6;
             SL.Name = "SL";
             SL.ReadOnly = true;
             // 
@@ -330,6 +322,7 @@
             // 
             money.DataPropertyName = "TongBill";
             money.HeaderText = "Tiền";
+            money.MinimumWidth = 6;
             money.Name = "money";
             money.ReadOnly = true;
             // 
@@ -342,14 +335,13 @@
             pnfHoaDon1.Controls.Add(lbMaDH);
             pnfHoaDon1.Controls.Add(label1);
             pnfHoaDon1.Dock = DockStyle.Top;
-            pnfHoaDon1.Location = new Point(18, 0);
-            pnfHoaDon1.Margin = new Padding(3, 2, 3, 2);
+            pnfHoaDon1.Location = new Point(21, 0);
             pnfHoaDon1.Name = "pnfHoaDon1";
-            pnfHoaDon1.Padding = new Padding(4);
+            pnfHoaDon1.Padding = new Padding(5, 5, 5, 5);
             pnfHoaDon1.Palette = kryptonPalette1;
             pnfHoaDon1.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             pnfHoaDon1.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelCustom1;
-            pnfHoaDon1.Size = new Size(372, 66);
+            pnfHoaDon1.Size = new Size(424, 88);
             pnfHoaDon1.TabIndex = 0;
             // 
             // iconPictureBox1
@@ -359,11 +351,10 @@
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
             iconPictureBox1.IconColor = Color.White;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 30;
-            iconPictureBox1.Location = new Point(320, 21);
-            iconPictureBox1.Margin = new Padding(3, 2, 3, 2);
+            iconPictureBox1.IconSize = 40;
+            iconPictureBox1.Location = new Point(365, 28);
             iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(35, 30);
+            iconPictureBox1.Size = new Size(40, 40);
             iconPictureBox1.TabIndex = 5;
             iconPictureBox1.TabStop = false;
             // 
@@ -373,9 +364,9 @@
             lbDateBill.BackColor = Color.Transparent;
             lbDateBill.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbDateBill.ForeColor = SystemColors.ActiveBorder;
-            lbDateBill.Location = new Point(199, 4);
+            lbDateBill.Location = new Point(227, 5);
             lbDateBill.Name = "lbDateBill";
-            lbDateBill.Size = new Size(99, 20);
+            lbDateBill.Size = new Size(122, 25);
             lbDateBill.TabIndex = 4;
             lbDateBill.Text = "10/10/2023";
             // 
@@ -386,9 +377,9 @@
             lbNameCus.BackColor = Color.Transparent;
             lbNameCus.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lbNameCus.ForeColor = Color.White;
-            lbNameCus.Location = new Point(59, 32);
+            lbNameCus.Location = new Point(67, 43);
             lbNameCus.Name = "lbNameCus";
-            lbNameCus.Size = new Size(131, 20);
+            lbNameCus.Size = new Size(165, 25);
             lbNameCus.TabIndex = 3;
             lbNameCus.Text = "Nguyễn Thái Hòa";
             // 
@@ -398,9 +389,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(7, 32);
+            label3.Location = new Point(8, 43);
             label3.Name = "label3";
-            label3.Size = new Size(40, 20);
+            label3.Size = new Size(53, 25);
             label3.TabIndex = 2;
             label3.Text = "Tên:";
             // 
@@ -410,9 +401,9 @@
             lbMaDH.BackColor = Color.Transparent;
             lbMaDH.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             lbMaDH.ForeColor = Color.White;
-            lbMaDH.Location = new Point(139, 8);
+            lbMaDH.Location = new Point(159, 11);
             lbMaDH.Name = "lbMaDH";
-            lbMaDH.Size = new Size(40, 17);
+            lbMaDH.Size = new Size(45, 20);
             lbMaDH.TabIndex = 1;
             lbMaDH.Text = "5151";
             // 
@@ -422,9 +413,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(7, 4);
+            label1.Location = new Point(8, 5);
             label1.Name = "label1";
-            label1.Size = new Size(118, 20);
+            label1.Size = new Size(145, 25);
             label1.TabIndex = 0;
             label1.Text = "Mã đơn hàng:";
             // 
@@ -444,13 +435,12 @@
             // 
             kryptonPanel1.Controls.Add(pnfSanPham);
             kryptonPanel1.Dock = DockStyle.Fill;
-            kryptonPanel1.Location = new Point(33, 86);
-            kryptonPanel1.Margin = new Padding(3, 2, 3, 2);
+            kryptonPanel1.Location = new Point(38, 115);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Padding = new Padding(4);
+            kryptonPanel1.Padding = new Padding(5, 5, 5, 5);
             kryptonPanel1.Palette = kryptonPalette1;
             kryptonPanel1.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
-            kryptonPanel1.Size = new Size(577, 473);
+            kryptonPanel1.Size = new Size(659, 630);
             kryptonPanel1.TabIndex = 5;
             // 
             // pnfSanPham
@@ -463,21 +453,19 @@
             pnfSanPham.Controls.Add(kryptonTableLayoutPanel1);
             pnfSanPham.Controls.Add(label10);
             pnfSanPham.Dock = DockStyle.Fill;
-            pnfSanPham.Location = new Point(4, 4);
-            pnfSanPham.Margin = new Padding(3, 2, 3, 2);
+            pnfSanPham.Location = new Point(5, 5);
             pnfSanPham.Name = "pnfSanPham";
             pnfSanPham.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            pnfSanPham.Size = new Size(569, 465);
+            pnfSanPham.Size = new Size(649, 620);
             pnfSanPham.TabIndex = 0;
             // 
             // btnInsertItemToBill
             // 
             btnInsertItemToBill.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnInsertItemToBill.CornerRoundingRadius = 10F;
-            btnInsertItemToBill.Location = new Point(131, 416);
-            btnInsertItemToBill.Margin = new Padding(3, 2, 3, 2);
+            btnInsertItemToBill.Location = new Point(150, 555);
             btnInsertItemToBill.Name = "btnInsertItemToBill";
-            btnInsertItemToBill.Size = new Size(169, 41);
+            btnInsertItemToBill.Size = new Size(193, 55);
             btnInsertItemToBill.StateCommon.Back.Color1 = Color.FromArgb(255, 76, 32);
             btnInsertItemToBill.StateCommon.Back.Color2 = Color.FromArgb(255, 76, 32);
             btnInsertItemToBill.StateCommon.Border.Color1 = Color.FromArgb(255, 128, 0);
@@ -505,10 +493,9 @@
             // 
             btnDeleteInfoSp.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnDeleteInfoSp.CornerRoundingRadius = 10F;
-            btnDeleteInfoSp.Location = new Point(312, 416);
-            btnDeleteInfoSp.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteInfoSp.Location = new Point(357, 555);
             btnDeleteInfoSp.Name = "btnDeleteInfoSp";
-            btnDeleteInfoSp.Size = new Size(169, 41);
+            btnDeleteInfoSp.Size = new Size(193, 55);
             btnDeleteInfoSp.StateCommon.Back.Color1 = Color.White;
             btnDeleteInfoSp.StateCommon.Back.Color2 = Color.White;
             btnDeleteInfoSp.StateCommon.Border.Color1 = Color.FromArgb(255, 128, 0);
@@ -537,9 +524,9 @@
             lbShowSLTonKho.AutoSize = true;
             lbShowSLTonKho.BackColor = Color.Transparent;
             lbShowSLTonKho.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbShowSLTonKho.Location = new Point(312, 345);
+            lbShowSLTonKho.Location = new Point(357, 460);
             lbShowSLTonKho.Name = "lbShowSLTonKho";
-            lbShowSLTonKho.Size = new Size(27, 20);
+            lbShowSLTonKho.Size = new Size(34, 25);
             lbShowSLTonKho.TabIndex = 11;
             lbShowSLTonKho.Text = "15";
             lbShowSLTonKho.Click += lbShowSLTonKho_Click;
@@ -549,9 +536,9 @@
             label17.AutoSize = true;
             label17.BackColor = Color.Transparent;
             label17.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(159, 344);
+            label17.Location = new Point(182, 459);
             label17.Name = "label17";
-            label17.Size = new Size(135, 20);
+            label17.Size = new Size(169, 25);
             label17.TabIndex = 9;
             label17.Text = "Số lượng hiện có: ";
             // 
@@ -564,10 +551,9 @@
             btnCheckInfo.IconColor = Color.White;
             btnCheckInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCheckInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCheckInfo.Location = new Point(25, 342);
-            btnCheckInfo.Margin = new Padding(3, 2, 3, 2);
+            btnCheckInfo.Location = new Point(29, 456);
             btnCheckInfo.Name = "btnCheckInfo";
-            btnCheckInfo.Size = new Size(108, 34);
+            btnCheckInfo.Size = new Size(123, 45);
             btnCheckInfo.TabIndex = 8;
             btnCheckInfo.Text = "Kiểm tra";
             btnCheckInfo.TextAlign = ContentAlignment.MiddleRight;
@@ -594,8 +580,7 @@
             kryptonTableLayoutPanel1.Controls.Add(txtPriceSp, 1, 3);
             kryptonTableLayoutPanel1.Controls.Add(txtSizeSp, 1, 4);
             kryptonTableLayoutPanel1.Controls.Add(txtSLSp, 1, 5);
-            kryptonTableLayoutPanel1.Location = new Point(25, 74);
-            kryptonTableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            kryptonTableLayoutPanel1.Location = new Point(29, 99);
             kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             kryptonTableLayoutPanel1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             kryptonTableLayoutPanel1.RowCount = 6;
@@ -605,7 +590,7 @@
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666641F));
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666641F));
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6666641F));
-            kryptonTableLayoutPanel1.Size = new Size(402, 251);
+            kryptonTableLayoutPanel1.Size = new Size(458, 335);
             kryptonTableLayoutPanel1.TabIndex = 7;
             // 
             // label11
@@ -615,7 +600,7 @@
             label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label11.Location = new Point(3, 0);
             label11.Name = "label11";
-            label11.Size = new Size(93, 19);
+            label11.Size = new Size(114, 23);
             label11.TabIndex = 1;
             label11.Text = "Mã sản phẩm";
             // 
@@ -624,9 +609,9 @@
             label12.AutoSize = true;
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(3, 41);
+            label12.Location = new Point(3, 55);
             label12.Name = "label12";
-            label12.Size = new Size(94, 19);
+            label12.Size = new Size(116, 23);
             label12.TabIndex = 2;
             label12.Text = "Tên sản phẩm";
             // 
@@ -635,9 +620,9 @@
             label16.AutoSize = true;
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.Location = new Point(3, 205);
+            label16.Location = new Point(3, 275);
             label16.Name = "label16";
-            label16.Size = new Size(63, 19);
+            label16.Size = new Size(78, 23);
             label16.TabIndex = 6;
             label16.Text = "Số lượng";
             // 
@@ -646,9 +631,9 @@
             label13.AutoSize = true;
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(3, 82);
+            label13.Location = new Point(3, 110);
             label13.Name = "label13";
-            label13.Size = new Size(98, 19);
+            label13.Size = new Size(121, 23);
             label13.TabIndex = 3;
             label13.Text = "Loại sản phẩm";
             // 
@@ -657,9 +642,9 @@
             label15.AutoSize = true;
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(3, 164);
+            label15.Location = new Point(3, 220);
             label15.Name = "label15";
-            label15.Size = new Size(32, 19);
+            label15.Size = new Size(40, 23);
             label15.TabIndex = 5;
             label15.Text = "Size";
             // 
@@ -668,9 +653,9 @@
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(3, 123);
+            label14.Location = new Point(3, 165);
             label14.Name = "label14";
-            label14.Size = new Size(29, 19);
+            label14.Size = new Size(35, 23);
             label14.TabIndex = 4;
             label14.Text = "Giá";
             // 
@@ -680,10 +665,9 @@
             txtIDSp.BackColor = Color.LightGray;
             txtIDSp.BorderStyle = BorderStyle.None;
             txtIDSp.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtIDSp.Location = new Point(123, 2);
-            txtIDSp.Margin = new Padding(3, 2, 3, 2);
+            txtIDSp.Location = new Point(140, 3);
             txtIDSp.Name = "txtIDSp";
-            txtIDSp.Size = new Size(276, 29);
+            txtIDSp.Size = new Size(315, 36);
             txtIDSp.TabIndex = 7;
             // 
             // txtNameSp
@@ -692,10 +676,9 @@
             txtNameSp.BackColor = Color.LightGray;
             txtNameSp.BorderStyle = BorderStyle.None;
             txtNameSp.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNameSp.Location = new Point(123, 43);
-            txtNameSp.Margin = new Padding(3, 2, 3, 2);
+            txtNameSp.Location = new Point(140, 58);
             txtNameSp.Name = "txtNameSp";
-            txtNameSp.Size = new Size(276, 29);
+            txtNameSp.Size = new Size(315, 36);
             txtNameSp.TabIndex = 8;
             // 
             // txtTypeSp
@@ -704,10 +687,9 @@
             txtTypeSp.BackColor = Color.LightGray;
             txtTypeSp.BorderStyle = BorderStyle.None;
             txtTypeSp.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTypeSp.Location = new Point(123, 84);
-            txtTypeSp.Margin = new Padding(3, 2, 3, 2);
+            txtTypeSp.Location = new Point(140, 113);
             txtTypeSp.Name = "txtTypeSp";
-            txtTypeSp.Size = new Size(276, 29);
+            txtTypeSp.Size = new Size(315, 36);
             txtTypeSp.TabIndex = 9;
             // 
             // txtPriceSp
@@ -716,10 +698,9 @@
             txtPriceSp.BackColor = Color.LightGray;
             txtPriceSp.BorderStyle = BorderStyle.None;
             txtPriceSp.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPriceSp.Location = new Point(123, 125);
-            txtPriceSp.Margin = new Padding(3, 2, 3, 2);
+            txtPriceSp.Location = new Point(140, 168);
             txtPriceSp.Name = "txtPriceSp";
-            txtPriceSp.Size = new Size(276, 29);
+            txtPriceSp.Size = new Size(315, 36);
             txtPriceSp.TabIndex = 10;
             // 
             // txtSizeSp
@@ -727,10 +708,9 @@
             txtSizeSp.BackColor = Color.LightGray;
             txtSizeSp.BorderStyle = BorderStyle.None;
             txtSizeSp.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSizeSp.Location = new Point(123, 166);
-            txtSizeSp.Margin = new Padding(3, 2, 3, 2);
+            txtSizeSp.Location = new Point(140, 223);
             txtSizeSp.Name = "txtSizeSp";
-            txtSizeSp.Size = new Size(141, 29);
+            txtSizeSp.Size = new Size(161, 36);
             txtSizeSp.TabIndex = 11;
             // 
             // txtSLSp
@@ -738,10 +718,9 @@
             txtSLSp.BackColor = Color.LightGray;
             txtSLSp.BorderStyle = BorderStyle.None;
             txtSLSp.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSLSp.Location = new Point(123, 207);
-            txtSLSp.Margin = new Padding(3, 2, 3, 2);
+            txtSLSp.Location = new Point(140, 278);
             txtSLSp.Name = "txtSLSp";
-            txtSLSp.Size = new Size(141, 29);
+            txtSLSp.Size = new Size(161, 36);
             txtSLSp.TabIndex = 12;
             // 
             // label10
@@ -749,24 +728,23 @@
             label10.AutoSize = true;
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(25, 26);
+            label10.Location = new Point(29, 35);
             label10.Name = "label10";
-            label10.Size = new Size(196, 24);
+            label10.Size = new Size(242, 29);
             label10.TabIndex = 0;
             label10.Text = "Thông tin sản phẩm";
             // 
             // fDatHang
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 255);
-            ClientSize = new Size(1004, 559);
+            ClientSize = new Size(1147, 745);
             Controls.Add(kryptonPanel1);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "fDatHang";
             Text = "fDonHang";
             Load += fDatHang_Load;

@@ -31,18 +31,18 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel2 = new Panel();
             panel1 = new Panel();
             txtPwd = new Krypton.Toolkit.KryptonTextBox();
+            exitBtn = new Krypton.Toolkit.KryptonButton();
             txtUsername = new Krypton.Toolkit.KryptonTextBox();
             btnLogin = new Krypton.Toolkit.KryptonButton();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
@@ -83,7 +83,7 @@
             kryptonPanel1.Controls.Add(panel2);
             kryptonPanel1.Controls.Add(panel1);
             kryptonPanel1.Controls.Add(txtPwd);
-            kryptonPanel1.Controls.Add(kryptonButton2);
+            kryptonPanel1.Controls.Add(exitBtn);
             kryptonPanel1.Controls.Add(txtUsername);
             kryptonPanel1.Controls.Add(btnLogin);
             kryptonPanel1.Controls.Add(iconPictureBox3);
@@ -96,6 +96,28 @@
             kryptonPanel1.Size = new Size(511, 653);
             kryptonPanel1.StateCommon.Color1 = Color.FromArgb(240, 101, 57);
             kryptonPanel1.TabIndex = 2;
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.Location = new Point(101, 352);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(84, 27);
+            guna2HtmlLabel2.TabIndex = 12;
+            guna2HtmlLabel2.Text = "Mật khẩu";
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.Location = new Point(101, 267);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(136, 27);
+            guna2HtmlLabel1.TabIndex = 11;
+            guna2HtmlLabel1.Text = "Tên đăng nhập";
             // 
             // panel2
             // 
@@ -128,6 +150,30 @@
             txtPwd.StateActive.Content.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtPwd.TabIndex = 2;
             txtPwd.UseSystemPasswordChar = true;
+            // 
+            // exitBtn
+            // 
+            exitBtn.CornerRoundingRadius = 15F;
+            exitBtn.Location = new Point(38, 484);
+            exitBtn.Name = "exitBtn";
+            exitBtn.Size = new Size(165, 69);
+            exitBtn.StateCommon.Back.Color1 = Color.FromArgb(240, 101, 57);
+            exitBtn.StateCommon.Back.Color2 = Color.FromArgb(240, 101, 57);
+            exitBtn.StateCommon.Border.Color1 = Color.White;
+            exitBtn.StateCommon.Border.Color2 = Color.White;
+            exitBtn.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            exitBtn.StateCommon.Border.Rounding = 15F;
+            exitBtn.StateCommon.Border.Width = 2;
+            exitBtn.StateCommon.Content.ShortText.Color1 = Color.White;
+            exitBtn.StateCommon.Content.ShortText.Color2 = Color.White;
+            exitBtn.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            exitBtn.StatePressed.Back.Color1 = Color.White;
+            exitBtn.StatePressed.Back.Color2 = Color.White;
+            exitBtn.StatePressed.Content.ShortText.Color1 = Color.FromArgb(255, 128, 0);
+            exitBtn.StatePressed.Content.ShortText.Color2 = Color.FromArgb(255, 128, 0);
+            exitBtn.TabIndex = 4;
+            exitBtn.Values.Text = "Hủy";
+            exitBtn.Click += exitBtn_Click;
             // 
             // txtUsername
             // 
@@ -224,51 +270,6 @@
             iconPictureBox1.TabIndex = 0;
             iconPictureBox1.TabStop = false;
             // 
-            // guna2HtmlLabel1
-            // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(101, 267);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(136, 27);
-            guna2HtmlLabel1.TabIndex = 11;
-            guna2HtmlLabel1.Text = "Tên đăng nhập";
-            // 
-            // guna2HtmlLabel2
-            // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(101, 352);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(84, 27);
-            guna2HtmlLabel2.TabIndex = 12;
-            guna2HtmlLabel2.Text = "Mật khẩu";
-            // 
-            // kryptonButton2
-            // 
-            kryptonButton2.CornerRoundingRadius = 15F;
-            kryptonButton2.Location = new Point(38, 484);
-            kryptonButton2.Name = "kryptonButton2";
-            kryptonButton2.Size = new Size(165, 69);
-            kryptonButton2.StateCommon.Back.Color1 = Color.FromArgb(240, 101, 57);
-            kryptonButton2.StateCommon.Back.Color2 = Color.FromArgb(240, 101, 57);
-            kryptonButton2.StateCommon.Border.Color1 = Color.White;
-            kryptonButton2.StateCommon.Border.Color2 = Color.White;
-            kryptonButton2.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
-            kryptonButton2.StateCommon.Border.Rounding = 15F;
-            kryptonButton2.StateCommon.Border.Width = 2;
-            kryptonButton2.StateCommon.Content.ShortText.Color1 = Color.White;
-            kryptonButton2.StateCommon.Content.ShortText.Color2 = Color.White;
-            kryptonButton2.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            kryptonButton2.StatePressed.Back.Color1 = Color.White;
-            kryptonButton2.StatePressed.Back.Color2 = Color.White;
-            kryptonButton2.StatePressed.Content.ShortText.Color1 = Color.FromArgb(255, 128, 0);
-            kryptonButton2.StatePressed.Content.ShortText.Color2 = Color.FromArgb(255, 128, 0);
-            kryptonButton2.TabIndex = 4;
-            kryptonButton2.Values.Text = "Hủy";
-            // 
             // fLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -317,6 +318,6 @@
         private Panel panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Krypton.Toolkit.KryptonButton kryptonButton2;
+        private Krypton.Toolkit.KryptonButton exitBtn;
     }
 }

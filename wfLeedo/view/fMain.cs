@@ -54,11 +54,11 @@ namespace wfLeedo
             {
                 btnDonHang.Enabled = false;
             }
-            if(chucvu == "Chuyên viên chăm sóc khách hàng"||chucvu== "Chuyên viên tư vấn sản phẩm")
+            else if(chucvu == "Chuyên viên chăm sóc khách hàng"||chucvu== "Chuyên viên tư vấn sản phẩm")
             {
                 btnQuanLy.Enabled = false;
             }
-            else
+            else if(chucvu == "Quản trị viên")
             {
                 btnDonHang.Enabled = true;
                 btnQuanLy.Enabled = true;
@@ -72,7 +72,7 @@ namespace wfLeedo
 
         private void btnQuanLy_Click(object sender, EventArgs e)
         {
-            fquanly = new fQuanLy();
+            fquanly = new fQuanLy(idNV);
             openPanel(fquanly);
         }
 

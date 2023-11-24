@@ -32,6 +32,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -43,10 +45,9 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             cbb_year = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             cbb_topic = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -58,7 +59,6 @@
             toggleMonth = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             dgvDoanhThu = new Guna.UI2.WinForms.Guna2DataGridView();
             lbFilter = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
             guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvDoanhThu).BeginInit();
             SuspendLayout();
@@ -76,11 +76,11 @@
             cbb_year.ForeColor = Color.White;
             cbb_year.ItemHeight = 30;
             cbb_year.Items.AddRange(new object[] { "2023", "2022", "2021", "2020" });
-            cbb_year.Location = new Point(10, 38);
-            cbb_year.Margin = new Padding(3, 2, 3, 2);
+            cbb_year.Location = new Point(11, 51);
             cbb_year.Name = "cbb_year";
             cbb_year.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            cbb_year.Size = new Size(112, 36);
+            cbb_year.Size = new Size(127, 36);
+            cbb_year.StartIndex = 0;
             cbb_year.TabIndex = 0;
             // 
             // guna2GradientPanel2
@@ -99,21 +99,39 @@
             guna2GradientPanel2.CustomizableEdges = customizableEdges13;
             guna2GradientPanel2.Dock = DockStyle.Top;
             guna2GradientPanel2.Location = new Point(0, 0);
-            guna2GradientPanel2.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel2.Name = "guna2GradientPanel2";
             guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2GradientPanel2.Size = new Size(756, 84);
+            guna2GradientPanel2.Size = new Size(864, 112);
             guna2GradientPanel2.TabIndex = 2;
+            // 
+            // btnExportExcel
+            // 
+            btnExportExcel.BorderRadius = 30;
+            btnExportExcel.CustomizableEdges = customizableEdges3;
+            btnExportExcel.DisabledState.BorderColor = Color.DarkGray;
+            btnExportExcel.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnExportExcel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnExportExcel.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExportExcel.FillColor = Color.Tomato;
+            btnExportExcel.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExportExcel.ForeColor = Color.White;
+            btnExportExcel.Image = Properties.Resources.line_chart;
+            btnExportExcel.Location = new Point(681, 79);
+            btnExportExcel.Name = "btnExportExcel";
+            btnExportExcel.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnExportExcel.Size = new Size(142, 33);
+            btnExportExcel.TabIndex = 12;
+            btnExportExcel.Text = "Xuất thống kê";
+            btnExportExcel.Click += btnExportExcel_Click;
             // 
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel5.ForeColor = Color.White;
-            guna2HtmlLabel5.Location = new Point(387, 16);
-            guna2HtmlLabel5.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel5.Location = new Point(442, 21);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(47, 21);
+            guna2HtmlLabel5.Size = new Size(58, 24);
             guna2HtmlLabel5.TabIndex = 11;
             guna2HtmlLabel5.Text = "Chủ đề";
             // 
@@ -122,8 +140,7 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.White;
-            guna2HtmlLabel4.Location = new Point(409, 16);
-            guna2HtmlLabel4.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel4.Location = new Point(467, 21);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(3, 2);
             guna2HtmlLabel4.TabIndex = 10;
@@ -142,11 +159,11 @@
             cbb_topic.ForeColor = Color.Black;
             cbb_topic.ItemHeight = 30;
             cbb_topic.Items.AddRange(new object[] { "Doanh thu", "Chi tiêu", "Lợi nhuận" });
-            cbb_topic.Location = new Point(387, 40);
-            cbb_topic.Margin = new Padding(3, 2, 3, 2);
+            cbb_topic.Location = new Point(442, 53);
             cbb_topic.Name = "cbb_topic";
             cbb_topic.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            cbb_topic.Size = new Size(134, 36);
+            cbb_topic.Size = new Size(153, 36);
+            cbb_topic.StartIndex = 0;
             cbb_topic.TabIndex = 9;
             // 
             // guna2HtmlLabel3
@@ -154,10 +171,9 @@
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.White;
-            guna2HtmlLabel3.Location = new Point(242, 18);
-            guna2HtmlLabel3.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel3.Location = new Point(277, 24);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(40, 21);
+            guna2HtmlLabel3.Size = new Size(51, 24);
             guna2HtmlLabel3.TabIndex = 8;
             guna2HtmlLabel3.Text = "Tháng";
             // 
@@ -166,10 +182,9 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(138, 16);
-            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel1.Location = new Point(158, 21);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(71, 21);
+            guna2HtmlLabel1.Size = new Size(90, 24);
             guna2HtmlLabel1.TabIndex = 7;
             guna2HtmlLabel1.Text = "Từng tháng";
             // 
@@ -178,10 +193,9 @@
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(10, 16);
-            guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel2.Location = new Point(11, 21);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(33, 21);
+            guna2HtmlLabel2.Size = new Size(40, 24);
             guna2HtmlLabel2.TabIndex = 6;
             guna2HtmlLabel2.Text = "Năm";
             // 
@@ -197,11 +211,10 @@
             btnThongKe.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnThongKe.ForeColor = Color.White;
             btnThongKe.Image = Properties.Resources.line_chart;
-            btnThongKe.Location = new Point(565, 11);
-            btnThongKe.Margin = new Padding(3, 2, 3, 2);
+            btnThongKe.Location = new Point(646, 15);
             btnThongKe.Name = "btnThongKe";
             btnThongKe.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnThongKe.Size = new Size(180, 42);
+            btnThongKe.Size = new Size(206, 56);
             btnThongKe.TabIndex = 5;
             btnThongKe.Text = "Thống kê";
             btnThongKe.Click += btnThongKe_Click;
@@ -219,11 +232,11 @@
             cbb_month.ForeColor = Color.White;
             cbb_month.ItemHeight = 30;
             cbb_month.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" });
-            cbb_month.Location = new Point(242, 40);
-            cbb_month.Margin = new Padding(3, 2, 3, 2);
+            cbb_month.Location = new Point(277, 53);
             cbb_month.Name = "cbb_month";
             cbb_month.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            cbb_month.Size = new Size(112, 36);
+            cbb_month.Size = new Size(127, 36);
+            cbb_month.StartIndex = 0;
             cbb_month.TabIndex = 3;
             // 
             // toggleMonth
@@ -233,11 +246,10 @@
             toggleMonth.CheckedState.InnerBorderColor = Color.White;
             toggleMonth.CheckedState.InnerColor = Color.White;
             toggleMonth.CustomizableEdges = customizableEdges11;
-            toggleMonth.Location = new Point(138, 46);
-            toggleMonth.Margin = new Padding(3, 2, 3, 2);
+            toggleMonth.Location = new Point(158, 61);
             toggleMonth.Name = "toggleMonth";
             toggleMonth.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            toggleMonth.Size = new Size(38, 19);
+            toggleMonth.Size = new Size(43, 25);
             toggleMonth.TabIndex = 1;
             toggleMonth.UncheckedState.BorderColor = Color.FromArgb(224, 224, 224);
             toggleMonth.UncheckedState.FillColor = Color.LightGray;
@@ -271,13 +283,12 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvDoanhThu.DefaultCellStyle = dataGridViewCellStyle3;
             dgvDoanhThu.GridColor = Color.FromArgb(254, 203, 186);
-            dgvDoanhThu.Location = new Point(10, 121);
-            dgvDoanhThu.Margin = new Padding(3, 2, 3, 2);
+            dgvDoanhThu.Location = new Point(11, 161);
             dgvDoanhThu.Name = "dgvDoanhThu";
             dgvDoanhThu.RowHeadersVisible = false;
             dgvDoanhThu.RowHeadersWidth = 51;
             dgvDoanhThu.RowTemplate.Height = 29;
-            dgvDoanhThu.Size = new Size(735, 329);
+            dgvDoanhThu.Size = new Size(840, 439);
             dgvDoanhThu.TabIndex = 3;
             dgvDoanhThu.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.DeepOrange;
             dgvDoanhThu.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(254, 205, 189);
@@ -308,45 +319,22 @@
             lbFilter.BackColor = Color.Transparent;
             lbFilter.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbFilter.ForeColor = Color.Orange;
-            lbFilter.Location = new Point(10, 88);
-            lbFilter.Margin = new Padding(3, 2, 3, 2);
+            lbFilter.Location = new Point(11, 117);
             lbFilter.Name = "lbFilter";
             lbFilter.Size = new Size(3, 2);
             lbFilter.TabIndex = 4;
             lbFilter.Text = null;
             // 
-            // btnExportExcel
-            // 
-            btnExportExcel.BorderRadius = 30;
-            btnExportExcel.CustomizableEdges = customizableEdges3;
-            btnExportExcel.DisabledState.BorderColor = Color.DarkGray;
-            btnExportExcel.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnExportExcel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnExportExcel.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnExportExcel.FillColor = Color.Tomato;
-            btnExportExcel.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExportExcel.ForeColor = Color.White;
-            btnExportExcel.Image = Properties.Resources.line_chart;
-            btnExportExcel.Location = new Point(596, 59);
-            btnExportExcel.Margin = new Padding(3, 2, 3, 2);
-            btnExportExcel.Name = "btnExportExcel";
-            btnExportExcel.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnExportExcel.Size = new Size(124, 25);
-            btnExportExcel.TabIndex = 12;
-            btnExportExcel.Text = "Xuất thống kê";
-            btnExportExcel.Click += btnExportExcel_Click;
-            // 
             // fDoanhThu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(51, 51, 51);
-            ClientSize = new Size(756, 459);
+            ClientSize = new Size(864, 612);
             Controls.Add(lbFilter);
             Controls.Add(dgvDoanhThu);
             Controls.Add(guna2GradientPanel2);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fDoanhThu";
             Text = "fDoanhThu";
             Load += fDoanhThu_Load;

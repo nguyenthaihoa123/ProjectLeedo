@@ -30,6 +30,8 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -37,15 +39,13 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            btnResetEmp = new Guna.UI2.WinForms.Guna2Button();
             btnInsertEmp = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtInputInfoEmp = new Guna.UI2.WinForms.Guna2TextBox();
             dgvEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
             Delete = new DataGridViewButtonColumn();
-            btnResetEmp = new Guna.UI2.WinForms.Guna2Button();
             guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvEmployee).BeginInit();
             SuspendLayout();
@@ -64,6 +64,23 @@
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2GradientPanel1.Size = new Size(762, 84);
             guna2GradientPanel1.TabIndex = 0;
+            // 
+            // btnResetEmp
+            // 
+            btnResetEmp.CustomizableEdges = customizableEdges1;
+            btnResetEmp.DisabledState.BorderColor = Color.DarkGray;
+            btnResetEmp.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnResetEmp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnResetEmp.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnResetEmp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnResetEmp.ForeColor = Color.White;
+            btnResetEmp.Location = new Point(317, 16);
+            btnResetEmp.Name = "btnResetEmp";
+            btnResetEmp.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnResetEmp.Size = new Size(122, 30);
+            btnResetEmp.TabIndex = 4;
+            btnResetEmp.Text = "Reset";
+            btnResetEmp.Click += btnResetEmp_Click;
             // 
             // btnInsertEmp
             // 
@@ -149,7 +166,9 @@
             dgvEmployee.GridColor = Color.FromArgb(254, 203, 186);
             dgvEmployee.Location = new Point(10, 84);
             dgvEmployee.Margin = new Padding(3, 2, 3, 2);
+            dgvEmployee.MultiSelect = false;
             dgvEmployee.Name = "dgvEmployee";
+            dgvEmployee.ReadOnly = true;
             dgvEmployee.RowHeadersVisible = false;
             dgvEmployee.RowHeadersWidth = 51;
             dgvEmployee.RowTemplate.Height = 29;
@@ -169,7 +188,7 @@
             dgvEmployee.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dgvEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgvEmployee.ThemeStyle.HeaderStyle.Height = 22;
-            dgvEmployee.ThemeStyle.ReadOnly = false;
+            dgvEmployee.ThemeStyle.ReadOnly = true;
             dgvEmployee.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(254, 221, 211);
             dgvEmployee.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvEmployee.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -184,25 +203,9 @@
             // 
             Delete.HeaderText = "Xóa";
             Delete.Name = "Delete";
+            Delete.ReadOnly = true;
             Delete.Text = "Xóa";
             Delete.UseColumnTextForButtonValue = true;
-            // 
-            // btnResetEmp
-            // 
-            btnResetEmp.CustomizableEdges = customizableEdges1;
-            btnResetEmp.DisabledState.BorderColor = Color.DarkGray;
-            btnResetEmp.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnResetEmp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnResetEmp.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnResetEmp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnResetEmp.ForeColor = Color.White;
-            btnResetEmp.Location = new Point(317, 16);
-            btnResetEmp.Name = "btnResetEmp";
-            btnResetEmp.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnResetEmp.Size = new Size(122, 30);
-            btnResetEmp.TabIndex = 4;
-            btnResetEmp.Text = "Reset";
-            btnResetEmp.Click += btnResetEmp_Click;
             // 
             // fNhanVien
             // 

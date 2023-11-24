@@ -22,30 +22,11 @@ namespace wfLeedo
 
         private void fDoanhThu_Load(object sender, EventArgs e)
         {
-            /*DataGridViewButtonColumn buttonColumn =
-            new DataGridViewButtonColumn();
-            buttonColumn.Name = "Details";
-            buttonColumn.HeaderText = "Details";
-            buttonColumn.Text = "View Details";
-
-            // Use the Text property for the button text for all cells rather
-            // than using each cell's value as the text for its own button.
-            buttonColumn.UseColumnTextForButtonValue = true;
-
-            // Add the button column to the control.
-            test.Columns.Insert(0, buttonColumn);*/
-
-
-            cbb_year.SelectedIndex = 0;
-
-            cbb_month.SelectedIndex = 0;
-
-            cbb_topic.SelectedIndex = 0;
+            doanhthuViewModel doanhthuViewModel = new doanhthuViewModel();
+            lbFilter.Text = "Dữ liệu vào " + cbb_year.Text;
+            dgvDoanhThu.DataSource = doanhthuViewModel.dataDoanhThuNam(cbb_year.Text);
 
             cbb_month.Enabled = false;
-
-
-
         }
 
         private void swMonth_CheckedChanged(object sender, EventArgs e)

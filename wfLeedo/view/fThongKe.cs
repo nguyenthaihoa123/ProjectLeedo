@@ -22,11 +22,34 @@ namespace wfLeedo.view
 
         private void fThongKe_Load(object sender, EventArgs e)
         {
-            cbb_year.SelectedIndex = 0;
+            String labeltopic = "Thang";
+            String valuetopic = "DoanhThu";
 
-            cbb_month.SelectedIndex = 0;
+            doanhthuViewModel doanhthuViewModel = new doanhthuViewModel();
+            lbFilter.Text = "Dữ liệu vào " + cbb_year.Text;
+            DataTable dt = doanhthuViewModel.dataDoanhThuNam(cbb_year.Text);
 
-            cbb_topic.SelectedIndex = 0;
+            gunaBarDataset.DataPoints.Clear();
+            foreach (DataRow row in dt.Rows)
+            {
+                string label = row[labeltopic].ToString(); // Thay "LabelColumnName" bằng tên cột chứa nhãn
+
+                // Thay "ValueColumnName" bằng tên cột chứa giá trị
+                string valueStr = row[valuetopic].ToString();
+
+                // Thử chia giá trị cho 1000 trước khi chuyển đổi
+                if (decimal.TryParse(valueStr, out decimal originalValue))
+                {
+                    int value = (int)(originalValue / 1000); // Chia cho 1000 để bớt đi 3 số 0
+                    gunaBarDataset.DataPoints.Add(new Guna.Charts.WinForms.LPoint(label, value));
+                    gunaBarDataset.TargetChart = chartThongKe;
+                }
+                else
+                {
+                    // Xử lý trường hợp không thể chuyển đổi thành decimal
+                    // Ví dụ: Log hoặc hiển thị thông báo lỗi.
+                }
+            }
 
             cbb_month.Enabled = false;
         }
@@ -52,7 +75,7 @@ namespace wfLeedo.view
             String labeltopic = "";
             String valuetopic = "";
             gunaBarDataset.Label = cbb_topic.Text;
-            gunaBarDataset.DataPoints.Clear ();
+            gunaBarDataset.DataPoints.Clear();
 
             if (toggleMonth.Checked)
             {

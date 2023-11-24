@@ -33,7 +33,7 @@ namespace wfLeedo
 
             if (string.IsNullOrEmpty(idKH))
             {
-                this.Text = "Thêm mới đơn hàng với khách vãng lai";
+                this.Text = "Đơn hàng khách vãng lai";
                 DonHangViewModel Bill = new DonHangViewModel();
                 DonHang InfoBill = Bill.dataDonHangLastest();
                 lbNameCus.Text = "Vãng lai";
@@ -52,7 +52,7 @@ namespace wfLeedo
                 customer cus = cusData.dataCustomer(InfoBill.MaKH);
 
                 voucher = cus.Voucher;
-                this.Text = "Thêm mới đơn hàng";
+                this.Text = "Đơn hàng khách hàng thành viên";
                 lbNameCus.Text = cus.Name;
                 lbMaDH.Text = InfoBill.ID;
                 idDH = InfoBill.ID;
@@ -72,7 +72,7 @@ namespace wfLeedo
             DonHangViewModel data = new DonHangViewModel();
             if (txtIDSp.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập id sản phẩm");
+                MessageBox.Show("Vui lòng nhập ID sản phẩm");
             }
             else
             {
@@ -82,21 +82,30 @@ namespace wfLeedo
                 }
                 else
                 {
-                    if (double.Parse(txtSLSp.Text) <= double.Parse(data.getSanPhamTonKho(txtIDSp.Text).ToString()))
+                    if (!int.TryParse(txtSLSp.Text, out _) || int.Parse(txtSLSp.Text) < 0)
                     {
-
-                        Product productData = data.selectPro(txtIDSp.Text);
-
-                        txtNameSp.Text = productData.Name;
-                        txtPriceSp.Text = productData.Price.ToString();
-                        txtSizeSp.Text = productData.Size.ToString();
-                        txtTypeSp.Text = productData.Type.ToString();
-                        lbShowSLTonKho.Text = data.getSanPhamTonKho(txtIDSp.Text).ToString();
+                        txtSLSp.Text = "";
+                        txtSLSp.Focus();
+                        MessageBox.Show("Số lượng nhập vào không phù hợp! Vui lòng nhập lại!");
                     }
                     else
                     {
-                        MessageBox.Show("Số lượng trong kho không đủ");
-                        txtSLSp.Text = "";
+                        if (double.Parse(txtSLSp.Text) <= double.Parse(data.getSanPhamTonKho(txtIDSp.Text).ToString()))
+                        {
+
+                            Product productData = data.selectPro(txtIDSp.Text);
+
+                            txtNameSp.Text = productData.Name;
+                            txtPriceSp.Text = productData.Price.ToString();
+                            txtSizeSp.Text = productData.Size.ToString();
+                            txtTypeSp.Text = productData.Type.ToString();
+                            lbShowSLTonKho.Text = data.getSanPhamTonKho(txtIDSp.Text).ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Số lượng trong kho không đủ");
+                            txtSLSp.Text = "";
+                        }
                     }
                 }
             }

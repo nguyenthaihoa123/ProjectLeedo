@@ -192,6 +192,7 @@
             cbb_topic.Name = "cbb_topic";
             cbb_topic.ShadowDecoration.CustomizableEdges = customizableEdges2;
             cbb_topic.Size = new Size(152, 36);
+            cbb_topic.StartIndex = 0;
             cbb_topic.TabIndex = 9;
             // 
             // guna2HtmlLabel3
@@ -264,6 +265,7 @@
             cbb_month.Name = "cbb_month";
             cbb_month.ShadowDecoration.CustomizableEdges = customizableEdges6;
             cbb_month.Size = new Size(127, 36);
+            cbb_month.StartIndex = 0;
             cbb_month.TabIndex = 3;
             // 
             // toggleMonth
@@ -301,6 +303,7 @@
             cbb_year.Name = "cbb_year";
             cbb_year.ShadowDecoration.CustomizableEdges = customizableEdges10;
             cbb_year.Size = new Size(127, 36);
+            cbb_year.StartIndex = 0;
             cbb_year.TabIndex = 0;
             // 
             // guna2Panel1

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BanGiay_N11;
+using BanGiay_N11.viewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +19,10 @@ namespace wfLeedo.view
         fThongKe fthongke;
         fKhachHang fkhachhang;
         fKho fKhohang;
-        public fQuanLy()
+        string idNV;
+        public fQuanLy(string idNV)
         {
+            this.idNV = idNV;
             InitializeComponent();
         }
 
@@ -78,6 +82,26 @@ namespace wfLeedo.view
         {
             fKhohang = new fKho();
             openPanel(fKhohang);
+        }
+
+        private void guna2GradientPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fQuanLy_Load(object sender, EventArgs e)
+        {
+            employeeViewModel model = new employeeViewModel();
+            employee emp = model.dataEmployee(idNV);
+
+            // Tạo một Font mới với thuộc tính bold và size lớn hơn
+            Font boldFont = new Font(lbNameConer.Font, FontStyle.Bold);
+
+            // Gán Font mới cho lbNameConer
+            lbNameConer.Font = boldFont;
+
+            // Gán nội dung cho Label
+            lbNameConer.Text = "Xin chào, " + emp.Name;
         }
     }
 }

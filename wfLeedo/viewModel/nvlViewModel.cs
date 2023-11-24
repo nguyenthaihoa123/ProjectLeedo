@@ -246,28 +246,85 @@ namespace BanGiay_N11.viewModel
                 return false;
             }
         }
-        public Boolean deleteNXNVL(DateTime? time)
+        public Boolean deleteNKhoNVL(DateTime? tg_nhap)
         {
-            string sql = "deleteKhoNVL";
+            string sql = "deleteNhapKhoNVL";
             List<CustomParameter> list = new List<CustomParameter>();
 
             list.Add(new CustomParameter()
             {
-                key = "@time",
-                value = time.ToString()
+                key = "@tg_nhap",
+                value = tg_nhap.ToString()
             });
 
             var rs = new Database().ExeCute(sql, list);
             if (rs == 1)
             {
-                MessageBox.Show("Xóa phiếu thành công!");
+                MessageBox.Show("Xóa phiếu nhập thành công!");
                 return true;
             }
             else
             {
-                MessageBox.Show("Xóa phiếu thất bại!");
+                MessageBox.Show("Xóa phiếu nhập thất bại!");
                 return false;
             }
+        }
+        public Boolean deleteXKhoNVL(DateTime? tg_xuat)
+        {
+            string sql = "deleteXuatKhoNVL";
+            List<CustomParameter> list = new List<CustomParameter>();
+
+            list.Add(new CustomParameter()
+            {
+                key = "@tg_xuat",
+                value = tg_xuat.ToString()
+            });
+
+            var rs = new Database().ExeCute(sql, list);
+            if (rs == 1)
+            {
+                MessageBox.Show("Xóa phiếu xuất thành công!");
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Xóa phiếu xuất thất bại!");
+                return false;
+            }
+        }
+        public DataTable dataNKhoNVLbyTime(DateTime sTime, DateTime eTime)
+        {
+            string sql = "selectNKhoNVLbyTime";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@sTime",
+                value = sTime.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@eTime",
+                value = eTime.ToString()
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
+        }
+        public DataTable dataXKhoNVLbyTime(DateTime sTime, DateTime eTime)
+        {
+            string sql = "selectXKhoNVLbyTime";
+            List<CustomParameter> list = new List<CustomParameter>();
+            list.Add(new CustomParameter()
+            {
+                key = "@sTime",
+                value = sTime.ToString()
+            });
+            list.Add(new CustomParameter()
+            {
+                key = "@eTime",
+                value = eTime.ToString()
+            });
+            DataTable dt = new Database().SelectData(sql, list);
+            return dt;
         }
         public int getSLTonNVL(string maNVL)
         {
