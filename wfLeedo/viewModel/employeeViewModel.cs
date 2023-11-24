@@ -205,7 +205,7 @@ namespace BanGiay_N11.viewModel
             var rs = new Database().ExeCute(sql, list);
             if (rs == 1)
             {
-                MessageBox.Show("Cập nhật thông tin khách hàng thành công!");
+                MessageBox.Show("Thêm nhân viên thành công!");
                 return true;
             }
             else

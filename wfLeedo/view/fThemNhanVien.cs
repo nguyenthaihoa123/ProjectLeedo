@@ -160,8 +160,8 @@ namespace wfLeedo
             if (string.IsNullOrWhiteSpace(txtCCCDEmp.Text))
                 return;
 
-            // Kiểm tra xem nếu giá trị không phải là số
-            if (!int.TryParse(txtCCCDEmp.Text, out _))
+            // Kiểm tra xem nếu chuỗi có chứa kí tự chữ cái
+            if (ContainsLetter(txtCCCDEmp.Text))
             {
                 MessageBox.Show("Vui lòng chỉ nhập số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCCCDEmp.Focus();
@@ -233,6 +233,17 @@ namespace wfLeedo
         private bool IsInputValid(string input)
         {
             return input.Length >= 6;
+        }
+        private bool ContainsLetter(string input)
+        {
+            foreach (char c in input)
+            {
+                if (char.IsLetter(c))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
     }
