@@ -98,15 +98,17 @@ namespace wfLeedo
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
 
-            DialogResult res = MessageBox.Show("Bạn muốn đăng xuất?","Xác nhận",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
-            if (res == DialogResult.OK) {
+            DialogResult res = MessageBox.Show("Bạn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (res == DialogResult.OK)
+            {
                 this.Hide();
                 fLogin fLogin = new fLogin();
                 fLogin.ShowDialog();
-                this.Close();   
+                this.Close();
             }
-            if(res == DialogResult.Cancel) { 
-                
+            if (res == DialogResult.Cancel)
+            {
+
             }
         }
     }

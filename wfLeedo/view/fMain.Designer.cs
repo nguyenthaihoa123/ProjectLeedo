@@ -36,10 +36,14 @@
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             pnMain = new Panel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
             kryptonPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // kryptonPanel1
@@ -162,13 +166,36 @@
             // 
             // pnMain
             // 
-            pnMain.BackColor = Color.FromArgb(244, 244, 255);
+            pnMain.BackColor = Color.Coral;
+            pnMain.Controls.Add(guna2HtmlLabel1);
+            pnMain.Controls.Add(pictureBox2);
             pnMain.Dock = DockStyle.Fill;
             pnMain.Location = new Point(117, 0);
             pnMain.Name = "pnMain";
             pnMain.Padding = new Padding(0, 0, 0, 15);
             pnMain.Size = new Size(1165, 753);
             pnMain.TabIndex = 1;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Times New Roman", 36F, FontStyle.Italic, GraphicsUnit.Point);
+            guna2HtmlLabel1.ForeColor = Color.Black;
+            guna2HtmlLabel1.Location = new Point(223, 484);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(673, 70);
+            guna2HtmlLabel1.TabIndex = 1;
+            guna2HtmlLabel1.Text = "Chúc bạn một ngày tốt lành";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.remove_bg;
+            pictureBox2.Location = new Point(313, 47);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(480, 405);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // fMain
             // 
@@ -186,6 +213,9 @@
             kryptonPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnMain.ResumeLayout(false);
+            pnMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -199,5 +229,7 @@
         private Panel pnMain;
         private FontAwesome.Sharp.IconButton btnQuanLy;
         private FontAwesome.Sharp.IconButton btnSanPham;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private PictureBox pictureBox2;
     }
 }
