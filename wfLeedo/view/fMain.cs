@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfLeedo.view;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace wfLeedo
 {
@@ -92,6 +93,21 @@ namespace wfLeedo
             this.Text = form.Text;
             this.pnMain.Controls.Add(form);
             form.Show();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+
+            DialogResult res = MessageBox.Show("Bạn muốn đăng xuất?","Xác nhận",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+            if (res == DialogResult.OK) {
+                this.Hide();
+                fLogin fLogin = new fLogin();
+                fLogin.ShowDialog();
+                this.Close();   
+            }
+            if(res == DialogResult.Cancel) { 
+                
+            }
         }
     }
 }

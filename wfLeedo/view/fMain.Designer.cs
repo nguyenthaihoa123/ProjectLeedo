@@ -110,13 +110,14 @@
             btnDangXuat.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
             btnDangXuat.IconColor = Color.White;
             btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDangXuat.Location = new Point(0, 701);
+            btnDangXuat.Location = new Point(0, 666);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Rotation = 180D;
-            btnDangXuat.Size = new Size(117, 52);
+            btnDangXuat.Size = new Size(117, 87);
             btnDangXuat.TabIndex = 6;
             btnDangXuat.TextImageRelation = TextImageRelation.ImageAboveText;
             btnDangXuat.UseVisualStyleBackColor = false;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // btnDonHang
             // 
