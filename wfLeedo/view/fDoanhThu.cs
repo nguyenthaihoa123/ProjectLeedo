@@ -27,6 +27,10 @@ namespace wfLeedo
             dgvDoanhThu.DataSource = doanhthuViewModel.dataDoanhThuNam(cbb_year.Text);
 
             cbb_month.Enabled = false;
+
+            dgvDoanhThu.Columns["Thang"].HeaderText = "Tháng";
+            dgvDoanhThu.Columns["DoanhThu"].HeaderText = "Doanh thu";
+            
         }
 
         private void swMonth_CheckedChanged(object sender, EventArgs e)

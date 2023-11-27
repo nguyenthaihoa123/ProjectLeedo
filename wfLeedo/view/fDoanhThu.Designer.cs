@@ -106,20 +106,20 @@
             // 
             // btnExportExcel
             // 
-            btnExportExcel.BorderRadius = 30;
+            btnExportExcel.BorderRadius = 20;
             btnExportExcel.CustomizableEdges = customizableEdges3;
             btnExportExcel.DisabledState.BorderColor = Color.DarkGray;
             btnExportExcel.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExportExcel.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnExportExcel.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnExportExcel.FillColor = Color.Tomato;
-            btnExportExcel.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExportExcel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnExportExcel.ForeColor = Color.White;
             btnExportExcel.Image = Properties.Resources.line_chart;
-            btnExportExcel.Location = new Point(681, 79);
+            btnExportExcel.Location = new Point(646, 67);
             btnExportExcel.Name = "btnExportExcel";
             btnExportExcel.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnExportExcel.Size = new Size(142, 33);
+            btnExportExcel.Size = new Size(172, 42);
             btnExportExcel.TabIndex = 12;
             btnExportExcel.Text = "Xuất thống kê";
             btnExportExcel.Click += btnExportExcel_Click;
@@ -201,7 +201,7 @@
             // 
             // btnThongKe
             // 
-            btnThongKe.BorderRadius = 30;
+            btnThongKe.BorderRadius = 20;
             btnThongKe.CustomizableEdges = customizableEdges7;
             btnThongKe.DisabledState.BorderColor = Color.DarkGray;
             btnThongKe.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -214,7 +214,7 @@
             btnThongKe.Location = new Point(646, 15);
             btnThongKe.Name = "btnThongKe";
             btnThongKe.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnThongKe.Size = new Size(206, 56);
+            btnThongKe.Size = new Size(172, 46);
             btnThongKe.TabIndex = 5;
             btnThongKe.Text = "Thống kê";
             btnThongKe.Click += btnThongKe_Click;

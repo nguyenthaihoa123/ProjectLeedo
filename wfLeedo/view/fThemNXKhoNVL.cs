@@ -25,7 +25,7 @@ namespace wfLeedo.view
 
         private void fThemNXKhoNVL_Load(object sender, EventArgs e)
         {
-           
+
             List<CustomParameter> list = new List<CustomParameter>();
             var dt = new Database().SelectData("selectMaKho", list);
             DateTime time = DateTime.Now;
@@ -71,7 +71,7 @@ namespace wfLeedo.view
                 txtSLNhap.Enabled = false;
                 dtTGNhap.Enabled = false;
             }
-            
+
         }
 
         private void insertBtn_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace wfLeedo.view
                         {
 
                             int slTon = newNVL.getSLTonNVL(cbMaNVL.Text);
-                            if(slTon - int.Parse(txtSLXuat.Text) < 0)
+                            if (slTon - int.Parse(txtSLXuat.Text) < 0)
                             {
                                 MessageBox.Show("Vui lòng nhập lại số lượng xuất! Số lượng xuất không được lớn hơn số lượng tồn kho!");
                             }
@@ -106,7 +106,7 @@ namespace wfLeedo.view
                                 this.Close();
                             }
                         }
-                    } 
+                    }
                     else if (mode == "Sản phẩm")
                     {
                         productViewModel newPro = new productViewModel();
@@ -143,6 +143,19 @@ namespace wfLeedo.view
                 // Xử lý các lỗi khác có thể xảy ra
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
         }
     }
 }

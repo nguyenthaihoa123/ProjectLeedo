@@ -32,7 +32,7 @@ namespace wfLeedo.view.dialog
             }
             else
             {
-                if(checkInput(InputText))
+                if (checkInput(InputText))
                 {
                     var r = new Database().Select("checkSDTKhach '" + InputText + "'");
                     if (r != null)
@@ -46,7 +46,7 @@ namespace wfLeedo.view.dialog
                         txtInsertSdtHD.Focus();
                         MessageBox.Show("Khách hàng không tồn tại! Vui lòng kiểm tra lại số điện thoại!");
                     }
-                } 
+                }
             }
         }
 
@@ -58,12 +58,12 @@ namespace wfLeedo.view.dialog
 
         public string InputText
         {
-            get { return txtInsertSdtHD.Text;}
+            get { return txtInsertSdtHD.Text; }
         }
 
         private Boolean checkInput(string input)
         {
-            if(input.Length != 10 || !int.TryParse(input, out _))
+            if (input.Length != 10 || !int.TryParse(input, out _))
             {
                 txtInsertSdtHD.Text = "";
                 txtInsertSdtHD.Focus();

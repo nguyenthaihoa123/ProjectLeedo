@@ -59,10 +59,9 @@
             guna2GradientPanel1.CustomizableEdges = customizableEdges7;
             guna2GradientPanel1.Dock = DockStyle.Top;
             guna2GradientPanel1.Location = new Point(0, 0);
-            guna2GradientPanel1.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2GradientPanel1.Size = new Size(762, 84);
+            guna2GradientPanel1.Size = new Size(871, 112);
             guna2GradientPanel1.TabIndex = 0;
             // 
             // btnResetEmp
@@ -72,12 +71,15 @@
             btnResetEmp.DisabledState.CustomBorderColor = Color.DarkGray;
             btnResetEmp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnResetEmp.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnResetEmp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnResetEmp.FillColor = Color.FromArgb(255, 128, 0);
+            btnResetEmp.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnResetEmp.ForeColor = Color.White;
-            btnResetEmp.Location = new Point(317, 16);
+            btnResetEmp.Image = Properties.Resources.reload;
+            btnResetEmp.Location = new Point(362, 21);
+            btnResetEmp.Margin = new Padding(3, 4, 3, 4);
             btnResetEmp.Name = "btnResetEmp";
             btnResetEmp.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnResetEmp.Size = new Size(122, 30);
+            btnResetEmp.Size = new Size(139, 40);
             btnResetEmp.TabIndex = 4;
             btnResetEmp.Text = "Reset";
             btnResetEmp.Click += btnResetEmp_Click;
@@ -89,12 +91,14 @@
             btnInsertEmp.DisabledState.CustomBorderColor = Color.DarkGray;
             btnInsertEmp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnInsertEmp.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnInsertEmp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInsertEmp.FillColor = Color.FromArgb(255, 128, 0);
+            btnInsertEmp.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnInsertEmp.ForeColor = Color.White;
-            btnInsertEmp.Location = new Point(490, 16);
+            btnInsertEmp.Location = new Point(546, 22);
+            btnInsertEmp.Margin = new Padding(3, 4, 3, 4);
             btnInsertEmp.Name = "btnInsertEmp";
             btnInsertEmp.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnInsertEmp.Size = new Size(112, 28);
+            btnInsertEmp.Size = new Size(139, 40);
             btnInsertEmp.TabIndex = 3;
             btnInsertEmp.Text = "Thêm";
             btnInsertEmp.Click += btnInsertEmp_Click;
@@ -104,10 +108,9 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(10, 61);
-            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel1.Location = new Point(11, 81);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(158, 23);
+            guna2HtmlLabel1.Size = new Size(192, 25);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "Thông tin nhân viên";
             // 
@@ -125,15 +128,14 @@
             txtInputInfoEmp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtInputInfoEmp.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtInputInfoEmp.IconLeft = Properties.Resources.magnifying_glass;
-            txtInputInfoEmp.Location = new Point(10, 9);
-            txtInputInfoEmp.Margin = new Padding(3, 2, 3, 2);
+            txtInputInfoEmp.Location = new Point(11, 12);
             txtInputInfoEmp.Name = "txtInputInfoEmp";
             txtInputInfoEmp.PasswordChar = '\0';
             txtInputInfoEmp.PlaceholderForeColor = Color.Silver;
             txtInputInfoEmp.PlaceholderText = "Nhập mã số nhân viên";
             txtInputInfoEmp.SelectedText = "";
             txtInputInfoEmp.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtInputInfoEmp.Size = new Size(273, 35);
+            txtInputInfoEmp.Size = new Size(312, 47);
             txtInputInfoEmp.TabIndex = 0;
             txtInputInfoEmp.TextChanged += txtInputInfoEmp_TextChanged;
             // 
@@ -164,15 +166,14 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvEmployee.DefaultCellStyle = dataGridViewCellStyle3;
             dgvEmployee.GridColor = Color.FromArgb(254, 203, 186);
-            dgvEmployee.Location = new Point(10, 84);
-            dgvEmployee.Margin = new Padding(3, 2, 3, 2);
+            dgvEmployee.Location = new Point(11, 112);
             dgvEmployee.MultiSelect = false;
             dgvEmployee.Name = "dgvEmployee";
             dgvEmployee.ReadOnly = true;
             dgvEmployee.RowHeadersVisible = false;
             dgvEmployee.RowHeadersWidth = 51;
             dgvEmployee.RowTemplate.Height = 29;
-            dgvEmployee.Size = new Size(731, 394);
+            dgvEmployee.Size = new Size(835, 525);
             dgvEmployee.TabIndex = 1;
             dgvEmployee.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.DeepOrange;
             dgvEmployee.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(254, 205, 189);
@@ -202,6 +203,7 @@
             // Delete
             // 
             Delete.HeaderText = "Xóa";
+            Delete.MinimumWidth = 6;
             Delete.Name = "Delete";
             Delete.ReadOnly = true;
             Delete.Text = "Xóa";
@@ -209,14 +211,13 @@
             // 
             // fNhanVien
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(51, 51, 51);
-            ClientSize = new Size(762, 478);
+            ClientSize = new Size(871, 637);
             Controls.Add(dgvEmployee);
             Controls.Add(guna2GradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "fNhanVien";
             Text = "fNhanVien";
             Load += fNhanVien_Load;

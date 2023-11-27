@@ -35,42 +35,63 @@
             // 
             // txtInsertSdtHD
             // 
-            txtInsertSdtHD.Location = new Point(59, 53);
+            txtInsertSdtHD.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtInsertSdtHD.Location = new Point(33, 76);
+            txtInsertSdtHD.Margin = new Padding(3, 4, 3, 4);
             txtInsertSdtHD.Name = "txtInsertSdtHD";
             txtInsertSdtHD.PlaceholderText = "Nhập số điện thoại";
-            txtInsertSdtHD.Size = new Size(194, 23);
+            txtInsertSdtHD.Size = new Size(256, 38);
             txtInsertSdtHD.TabIndex = 0;
             // 
             // btnInsertWithCus
             // 
-            btnInsertWithCus.CornerRoundingRadius = -1F;
-            btnInsertWithCus.Location = new Point(40, 150);
+            btnInsertWithCus.CornerRoundingRadius = 10F;
+            btnInsertWithCus.Location = new Point(33, 200);
+            btnInsertWithCus.Margin = new Padding(3, 4, 3, 4);
             btnInsertWithCus.Name = "btnInsertWithCus";
-            btnInsertWithCus.Size = new Size(90, 25);
-            btnInsertWithCus.TabIndex = 1;
+            btnInsertWithCus.Size = new Size(115, 52);
+            btnInsertWithCus.StateCommon.Back.Color1 = Color.Blue;
+            btnInsertWithCus.StateCommon.Back.Color2 = Color.Blue;
+            btnInsertWithCus.StateCommon.Border.Color1 = Color.FromArgb(128, 128, 255);
+            btnInsertWithCus.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            btnInsertWithCus.StateCommon.Border.Rounding = 10F;
+            btnInsertWithCus.StateCommon.Border.Width = 5;
+            btnInsertWithCus.StateCommon.Content.ShortText.Color1 = Color.White;
+            btnInsertWithCus.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInsertWithCus.TabIndex = 8;
             btnInsertWithCus.Values.Text = "Thêm";
             btnInsertWithCus.Click += btnInsertWithCus_Click;
             // 
             // btnInsertVangLai
             // 
-            btnInsertVangLai.CornerRoundingRadius = -1F;
-            btnInsertVangLai.Location = new Point(163, 150);
+            btnInsertVangLai.CornerRoundingRadius = 10F;
+            btnInsertVangLai.Location = new Point(174, 200);
+            btnInsertVangLai.Margin = new Padding(3, 4, 3, 4);
             btnInsertVangLai.Name = "btnInsertVangLai";
-            btnInsertVangLai.Size = new Size(90, 25);
-            btnInsertVangLai.TabIndex = 2;
+            btnInsertVangLai.Size = new Size(115, 52);
+            btnInsertVangLai.StateCommon.Back.Color1 = Color.White;
+            btnInsertVangLai.StateCommon.Back.Color2 = Color.White;
+            btnInsertVangLai.StateCommon.Border.Color1 = Color.Blue;
+            btnInsertVangLai.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            btnInsertVangLai.StateCommon.Border.Rounding = 10F;
+            btnInsertVangLai.StateCommon.Border.Width = 5;
+            btnInsertVangLai.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInsertVangLai.TabIndex = 9;
             btnInsertVangLai.Values.Text = "Vãng lai";
             btnInsertVangLai.Click += btnInsertVangLai_Click;
             // 
             // dialogInsertHoaDon
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(303, 281);
+            ClientSize = new Size(346, 375);
             Controls.Add(btnInsertVangLai);
             Controls.Add(btnInsertWithCus);
             Controls.Add(txtInsertSdtHD);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "dialogInsertHoaDon";
-            Text = "dialogInsertHoaDon";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Thêm hóa đơn";
             Load += dialogInsertHoaDon_Load;
             ResumeLayout(false);
             PerformLayout();

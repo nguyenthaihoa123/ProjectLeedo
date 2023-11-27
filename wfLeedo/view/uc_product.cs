@@ -17,8 +17,8 @@ namespace wfLeedo.view
             InitializeComponent();
         }
         // Thuộc tính cho BackgroundImage của Panel
-        
-        
+
+
         public string PanelBackgroundImagePath
         {
             get { return null; } // Trả về null vì bạn không muốn đọc đường dẫn từ UserControl

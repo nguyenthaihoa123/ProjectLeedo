@@ -26,11 +26,11 @@ namespace wfLeedo
             this.idNV = id;
         }
 
-        
 
-        
 
-        
+
+
+
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
@@ -38,10 +38,10 @@ namespace wfLeedo
             openPanel(fdonhang);
         }
 
-        
 
-       
-        
+
+
+
 
         private void fMain_Load(object sender, EventArgs e)
         {
@@ -50,15 +50,15 @@ namespace wfLeedo
             employee emp = employeeViewModel.dataEmployee(idNV);
             string chucvu = emp.ChucVu;
 
-            if(chucvu == "Chuyên viên quản lý kho" || chucvu == "Chuyên viên kế toán tài chính"|| chucvu == "Chuyên viên quản lý nhân sự")
+            if (chucvu == "Chuyên viên quản lý kho" || chucvu == "Chuyên viên kế toán tài chính" || chucvu == "Chuyên viên quản lý nhân sự")
             {
                 btnDonHang.Enabled = false;
             }
-            else if(chucvu == "Chuyên viên chăm sóc khách hàng"||chucvu== "Chuyên viên tư vấn sản phẩm")
+            else if (chucvu == "Chuyên viên chăm sóc khách hàng" || chucvu == "Chuyên viên tư vấn sản phẩm")
             {
                 btnQuanLy.Enabled = false;
             }
-            else if(chucvu == "Quản trị viên")
+            else if (chucvu == "Quản trị viên")
             {
                 btnDonHang.Enabled = true;
                 btnQuanLy.Enabled = true;

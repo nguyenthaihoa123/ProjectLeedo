@@ -73,49 +73,61 @@
             // 
             // kryptonLabel6
             // 
-            kryptonLabel6.Location = new Point(3, 249);
+            kryptonLabel6.Location = new Point(2, 198);
+            kryptonLabel6.Margin = new Padding(2);
             kryptonLabel6.Name = "kryptonLabel6";
-            kryptonLabel6.Size = new Size(106, 29);
+            kryptonLabel6.Size = new Size(90, 24);
+            kryptonLabel6.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel6.TabIndex = 5;
             kryptonLabel6.Values.Text = "Đơn vị tính:";
             // 
             // kryptonLabel5
             // 
-            kryptonLabel5.Location = new Point(3, 200);
+            kryptonLabel5.Location = new Point(2, 159);
+            kryptonLabel5.Margin = new Padding(2);
             kryptonLabel5.Name = "kryptonLabel5";
-            kryptonLabel5.Size = new Size(134, 29);
+            kryptonLabel5.Size = new Size(112, 24);
+            kryptonLabel5.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel5.TabIndex = 4;
             kryptonLabel5.Values.Text = "Size sản phẩm:";
             // 
             // kryptonLabel4
             // 
-            kryptonLabel4.Location = new Point(3, 151);
+            kryptonLabel4.Location = new Point(2, 120);
+            kryptonLabel4.Margin = new Padding(2);
             kryptonLabel4.Name = "kryptonLabel4";
-            kryptonLabel4.Size = new Size(128, 29);
+            kryptonLabel4.Size = new Size(108, 24);
+            kryptonLabel4.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel4.TabIndex = 3;
             kryptonLabel4.Values.Text = "Giá sản phẩm:";
             // 
             // kryptonLabel3
             // 
-            kryptonLabel3.Location = new Point(3, 102);
+            kryptonLabel3.Location = new Point(2, 81);
+            kryptonLabel3.Margin = new Padding(2);
             kryptonLabel3.Name = "kryptonLabel3";
-            kryptonLabel3.Size = new Size(131, 29);
+            kryptonLabel3.Size = new Size(110, 24);
+            kryptonLabel3.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel3.TabIndex = 2;
             kryptonLabel3.Values.Text = "Tên sản phẩm:";
             // 
             // kryptonLabel2
             // 
-            kryptonLabel2.Location = new Point(3, 53);
+            kryptonLabel2.Location = new Point(2, 42);
+            kryptonLabel2.Margin = new Padding(2);
             kryptonLabel2.Name = "kryptonLabel2";
-            kryptonLabel2.Size = new Size(135, 29);
+            kryptonLabel2.Size = new Size(113, 24);
+            kryptonLabel2.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel2.TabIndex = 1;
             kryptonLabel2.Values.Text = "Loại sản phẩm:";
             // 
             // kryptonLabel1
             // 
-            kryptonLabel1.Location = new Point(3, 3);
+            kryptonLabel1.Location = new Point(2, 2);
+            kryptonLabel1.Margin = new Padding(2);
             kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(127, 29);
+            kryptonLabel1.Size = new Size(107, 24);
+            kryptonLabel1.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel1.TabIndex = 0;
             kryptonLabel1.Values.Text = "Mã sản phẩm:";
             // 
@@ -138,7 +150,8 @@
             kryptonTableLayoutPanel1.Controls.Add(txtGiaSP, 1, 3);
             kryptonTableLayoutPanel1.Controls.Add(txtSizeSP, 1, 4);
             kryptonTableLayoutPanel1.Controls.Add(txtDonViTinh, 1, 5);
-            kryptonTableLayoutPanel1.Location = new Point(12, 12);
+            kryptonTableLayoutPanel1.Location = new Point(11, 10);
+            kryptonTableLayoutPanel1.Margin = new Padding(2);
             kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             kryptonTableLayoutPanel1.RowCount = 6;
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.9230843F));
@@ -147,7 +160,8 @@
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6153851F));
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6153851F));
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6153851F));
-            kryptonTableLayoutPanel1.Size = new Size(470, 296);
+            kryptonTableLayoutPanel1.Size = new Size(376, 237);
+            kryptonTableLayoutPanel1.StateCommon.Color1 = Color.WhiteSmoke;
             kryptonTableLayoutPanel1.TabIndex = 2;
             // 
             // txtMaSP
@@ -161,13 +175,14 @@
             txtMaSP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaSP.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtMaSP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaSP.Location = new Point(194, 3);
+            txtMaSP.Location = new Point(154, 2);
+            txtMaSP.Margin = new Padding(2);
             txtMaSP.Name = "txtMaSP";
             txtMaSP.PasswordChar = '\0';
             txtMaSP.PlaceholderText = "";
             txtMaSP.SelectedText = "";
             txtMaSP.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtMaSP.Size = new Size(273, 44);
+            txtMaSP.Size = new Size(218, 35);
             txtMaSP.TabIndex = 6;
             // 
             // txtLoaiSP
@@ -181,13 +196,14 @@
             txtLoaiSP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtLoaiSP.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtLoaiSP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLoaiSP.Location = new Point(194, 53);
+            txtLoaiSP.Location = new Point(154, 42);
+            txtLoaiSP.Margin = new Padding(2);
             txtLoaiSP.Name = "txtLoaiSP";
             txtLoaiSP.PasswordChar = '\0';
             txtLoaiSP.PlaceholderText = "";
             txtLoaiSP.SelectedText = "";
             txtLoaiSP.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtLoaiSP.Size = new Size(273, 43);
+            txtLoaiSP.Size = new Size(218, 34);
             txtLoaiSP.TabIndex = 7;
             // 
             // txtTenSP
@@ -201,13 +217,14 @@
             txtTenSP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenSP.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTenSP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenSP.Location = new Point(194, 102);
+            txtTenSP.Location = new Point(154, 81);
+            txtTenSP.Margin = new Padding(2);
             txtTenSP.Name = "txtTenSP";
             txtTenSP.PasswordChar = '\0';
             txtTenSP.PlaceholderText = "";
             txtTenSP.SelectedText = "";
             txtTenSP.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTenSP.Size = new Size(273, 43);
+            txtTenSP.Size = new Size(218, 34);
             txtTenSP.TabIndex = 8;
             // 
             // txtGiaSP
@@ -221,13 +238,14 @@
             txtGiaSP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtGiaSP.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtGiaSP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaSP.Location = new Point(194, 151);
+            txtGiaSP.Location = new Point(154, 120);
+            txtGiaSP.Margin = new Padding(2);
             txtGiaSP.Name = "txtGiaSP";
             txtGiaSP.PasswordChar = '\0';
             txtGiaSP.PlaceholderText = "";
             txtGiaSP.SelectedText = "";
             txtGiaSP.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtGiaSP.Size = new Size(273, 43);
+            txtGiaSP.Size = new Size(218, 34);
             txtGiaSP.TabIndex = 9;
             // 
             // txtSizeSP
@@ -241,13 +259,14 @@
             txtSizeSP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSizeSP.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtSizeSP.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSizeSP.Location = new Point(194, 200);
+            txtSizeSP.Location = new Point(154, 159);
+            txtSizeSP.Margin = new Padding(2);
             txtSizeSP.Name = "txtSizeSP";
             txtSizeSP.PasswordChar = '\0';
             txtSizeSP.PlaceholderText = "";
             txtSizeSP.SelectedText = "";
             txtSizeSP.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtSizeSP.Size = new Size(273, 43);
+            txtSizeSP.Size = new Size(218, 34);
             txtSizeSP.TabIndex = 10;
             // 
             // txtDonViTinh
@@ -261,64 +280,86 @@
             txtDonViTinh.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDonViTinh.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDonViTinh.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDonViTinh.Location = new Point(194, 249);
+            txtDonViTinh.Location = new Point(154, 198);
+            txtDonViTinh.Margin = new Padding(2);
             txtDonViTinh.Name = "txtDonViTinh";
             txtDonViTinh.PasswordChar = '\0';
             txtDonViTinh.PlaceholderText = "";
             txtDonViTinh.SelectedText = "";
             txtDonViTinh.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtDonViTinh.Size = new Size(273, 44);
+            txtDonViTinh.Size = new Size(218, 35);
             txtDonViTinh.TabIndex = 11;
             // 
             // imgBtn
             // 
-            imgBtn.CornerRoundingRadius = -1F;
-            imgBtn.Location = new Point(495, 174);
+            imgBtn.CornerRoundingRadius = 10F;
+            imgBtn.Location = new Point(396, 139);
+            imgBtn.Margin = new Padding(2);
             imgBtn.Name = "imgBtn";
-            imgBtn.Size = new Size(150, 44);
+            imgBtn.Size = new Size(120, 35);
+            imgBtn.StateCommon.Back.Color1 = Color.Tomato;
+            imgBtn.StateCommon.Back.Color2 = Color.FromArgb(255, 224, 192);
+            imgBtn.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            imgBtn.StateCommon.Border.Rounding = 10F;
             imgBtn.TabIndex = 7;
             imgBtn.Values.Text = "Chọn ảnh";
             imgBtn.Click += imgBtn_Click;
             // 
             // saveBtn
             // 
-            saveBtn.CornerRoundingRadius = -1F;
-            saveBtn.Location = new Point(262, 333);
+            saveBtn.CornerRoundingRadius = 10F;
+            saveBtn.Location = new Point(219, 313);
+            saveBtn.Margin = new Padding(2);
             saveBtn.Name = "saveBtn";
-            saveBtn.Size = new Size(135, 38);
+            saveBtn.Size = new Size(108, 30);
+            saveBtn.StateCommon.Back.Color1 = Color.FromArgb(255, 128, 128);
+            saveBtn.StateCommon.Back.Color2 = Color.FromArgb(255, 192, 192);
+            saveBtn.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            saveBtn.StateCommon.Border.Rounding = 10F;
+            saveBtn.StateCommon.Content.ShortText.Color1 = Color.White;
             saveBtn.TabIndex = 6;
             saveBtn.Values.Text = "Lưu";
             saveBtn.Click += saveBtn_Click;
             // 
             // insertBtn
             // 
-            insertBtn.CornerRoundingRadius = -1F;
-            insertBtn.Location = new Point(47, 333);
+            insertBtn.CornerRoundingRadius = 10F;
+            insertBtn.Location = new Point(59, 313);
+            insertBtn.Margin = new Padding(2);
             insertBtn.Name = "insertBtn";
-            insertBtn.Size = new Size(135, 38);
+            insertBtn.Size = new Size(108, 30);
+            insertBtn.StateCommon.Back.Color1 = Color.Tomato;
+            insertBtn.StateCommon.Back.Color2 = Color.FromArgb(255, 224, 192);
+            insertBtn.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            insertBtn.StateCommon.Border.Rounding = 10F;
+            insertBtn.StateCommon.Content.ShortText.Color1 = Color.White;
             insertBtn.TabIndex = 5;
             insertBtn.Values.Text = "Thêm";
             insertBtn.Click += insertBtn_Click;
             // 
             // imgSP
             // 
-            imgSP.Location = new Point(495, 12);
+            imgSP.Location = new Point(396, 10);
+            imgSP.Margin = new Padding(2);
             imgSP.Name = "imgSP";
-            imgSP.Size = new Size(150, 156);
+            imgSP.Size = new Size(120, 125);
             imgSP.TabIndex = 4;
             imgSP.TabStop = false;
             // 
             // fThemSP
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(657, 503);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(526, 402);
             Controls.Add(imgBtn);
             Controls.Add(saveBtn);
             Controls.Add(insertBtn);
             Controls.Add(imgSP);
             Controls.Add(kryptonTableLayoutPanel1);
+            Margin = new Padding(2);
             Name = "fThemSP";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Thêm sản phẩm";
             Load += fThemSP_Load;
             kryptonTableLayoutPanel1.ResumeLayout(false);

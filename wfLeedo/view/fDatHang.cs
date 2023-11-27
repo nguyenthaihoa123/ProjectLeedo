@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfLeedo.model;
 using wfLeedo.view;
+using wfLeedo.view.dialog;
 using wfLeedo.viewModel;
 
 namespace wfLeedo
@@ -226,6 +227,14 @@ namespace wfLeedo
             txtSizeSp.Text = "";
             txtSLSp.Text = "";
             txtTypeSp.Text = "";
+        }
+
+        private void imgMomo_Click(object sender, EventArgs e)
+        {
+            dialogMomo inputDialog = new dialogMomo();
+
+            // Hiển thị dialog và lấy kết quả trả về khi dialog đóng
+            DialogResult result = inputDialog.ShowDialog();
         }
     }
 }

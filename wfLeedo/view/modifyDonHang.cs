@@ -122,7 +122,7 @@ namespace wfLeedo.view
             g.DrawString("Mã SP: " + maSP1, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition));
             g.DrawString("Tên SP: " + tenSP1, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 20));
             g.DrawString("Số lượng: " + sl1, new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 40));
-            g.DrawString("Giá SP: " + giaSP1 +" VNĐ", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 60));
+            g.DrawString("Giá SP: " + giaSP1 + " VNĐ", new Font("Arial", 10, FontStyle.Regular), Brushes.Black, new PointF(100, yPosition + 60));
 
             yPosition += lineHeight; // Dịch vị trí vẽ xuống
 

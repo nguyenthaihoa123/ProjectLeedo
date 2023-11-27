@@ -30,12 +30,11 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDatHang));
-            kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
             panel1 = new Panel();
+            imgMomo = new PictureBox();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             label7 = new Label();
             label6 = new Label();
-            kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             panel2 = new Panel();
             panel3 = new Panel();
             pnfHoaDon2 = new Krypton.Toolkit.KryptonPanel();
@@ -79,6 +78,7 @@
             txtSLSp = new TextBox();
             label10 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)imgMomo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pnfHoaDon2).BeginInit();
@@ -95,35 +95,29 @@
             kryptonTableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
-            // kryptonTextBox1
-            // 
-            kryptonTextBox1.Location = new Point(43, 51);
-            kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.Size = new Size(437, 42);
-            kryptonTextBox1.StateActive.Back.Color1 = Color.White;
-            kryptonTextBox1.StateActive.Border.Color1 = Color.White;
-            kryptonTextBox1.StateActive.Border.Color2 = Color.White;
-            kryptonTextBox1.StateActive.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
-            kryptonTextBox1.StateActive.Border.Rounding = 10F;
-            kryptonTextBox1.StateActive.Border.Width = 0;
-            kryptonTextBox1.StateActive.Content.Color1 = Color.DarkGray;
-            kryptonTextBox1.StateActive.Content.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            kryptonTextBox1.TabIndex = 0;
-            kryptonTextBox1.Text = "Mã sản phẩm, ...";
-            // 
             // panel1
             // 
+            panel1.Controls.Add(imgMomo);
             panel1.Controls.Add(iconPictureBox2);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(kryptonButton1);
-            panel1.Controls.Add(kryptonTextBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(0, 0, 0, 11);
             panel1.Size = new Size(1147, 115);
             panel1.TabIndex = 2;
+            // 
+            // imgMomo
+            // 
+            imgMomo.Image = Properties.Resources.Momo_logo;
+            imgMomo.Location = new Point(35, 12);
+            imgMomo.Name = "imgMomo";
+            imgMomo.Size = new Size(75, 75);
+            imgMomo.SizeMode = PictureBoxSizeMode.StretchImage;
+            imgMomo.TabIndex = 10;
+            imgMomo.TabStop = false;
+            imgMomo.Click += imgMomo_Click;
             // 
             // iconPictureBox2
             // 
@@ -134,7 +128,7 @@
             iconPictureBox2.IconColor = SystemColors.ControlText;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox2.IconSize = 81;
-            iconPictureBox2.Location = new Point(1045, 12);
+            iconPictureBox2.Location = new Point(1041, 12);
             iconPictureBox2.Name = "iconPictureBox2";
             iconPictureBox2.Size = new Size(91, 81);
             iconPictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -161,21 +155,6 @@
             label6.Size = new Size(154, 25);
             label6.TabIndex = 7;
             label6.Text = "Nguyen Thang";
-            // 
-            // kryptonButton1
-            // 
-            kryptonButton1.CornerRoundingRadius = 10F;
-            kryptonButton1.Location = new Point(485, 51);
-            kryptonButton1.Name = "kryptonButton1";
-            kryptonButton1.Size = new Size(75, 43);
-            kryptonButton1.StateCommon.Back.Color1 = Color.White;
-            kryptonButton1.StateCommon.Back.Color2 = Color.White;
-            kryptonButton1.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
-            kryptonButton1.StateCommon.Border.Rounding = 10F;
-            kryptonButton1.StateCommon.Border.Width = 1;
-            kryptonButton1.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            kryptonButton1.TabIndex = 1;
-            kryptonButton1.Values.Text = "Tìm";
             // 
             // panel2
             // 
@@ -337,7 +316,7 @@
             pnfHoaDon1.Dock = DockStyle.Top;
             pnfHoaDon1.Location = new Point(21, 0);
             pnfHoaDon1.Name = "pnfHoaDon1";
-            pnfHoaDon1.Padding = new Padding(5, 5, 5, 5);
+            pnfHoaDon1.Padding = new Padding(5);
             pnfHoaDon1.Palette = kryptonPalette1;
             pnfHoaDon1.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             pnfHoaDon1.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelCustom1;
@@ -437,7 +416,7 @@
             kryptonPanel1.Dock = DockStyle.Fill;
             kryptonPanel1.Location = new Point(38, 115);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Padding = new Padding(5, 5, 5, 5);
+            kryptonPanel1.Padding = new Padding(5);
             kryptonPanel1.Palette = kryptonPalette1;
             kryptonPanel1.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             kryptonPanel1.Size = new Size(659, 630);
@@ -746,10 +725,12 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "fDatHang";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "fDonHang";
             Load += fDatHang_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)imgMomo).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pnfHoaDon2).EndInit();
@@ -772,8 +753,6 @@
         }
 
         #endregion
-
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
@@ -787,7 +766,6 @@
         private Label lbDateBill;
         private Label lbNameCus;
         private Label label3;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Toolkit.KryptonPanel pnfHoaDon2;
         private Label label6;
         private Label label7;
@@ -821,5 +799,6 @@
         private DataGridViewTextBoxColumn money;
         private Label lbShowVoucher;
         private Label label2;
+        private PictureBox imgMomo;
     }
 }

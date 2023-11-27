@@ -37,6 +37,20 @@ namespace wfLeedo
         {
             customerViewModel viewAllEmp = new customerViewModel();
             dgvCustomer.DataSource = viewAllEmp.dataAllCustomer("");
+
+
+            dgvCustomer.Columns["MaKH"].HeaderText = "Mã khách hàng";
+            dgvCustomer.Columns["HotenKH"].HeaderText = "Họ tên khách hàng";
+            dgvCustomer.Columns["GT"].HeaderText = "Giới tính";
+            dgvCustomer.Columns["NgSinh"].HeaderText = "Ngày sinh";
+            dgvCustomer.Columns["SDT"].HeaderText = "Số điện thoại";
+            dgvCustomer.Columns["Email"].HeaderText = "Email";
+            dgvCustomer.Columns["DiaChi"].HeaderText = "Địa chỉ";
+            dgvCustomer.Columns["MatKhau"].HeaderText = "Mật khẩu";
+            dgvCustomer.Columns["TichDiem"].HeaderText = "Tích điểm";
+
+
+
         }
 
         private void dgvCustomer_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
@@ -51,7 +65,7 @@ namespace wfLeedo
             }
         }
 
-        
+
 
         private void btnInsertCus_Click(object sender, EventArgs e)
         {
@@ -60,7 +74,7 @@ namespace wfLeedo
             form.Show();
         }
 
-        
+
 
         private void timerCus_Tick(object sender, EventArgs e)
         {

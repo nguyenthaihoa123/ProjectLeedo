@@ -32,6 +32,14 @@ namespace wfLeedo
             dt_Search_Start.CustomFormat = "MM-dd-yyyy";
             dt_Search_End.Format = DateTimePickerFormat.Custom;
             dt_Search_End.CustomFormat = "MM-dd-yyyy";
+
+
+            dgvDonHang.Columns["MaDH"].HeaderText = "Mã đơn hàng";
+            dgvDonHang.Columns["HotenKH"].HeaderText = "Họ tên khách hàng";
+            dgvDonHang.Columns["SDT"].HeaderText = "Số điện thoại";
+            dgvDonHang.Columns["TG_lapBill"].HeaderText = "Thời gian lập hóa đơn";
+            dgvDonHang.Columns["TongBill"].HeaderText = "Tổng hóa đơn";
+            dgvDonHang.Columns["Status"].HeaderText = "Trạng thái";
         }
 
 

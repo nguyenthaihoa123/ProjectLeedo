@@ -108,12 +108,12 @@
             btnDangXuat.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnDangXuat.ForeColor = Color.FromArgb(51, 51, 51);
             btnDangXuat.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
-            btnDangXuat.IconColor = Color.FromArgb(51, 51, 51);
+            btnDangXuat.IconColor = Color.White;
             btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDangXuat.Location = new Point(0, 677);
+            btnDangXuat.Location = new Point(0, 701);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Rotation = 180D;
-            btnDangXuat.Size = new Size(117, 76);
+            btnDangXuat.Size = new Size(117, 52);
             btnDangXuat.TabIndex = 6;
             btnDangXuat.TextImageRelation = TextImageRelation.ImageAboveText;
             btnDangXuat.UseVisualStyleBackColor = false;

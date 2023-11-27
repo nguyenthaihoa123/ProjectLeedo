@@ -50,6 +50,21 @@ namespace wfLeedo
         {
             employeeViewModel viewAllEmp = new employeeViewModel();
             dgvEmployee.DataSource = viewAllEmp.dataAllEmploy("");
+
+            dgvEmployee.Columns["MaNv"].HeaderText = "Mã nhân viên";
+            dgvEmployee.Columns["HotenNV"].HeaderText = "Họ tên nhân viên";
+            dgvEmployee.Columns["CCCD"].HeaderText = "CCCD";
+            dgvEmployee.Columns["SDT"].HeaderText = "Số điện thoại";
+            dgvEmployee.Columns["GT"].HeaderText = "Giới tính";
+            dgvEmployee.Columns["NgSinh"].HeaderText = "Ngày sinh";
+            dgvEmployee.Columns["PhongBan"].HeaderText = "Phòng ban";
+            dgvEmployee.Columns["TKBank"].HeaderText = "Tài khoản ngân hàng";
+            dgvEmployee.Columns["Email"].HeaderText = "Email";
+            dgvEmployee.Columns["ChucVu"].HeaderText = "Chức vụ";
+            dgvEmployee.Columns["Luong"].HeaderText = "Lương";
+            dgvEmployee.Columns["Img_NV"].HeaderText = "Ảnh nhân viên";
+            dgvEmployee.Columns["MatKhau"].HeaderText = "Mật khẩu";
+
         }
 
 

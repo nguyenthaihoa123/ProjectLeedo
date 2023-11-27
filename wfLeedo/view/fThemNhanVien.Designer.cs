@@ -371,20 +371,33 @@
             // 
             // btnSelectImg
             // 
-            btnSelectImg.CornerRoundingRadius = -1F;
-            btnSelectImg.Location = new Point(523, 148);
+            btnSelectImg.CornerRoundingRadius = 10F;
+            btnSelectImg.Location = new Point(511, 148);
             btnSelectImg.Name = "btnSelectImg";
-            btnSelectImg.Size = new Size(90, 25);
+            btnSelectImg.Size = new Size(111, 48);
+            btnSelectImg.StateCommon.Back.Color1 = Color.FromArgb(255, 192, 128);
+            btnSelectImg.StateCommon.Back.Color2 = Color.FromArgb(255, 224, 192);
+            btnSelectImg.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            btnSelectImg.StateCommon.Border.Rounding = 10F;
+            btnSelectImg.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btnSelectImg.TabIndex = 5;
             btnSelectImg.Values.Text = "Chọn ảnh";
             // 
             // btnSuaEmp
             // 
-            btnSuaEmp.CornerRoundingRadius = -1F;
-            btnSuaEmp.Location = new Point(166, 609);
+            btnSuaEmp.CornerRoundingRadius = 10F;
+            btnSuaEmp.Location = new Point(59, 592);
+            btnSuaEmp.Margin = new Padding(3, 4, 3, 4);
             btnSuaEmp.Name = "btnSuaEmp";
-            btnSuaEmp.Size = new Size(90, 25);
-            btnSuaEmp.TabIndex = 6;
+            btnSuaEmp.Size = new Size(93, 42);
+            btnSuaEmp.StateCommon.Back.Color1 = Color.White;
+            btnSuaEmp.StateCommon.Back.Color2 = Color.White;
+            btnSuaEmp.StateCommon.Border.Color1 = Color.FromArgb(128, 128, 255);
+            btnSuaEmp.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
+            btnSuaEmp.StateCommon.Border.Rounding = 10F;
+            btnSuaEmp.StateCommon.Border.Width = 3;
+            btnSuaEmp.StateCommon.Content.ShortText.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSuaEmp.TabIndex = 15;
             btnSuaEmp.Values.Text = "Sửa";
             btnSuaEmp.Click += btnSuaEmp_Click;
             // 

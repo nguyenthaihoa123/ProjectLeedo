@@ -72,7 +72,8 @@
             kryptonTableLayoutPanel1.Controls.Add(txtGiaNVL, 1, 3);
             kryptonTableLayoutPanel1.Controls.Add(txtDvtNVL, 1, 4);
             kryptonTableLayoutPanel1.Controls.Add(kryptonLabel6, 0, 4);
-            kryptonTableLayoutPanel1.Location = new Point(12, 12);
+            kryptonTableLayoutPanel1.Location = new Point(11, 11);
+            kryptonTableLayoutPanel1.Margin = new Padding(2);
             kryptonTableLayoutPanel1.Name = "kryptonTableLayoutPanel1";
             kryptonTableLayoutPanel1.RowCount = 5;
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.9230843F));
@@ -80,38 +81,47 @@
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6153851F));
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6153851F));
             kryptonTableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 16.6153851F));
-            kryptonTableLayoutPanel1.Size = new Size(470, 296);
+            kryptonTableLayoutPanel1.Size = new Size(376, 237);
+            kryptonTableLayoutPanel1.StateCommon.Color1 = Color.WhiteSmoke;
             kryptonTableLayoutPanel1.TabIndex = 4;
             // 
             // kryptonLabel1
             // 
-            kryptonLabel1.Location = new Point(3, 3);
+            kryptonLabel1.Location = new Point(2, 2);
+            kryptonLabel1.Margin = new Padding(2);
             kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(173, 29);
+            kryptonLabel1.Size = new Size(145, 24);
+            kryptonLabel1.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel1.TabIndex = 0;
             kryptonLabel1.Values.Text = "Mã nguyên vật liệu:";
             // 
             // kryptonLabel2
             // 
-            kryptonLabel2.Location = new Point(3, 63);
+            kryptonLabel2.Location = new Point(2, 50);
+            kryptonLabel2.Margin = new Padding(2);
             kryptonLabel2.Name = "kryptonLabel2";
-            kryptonLabel2.Size = new Size(180, 29);
+            kryptonLabel2.Size = new Size(148, 24);
+            kryptonLabel2.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel2.TabIndex = 1;
             kryptonLabel2.Values.Text = "Loại nguyên vật liệu:";
             // 
             // kryptonLabel3
             // 
-            kryptonLabel3.Location = new Point(3, 121);
+            kryptonLabel3.Location = new Point(2, 97);
+            kryptonLabel3.Margin = new Padding(2);
             kryptonLabel3.Name = "kryptonLabel3";
-            kryptonLabel3.Size = new Size(176, 29);
+            kryptonLabel3.Size = new Size(148, 24);
+            kryptonLabel3.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel3.TabIndex = 2;
             kryptonLabel3.Values.Text = "Tên nguyên vật liệu:";
             // 
             // kryptonLabel4
             // 
-            kryptonLabel4.Location = new Point(3, 179);
+            kryptonLabel4.Location = new Point(2, 144);
+            kryptonLabel4.Margin = new Padding(2);
             kryptonLabel4.Name = "kryptonLabel4";
-            kryptonLabel4.Size = new Size(173, 29);
+            kryptonLabel4.Size = new Size(145, 24);
+            kryptonLabel4.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel4.TabIndex = 3;
             kryptonLabel4.Values.Text = "Giá nguyên vật liệu:";
             // 
@@ -126,13 +136,14 @@
             txtMaNVL.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaNVL.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtMaNVL.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaNVL.Location = new Point(194, 3);
+            txtMaNVL.Location = new Point(154, 2);
+            txtMaNVL.Margin = new Padding(2);
             txtMaNVL.Name = "txtMaNVL";
             txtMaNVL.PasswordChar = '\0';
             txtMaNVL.PlaceholderText = "";
             txtMaNVL.SelectedText = "";
             txtMaNVL.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtMaNVL.Size = new Size(273, 44);
+            txtMaNVL.Size = new Size(218, 35);
             txtMaNVL.TabIndex = 6;
             // 
             // txtLoaiNVL
@@ -146,13 +157,14 @@
             txtLoaiNVL.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtLoaiNVL.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtLoaiNVL.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLoaiNVL.Location = new Point(194, 63);
+            txtLoaiNVL.Location = new Point(154, 50);
+            txtLoaiNVL.Margin = new Padding(2);
             txtLoaiNVL.Name = "txtLoaiNVL";
             txtLoaiNVL.PasswordChar = '\0';
             txtLoaiNVL.PlaceholderText = "";
             txtLoaiNVL.SelectedText = "";
             txtLoaiNVL.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtLoaiNVL.Size = new Size(273, 43);
+            txtLoaiNVL.Size = new Size(218, 34);
             txtLoaiNVL.TabIndex = 7;
             // 
             // txtTenNVL
@@ -166,13 +178,14 @@
             txtTenNVL.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenNVL.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTenNVL.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenNVL.Location = new Point(194, 121);
+            txtTenNVL.Location = new Point(154, 97);
+            txtTenNVL.Margin = new Padding(2);
             txtTenNVL.Name = "txtTenNVL";
             txtTenNVL.PasswordChar = '\0';
             txtTenNVL.PlaceholderText = "";
             txtTenNVL.SelectedText = "";
             txtTenNVL.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTenNVL.Size = new Size(273, 43);
+            txtTenNVL.Size = new Size(218, 34);
             txtTenNVL.TabIndex = 8;
             // 
             // txtGiaNVL
@@ -186,13 +199,14 @@
             txtGiaNVL.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtGiaNVL.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtGiaNVL.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaNVL.Location = new Point(194, 179);
+            txtGiaNVL.Location = new Point(154, 144);
+            txtGiaNVL.Margin = new Padding(2);
             txtGiaNVL.Name = "txtGiaNVL";
             txtGiaNVL.PasswordChar = '\0';
             txtGiaNVL.PlaceholderText = "";
             txtGiaNVL.SelectedText = "";
             txtGiaNVL.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtGiaNVL.Size = new Size(273, 43);
+            txtGiaNVL.Size = new Size(218, 34);
             txtGiaNVL.TabIndex = 9;
             // 
             // txtDvtNVL
@@ -206,29 +220,36 @@
             txtDvtNVL.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDvtNVL.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDvtNVL.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDvtNVL.Location = new Point(194, 237);
+            txtDvtNVL.Location = new Point(154, 191);
+            txtDvtNVL.Margin = new Padding(2);
             txtDvtNVL.Name = "txtDvtNVL";
             txtDvtNVL.PasswordChar = '\0';
             txtDvtNVL.PlaceholderText = "";
             txtDvtNVL.SelectedText = "";
             txtDvtNVL.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtDvtNVL.Size = new Size(273, 43);
+            txtDvtNVL.Size = new Size(218, 34);
             txtDvtNVL.TabIndex = 10;
             // 
             // kryptonLabel6
             // 
-            kryptonLabel6.Location = new Point(3, 237);
+            kryptonLabel6.Location = new Point(2, 191);
+            kryptonLabel6.Margin = new Padding(2);
             kryptonLabel6.Name = "kryptonLabel6";
-            kryptonLabel6.Size = new Size(106, 29);
+            kryptonLabel6.Size = new Size(90, 24);
+            kryptonLabel6.StateCommon.ShortText.Color1 = Color.Black;
             kryptonLabel6.TabIndex = 5;
             kryptonLabel6.Values.Text = "Đơn vị tính:";
             // 
             // insertBtn
             // 
             insertBtn.CornerRoundingRadius = -1F;
-            insertBtn.Location = new Point(60, 339);
+            insertBtn.Location = new Point(48, 271);
+            insertBtn.Margin = new Padding(2);
             insertBtn.Name = "insertBtn";
-            insertBtn.Size = new Size(135, 38);
+            insertBtn.Size = new Size(108, 30);
+            insertBtn.StateCommon.Back.Color1 = Color.Tomato;
+            insertBtn.StateCommon.Back.Color2 = Color.FromArgb(255, 224, 192);
+            insertBtn.StateCommon.Content.ShortText.Color1 = Color.White;
             insertBtn.TabIndex = 6;
             insertBtn.Values.Text = "Thêm";
             insertBtn.Click += insertBtn_Click;
@@ -236,22 +257,29 @@
             // saveBtn
             // 
             saveBtn.CornerRoundingRadius = -1F;
-            saveBtn.Location = new Point(261, 339);
+            saveBtn.Location = new Point(209, 271);
+            saveBtn.Margin = new Padding(2);
             saveBtn.Name = "saveBtn";
-            saveBtn.Size = new Size(135, 38);
+            saveBtn.Size = new Size(108, 30);
+            saveBtn.StateCommon.Back.Color1 = Color.FromArgb(255, 128, 128);
+            saveBtn.StateCommon.Back.Color2 = Color.FromArgb(255, 192, 192);
+            saveBtn.StateCommon.Content.ShortText.Color1 = Color.White;
             saveBtn.TabIndex = 7;
             saveBtn.Values.Text = "Lưu";
             saveBtn.Click += saveBtn_Click;
             // 
             // fThemNVL
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(504, 450);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(403, 360);
             Controls.Add(saveBtn);
             Controls.Add(insertBtn);
             Controls.Add(kryptonTableLayoutPanel1);
+            Margin = new Padding(2);
             Name = "fThemNVL";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Thêm nguyên vật liệu";
             Load += fThemNVL_Load;
             kryptonTableLayoutPanel1.ResumeLayout(false);
