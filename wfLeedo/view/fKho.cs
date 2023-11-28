@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -339,6 +340,168 @@ namespace wfLeedo
                 else if (modeNX == "Xuất")
                 {
                     dgvNXMode.DataSource = newPro.dataXKhoSPbyTime(sTime, eTime);
+                }
+            }
+        }
+
+        private void printBillNX_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            DateTime dt = DateTime.Now;
+            string label = "";
+            string now;
+
+            now = dt.ToString();
+
+            if (mode == "Nguyên vật liệu")
+            {
+                if (modeNX == "Nhập")
+                {
+                    label = "HÓA ĐƠN NHẬP NGUYÊN VẬT LIỆU";
+                }
+                else if (modeNX == "Xuất")
+                {
+                    label = "HÓA ĐƠN XUẤT NGUYÊN VẬT LIỆU";
+                }
+            }
+            else if (mode == "Sản phẩm")
+            {
+                if (modeNX == "Nhập")
+                {
+                    label = "HÓA ĐƠN NHẬP SẢN PHẨM";
+                }
+                else if (modeNX == "Xuất")
+                {
+                    label = "HÓA ĐƠN XUẤT SẢN PHẨM";
+                }
+            }
+
+            DataTable dtSource = dgvNXMode.DataSource as DataTable;
+
+            g.DrawString(label, new Font("Arial", 12, FontStyle.Bold), Brushes.Black, new PointF(250, 100));
+            g.DrawString("Thời gian tạo hóa đơn: " + now, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(220, 120));
+            g.DrawString("-----------------------------------------------------------------------", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(200, 140));
+
+            float yPosition = 160;
+            int lineHeight = 70; // Khoảng cách giữa các dòng
+            int lineWidth = 300;
+
+            string cID = "";
+            string cKho = dgvNXMode.SelectedRows[0].Cells["MaKho"].Value.ToString();
+            if (mode == "Nguyên vật liệu")
+            {
+                cID = dgvNXMode.SelectedRows[0].Cells["MaNVL"].Value.ToString();
+            }
+            else if (mode == "Sản phẩm")
+            {
+                cID = dgvNXMode.SelectedRows[0].Cells["MaSP"].Value.ToString();
+            }
+
+            int countK = 0;
+            int countID = 0;
+            int tong = 0;
+            for (int i = 0; i < dtSource.Rows.Count; i++)
+            {
+                DataRow row = dtSource.Rows[i];
+                string maKho = row["MaKho"].ToString();
+                if (maKho == cKho)
+                {
+                    if (countK == 0)
+                    {
+                        g.DrawString("Mã kho: " + cKho, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(220, yPosition));
+                    }
+                    if (mode == "Nguyên vật liệu")
+                    {
+                        string maNVL = row["MaNVL"].ToString();
+                        if (countID == 0)
+                        {
+                            g.DrawString("- Mã nguyên vật liệu: " + cID, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(240, yPosition += 20));
+                        }
+                        if (modeNX == "Nhập" && maNVL == cID)
+                        {
+                            string sl_nhap = row["SL_NhapNVL"].ToString();
+                            string tg_nhap = row["TG_NhapNVL"].ToString();
+
+                            g.DrawString("+ Thời gian nhập: " + tg_nhap, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(260, yPosition += 20));
+                            g.DrawString("• Số lượng nhập: " + sl_nhap, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(280, yPosition += 20));
+                            tong += int.Parse(sl_nhap);
+                        }
+                        else if (modeNX == "Xuất" && maNVL == cID)
+                        {
+                            string sl_xuat = row["SL_XuatNVL"].ToString();
+                            string tg_xuat = row["TG_XuatNVL"].ToString();
+
+                            g.DrawString("+ Thời gian xuất: " + tg_xuat, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(260, yPosition += 20));
+                            g.DrawString("• Số lượng xuất: " + sl_xuat, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(280, yPosition += 20));
+                            tong += int.Parse(sl_xuat);
+                        }
+                    }
+                    else if (mode == "Sản phẩm")
+                    {
+                        string maSP = row["MaSP"].ToString();
+                        if (countID == 0)
+                        {
+                            g.DrawString("- Mã sản phẩm: " + cID, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(240, yPosition += 20));
+                        }
+                        if (modeNX == "Nhập" && maSP == cID)
+                        {
+                            string sl_nhap = row["SL_NhapSP"].ToString();
+                            string tg_nhap = row["TG_NhapSP"].ToString();
+
+                            g.DrawString("+ Thời gian nhập: " + tg_nhap, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(260, yPosition += 20));
+                            g.DrawString("• Số lượng nhập: " + sl_nhap, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(280, yPosition += 20));
+                            tong += int.Parse(sl_nhap);
+                        }
+                        else if (modeNX == "Xuất" && maSP == cID)
+                        {
+                            string sl_xuat = row["SL_XuatSP"].ToString();
+                            string tg_xuat = row["TG_XuatSP"].ToString();
+
+                            g.DrawString("+ Thời gian xuất: " + tg_xuat, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(260, yPosition += 20));
+                            g.DrawString("• Số lượng xuất: " + sl_xuat, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(280, yPosition += 20));
+                            tong += int.Parse(sl_xuat);
+                        }
+                    }
+                    countK++;
+                    countID++;
+                }
+            }
+            g.DrawString("+ Tổng số lượng: " + tong, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(260, yPosition += 20));
+            g.DrawString("-----------------------------------------------------------------------", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new PointF(200, yPosition += 20));
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            if (modeNX == "Tất cả")
+            {
+                MessageBox.Show("Vui lòng chọn chức năng nhập/xuất để thực hiện chức năng in phiếu!");
+            }
+            else
+            {
+                DateTime now = DateTime.Now;
+                printBillNX = new PrintDocument();
+                printBillNX.PrintPage += new PrintPageEventHandler(printBillNX_PrintPage);
+
+                string pdfPath = @"D:\Bill\BillNX_" + now + ".pdf";
+
+                PrintController printController = new StandardPrintController();
+                //printController = new PrintControllerWithStatusDialog(new StandardPrintController());
+                printBillNX.PrintController = printController;
+
+                printBillNX.PrinterSettings.PrintFileName = "BillNX_" + now;
+
+                try
+                {
+                    // Print the document to the specified PDF file
+                    printBillNX.Print();
+
+                    // Open the printed PDF file
+                    if (File.Exists(pdfPath))
+                        System.Diagnostics.Process.Start(pdfPath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error printing: " + ex.Message);
                 }
             }
         }

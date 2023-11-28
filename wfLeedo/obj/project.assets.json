@@ -4244,19 +4244,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nguye\\.nuget\\packages\\": {}
+    "C:\\Users\\HAO NAM\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+      "projectUniqueName": "C:\\Users\\HAO NAM\\WorkSpace\\Công nghệ phần mềm\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
       "projectName": "wfLeedo",
-      "projectPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
-      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\obj\\",
+      "projectPath": "C:\\Users\\HAO NAM\\WorkSpace\\Công nghệ phần mềm\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+      "packagesPath": "C:\\Users\\HAO NAM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HAO NAM\\WorkSpace\\Công nghệ phần mềm\\ProjectLeedo\\wfLeedo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HAO NAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4338,7 +4343,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
