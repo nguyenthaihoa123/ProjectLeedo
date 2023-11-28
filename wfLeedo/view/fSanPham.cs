@@ -30,7 +30,7 @@ namespace wfLeedo.view
         }
         private void fSanPham_Load(object sender, EventArgs e)
         {
-
+            this.Text = "Danh mục Sản Phẩm";
             productViewModel model = new productViewModel();
             List<Product> list = model.GetAllProducts();
             foreach (Product productItem in list)

@@ -55,8 +55,9 @@
             kryptonPanel1.Controls.Add(panel1);
             kryptonPanel1.Dock = DockStyle.Left;
             kryptonPanel1.Location = new Point(0, 0);
+            kryptonPanel1.Margin = new Padding(3, 2, 3, 2);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Size = new Size(117, 753);
+            kryptonPanel1.Size = new Size(102, 565);
             kryptonPanel1.StateCommon.Color1 = Color.FromArgb(51, 51, 51);
             kryptonPanel1.StateCommon.Color2 = Color.FromArgb(51, 51, 51);
             kryptonPanel1.StateCommon.ColorAngle = 90F;
@@ -74,9 +75,10 @@
             btnQuanLy.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
             btnQuanLy.IconColor = Color.LightGray;
             btnQuanLy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnQuanLy.Location = new Point(0, 349);
+            btnQuanLy.Location = new Point(0, 262);
+            btnQuanLy.Margin = new Padding(3, 2, 3, 2);
             btnQuanLy.Name = "btnQuanLy";
-            btnQuanLy.Size = new Size(117, 93);
+            btnQuanLy.Size = new Size(102, 70);
             btnQuanLy.TabIndex = 8;
             btnQuanLy.Text = "Quản lý";
             btnQuanLy.TextImageRelation = TextImageRelation.ImageAboveText;
@@ -94,9 +96,10 @@
             btnSanPham.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
             btnSanPham.IconColor = Color.LightGray;
             btnSanPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnSanPham.Location = new Point(0, 256);
+            btnSanPham.Location = new Point(0, 192);
+            btnSanPham.Margin = new Padding(3, 2, 3, 2);
             btnSanPham.Name = "btnSanPham";
-            btnSanPham.Size = new Size(117, 93);
+            btnSanPham.Size = new Size(102, 70);
             btnSanPham.TabIndex = 7;
             btnSanPham.Text = "Sản phẩm";
             btnSanPham.TextImageRelation = TextImageRelation.ImageAboveText;
@@ -114,10 +117,11 @@
             btnDangXuat.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
             btnDangXuat.IconColor = Color.White;
             btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDangXuat.Location = new Point(0, 666);
+            btnDangXuat.Location = new Point(0, 500);
+            btnDangXuat.Margin = new Padding(3, 2, 3, 2);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Rotation = 180D;
-            btnDangXuat.Size = new Size(117, 87);
+            btnDangXuat.Size = new Size(102, 65);
             btnDangXuat.TabIndex = 6;
             btnDangXuat.TextImageRelation = TextImageRelation.ImageAboveText;
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -134,9 +138,10 @@
             btnDonHang.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
             btnDonHang.IconColor = Color.LightGray;
             btnDonHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnDonHang.Location = new Point(0, 163);
+            btnDonHang.Location = new Point(0, 122);
+            btnDonHang.Margin = new Padding(3, 2, 3, 2);
             btnDonHang.Name = "btnDonHang";
-            btnDonHang.Size = new Size(117, 93);
+            btnDonHang.Size = new Size(102, 70);
             btnDonHang.TabIndex = 4;
             btnDonHang.Text = "Đơn hàng";
             btnDonHang.TextImageRelation = TextImageRelation.ImageAboveText;
@@ -149,16 +154,18 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(117, 163);
+            panel1.Size = new Size(102, 122);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.remove_bg;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(117, 163);
+            pictureBox1.Size = new Size(102, 122);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -170,10 +177,11 @@
             pnMain.Controls.Add(guna2HtmlLabel1);
             pnMain.Controls.Add(pictureBox2);
             pnMain.Dock = DockStyle.Fill;
-            pnMain.Location = new Point(117, 0);
+            pnMain.Location = new Point(102, 0);
+            pnMain.Margin = new Padding(3, 2, 3, 2);
             pnMain.Name = "pnMain";
-            pnMain.Padding = new Padding(0, 0, 0, 15);
-            pnMain.Size = new Size(1165, 753);
+            pnMain.Padding = new Padding(0, 0, 0, 11);
+            pnMain.Size = new Size(1020, 565);
             pnMain.TabIndex = 1;
             // 
             // guna2HtmlLabel1
@@ -181,30 +189,33 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Times New Roman", 36F, FontStyle.Italic, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.Black;
-            guna2HtmlLabel1.Location = new Point(223, 484);
+            guna2HtmlLabel1.Location = new Point(223, 370);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(673, 70);
+            guna2HtmlLabel1.Size = new Size(536, 57);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "Chúc bạn một ngày tốt lành";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.remove_bg;
-            pictureBox2.Location = new Point(313, 47);
+            pictureBox2.Location = new Point(274, 35);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(480, 405);
+            pictureBox2.Size = new Size(420, 304);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
             // fMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 255);
-            ClientSize = new Size(1282, 753);
+            ClientSize = new Size(1122, 565);
             Controls.Add(pnMain);
             Controls.Add(kryptonPanel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "fMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";

@@ -67,7 +67,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "fSanPham";
-            Text = "fSanPham";
+            Text = "Danh mục sản phẩm";
             Load += fSanPham_Load;
             ResumeLayout(false);
             PerformLayout();

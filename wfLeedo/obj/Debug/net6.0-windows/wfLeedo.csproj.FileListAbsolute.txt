@@ -217,7 +217,6 @@ D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\o
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.fMain.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.fNhanVien.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fQuanLy.resources
-D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.fRegister.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fSanPham.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.fThemKhachHang.resources
 D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.fThemNhanVien.resources
@@ -442,3 +441,4 @@ C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\Micro
 C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
 C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\APC\Desktop\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.dialog.dialogMomo.resources
+D:\hoctap\Nam3\Software Engineering\Project Leedo\project\ProjectLeedo\wfLeedo\obj\Debug\net6.0-windows\wfLeedo.view.dialog.dialogMomo.resources

@@ -4244,19 +4244,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APC\\.nuget\\packages\\": {}
+    "C:\\Users\\nguye\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APC\\Desktop\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+      "projectUniqueName": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
       "projectName": "wfLeedo",
-      "projectPath": "C:\\Users\\APC\\Desktop\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
-      "packagesPath": "C:\\Users\\APC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APC\\Desktop\\project\\ProjectLeedo\\wfLeedo\\obj\\",
+      "projectPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\wfLeedo.csproj",
+      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+      "outputPath": "D:\\hoctap\\Nam3\\Software Engineering\\Project Leedo\\project\\ProjectLeedo\\wfLeedo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4338,7 +4338,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
